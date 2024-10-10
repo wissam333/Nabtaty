@@ -1,0 +1,407 @@
+<template>
+  <div class="bottom">
+    <div class="overlay"></div>
+    <div class="overlay"></div>
+    <div class="foot cont" :class="$i18n.locale === 'ar' ? 'ar' : ''">
+      <div class="logo">
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <img src="/AlMuadalahLogoRamli.60ed7b1.png" alt="" />
+        </div>
+
+        <!-- <div
+          class="d-flex align-items-center contacts-content"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <font-awesome :icon="['fas', 'box']" />
+
+          <div
+            class="contacts-info"
+            :class="$i18n.locale === 'ar' ? 'ar' : ''"
+            v-html="
+              $i18n.locale === 'ar'
+                ? ContactsDetails?.description3
+                : ContactsDetails?.englishDescription3
+            "
+          ></div>
+        </div> -->
+
+        <!-- <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          class="contacts-info"
+          :class="$i18n.locale === 'ar' ? 'ar' : ''"
+          v-html="
+            $i18n.locale === 'ar'
+              ? ContactsDetails?.description4
+              : ContactsDetails?.englishDescription4
+          "
+        ></div> -->
+
+        <!-- social -->
+        <div
+          class="d-flex socials"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          :class="$i18n.locale === 'ar' ? 'ar' : ''"
+        >
+          <a
+            :href="Socials?.items[0]?.pageUrl"
+            target="_blank"
+            class="socials-img"
+            style=""
+          >
+            <font-awesome :icon="['fab', 'x-twitter']" />
+          </a>
+
+          <a
+            :href="Socials?.items[1]?.pageUrl"
+            target="_blank"
+            class="socials-img"
+            style=""
+          >
+            <font-awesome :icon="['fab', 'youtube']" />
+          </a>
+
+          <a
+            :href="Socials?.items[2]?.pageUrl"
+            target="_blank"
+            class="socials-img"
+            style=""
+          >
+            <font-awesome :icon="['fab', 'facebook']" />
+          </a>
+        </div>
+      </div>
+
+      <div class="links" data-aos="fade-up">
+        <h4 class="sub-title linear" :class="$i18n.locale === 'ar' ? 'ar' : ''">
+          <span>
+            {{ $i18n.locale === "ar" ? "روابط مفيدة" : "Useful Links" }}
+          </span>
+        </h4>
+        <div class="d-flex align-items-start justify-content-start">
+          <ul class="menu-list">
+            <li
+              v-for="menu in Menus?.items.slice(0, 3)"
+              :key="menu.id"
+              class="menu-item"
+            >
+              <div class="paste-button">
+                <div>
+                  <nuxt-link class="button" :to="menu.pageUrl">
+                    {{ locale === "ar" ? menu.name : menu.englishName }}
+                  </nuxt-link>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul class="menu-list">
+            <li
+              v-for="menu in Menus?.items.slice(3)"
+              :key="menu.id"
+              class="menu-item"
+            >
+              <div class="paste-button">
+                <div>
+                  <nuxt-link class="button" :to="menu.pageUrl">
+                    {{ locale === "ar" ? menu.name : menu.englishName }}
+                  </nuxt-link>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <SharedFooterCopyRight></SharedFooterCopyRight>
+  </div>
+</template>
+
+<script setup>
+const {
+  public: { apiBase, api },
+} = useRuntimeConfig();
+const { $awn } = useNuxtApp();
+const { locale } = useI18n();
+
+const { data: Menus } = await useGetSiteApi().GetAll(
+  `${api.GetMenuDetail}?categoryId=3`
+);
+
+const { data: Socials } = await useGetSiteApi().GetAll(
+  `${api.GetMenuDetail}?categoryId=2`
+);
+</script>
+
+<style lang="scss" scoped>
+.bottom {
+  position: relative;
+  background-color: rgb(255 255 255 / 90%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-top: 4px solid $second;
+  @media (max-width: 1250px) {
+    margin-bottom: 68px;
+  }
+  // .overlay {
+  //   top: 0;
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: #00000053;
+  //   z-index: 9;
+  // }
+
+  // @media (max-width: 550px) {
+  //   direction: rtl;
+  //   text-align: left;
+  // }
+  // .overlay {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: $basic;
+  // }
+
+  .foot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+    align-items: start;
+    justify-items: center;
+    color: $main;
+    position: relative;
+    padding: 30px;
+    column-gap: 40px;
+    z-index: 10;
+    &.ar {
+      @media (max-width: 550px) {
+        justify-items: end;
+      }
+    }
+    @media (max-width: 991px) {
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      justify-items: start;
+      padding: 30px 0px;
+    }
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   left: 0;
+    //   bottom: -30px;
+    //   right: 0;
+    //   border-bottom: 2px solid $main;
+    // }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+      margin-top: -15px;
+      align-items: center;
+      @media (max-width: 1200px) {
+        flex-direction: row;
+        margin-bottom: 50px;
+      }
+
+      &.ar {
+        .socials-img {
+          margin-left: 20px !important;
+          margin-right: 0px !important;
+        }
+        @media (max-width: 991px) {
+          justify-content: flex-end;
+        }
+      }
+      .socials-img {
+        width: 30px;
+        font-size: 30px;
+        margin: 0px 10px;
+        display: flex;
+        justify-content: center;
+        color: $second;
+
+        a {
+          color: $second;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+          &:hover {
+            color: $second;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    ul {
+      padding: 0;
+      a {
+        &.router-link-active {
+          li {
+            font-size: 22px;
+            color: $main;
+            @media (max-width: 1300px) {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      li {
+        font-size: 18px;
+        line-height: 50px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        a {
+          color: #333;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          transform: translateX(10px);
+          .paste-button a {
+            color: $main;
+          }
+        }
+      }
+    }
+
+    .logo {
+      display: flex;
+      flex-direction: column;
+      margin-top: -25px;
+      // align-items: flex-start;
+      @media (max-width: 768px) {
+        width: 100%;
+        align-items: center;
+      }
+      img {
+        width: 300px;
+        margin-bottom: 40px;
+        @media (max-width: 1400px) {
+          width: 250px;
+        }
+      }
+    }
+  }
+
+  .name {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+.icon {
+  color: $main;
+  margin-right: 5px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.menu-item {
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  list-style: none; /* Remove bullet points */
+  padding: 0.5rem; /* Optional: add padding for spacing */
+  white-space: nowrap;
+  text-wrap: nowrap;
+}
+.sub-title {
+  position: relative;
+  margin-bottom: 30px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: auto;
+    height: 2px;
+    width: 25%;
+    background-color: $DarkBlue;
+  }
+  &.ar {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+      left: auto;
+      height: 2px;
+      width: 25%;
+      background-color: $DarkBlue;
+    }
+  }
+}
+
+.router-link-active.router-link-exact-active {
+  color: $main !important;
+}
+.send {
+  width: 100%;
+  border: 1px solid $main;
+  color: $main;
+  border-radius: 30px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: $main;
+    color: $main;
+  }
+}
+
+.sub-title {
+  position: relative;
+  margin-bottom: 30px;
+  color: $second;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: auto;
+    height: 4px;
+    width: 100%;
+    background-color: $second;
+  }
+  &.ar {
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -15px;
+      right: 0;
+      left: auto;
+      height: 4px;
+      width: 100%;
+      background-color: $second;
+    }
+  }
+}
+.menu-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.menu-item {
+  flex: 0 0 50%; /* Each item takes up 50% of the container's width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  list-style: none; /* Remove bullet points */
+  padding: 0.5rem; /* Optional: add padding for spacing */
+  white-space: nowrap;
+  text-wrap: nowrap;
+}
+.links {
+  width: 100%;
+}
+</style>

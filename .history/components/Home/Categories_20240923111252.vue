@@ -1,0 +1,50 @@
+<template>
+  <div class="categories">
+    <div class="cont">
+      <h1 class="title linear">
+        <span>
+          {{ $i18n.locale === "ar" ? "الفئات" : "Categories" }}
+        </span>
+      </h1>
+
+      <div v-if="pending" class="text-center text-white loader">
+        <ElementsSpinner></ElementsSpinner>
+      </div>
+      <div v-else-if="!pending">
+        <Swiper
+          style="direction: ltr"
+          :modules="[SwiperAutoplay, SwiperPagination]"
+          :slides-per-view="1"
+          :loop="true"
+          :autoplay="{
+            delay: 5000,
+            disableOnInteraction: true,
+          }"
+          :speed="1000"
+          :pagination="{
+            clickable: true,
+          }"
+        >
+          <SwiperSlide v-for="category in Categories?.items">
+            <div class="category row">
+              <div class="col-lg-8">
+                <img :src="apiBase + category.imageUrl" alt="" />
+              </div>
+              <div class="col-lg-4"></div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
+  </div>
+</template>
+<script setup>
+const {
+  public: { apiBase, api },
+} = useRuntimeConfig();
+
+const { data: Categories, pending } = await useGetSiteApi().GetAll(
+  `${api.ProductsCategories}`
+);
+</script>
+<style lang="scss" scoped></style>

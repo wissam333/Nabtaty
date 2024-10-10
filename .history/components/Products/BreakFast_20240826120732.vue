@@ -1,0 +1,180 @@
+<template>
+  <div class="offers" :class="$i18n.locale === 'ar' ? 'ar' : ''">
+    <div class="container mt-10">
+      <h1>
+        <span>
+          {{ $i18n.locale === "ar" ? "الإفطار" : "Breakfast" }}
+        </span>
+      </h1>
+
+      <div v-if="pending" class="text-center text-white loader">
+        <ElementsSpinner></ElementsSpinner>
+      </div>
+      <div v-else>
+        <Swiper
+          class="sliderPc"
+          style="direction: ltr"
+          :modules="[SwiperAutoplay, SwiperPagination]"
+          :slides-per-view="1"
+          :loop="true"
+          :autoplay="{
+            delay: 5000,
+            disableOnInteraction: true,
+          }"
+          :pagination="{
+            clickable: true,
+          }"
+        >
+          <SwiperSlide
+            v-for="(productGroup, index) in groupedProducts"
+            :key="index"
+          >
+            <div class="products">
+              <div
+                class="product"
+                :dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'"
+                v-for="product in productGroup"
+                :key="product.name"
+              >
+                <ProductCard :product="product"></ProductCard>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+
+        <Swiper
+          class="sliderMob"
+          style="direction: ltr"
+          :modules="[SwiperAutoplay, SwiperPagination]"
+          :slides-per-view="1"
+          :loop="true"
+          :autoplay="{
+            delay: 5000,
+            disableOnInteraction: true,
+          }"
+          :pagination="{
+            clickable: true,
+          }"
+        >
+          <SwiperSlide v-for="product in Products.data" :key="product.id">
+            <div class="products-mob">
+              <div class="product" :dir="$i18n.locale === 'ar' ? 'rtl' : 'ltr'">
+                <ProductCard :product="product"></ProductCard>
+              </div>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
+  </div>
+</template>
+<script setup>
+const {
+  public: { api, apiBase },
+} = useRuntimeConfig();
+
+const { data: Products, pending } = await useGetSiteApi().GetAll(
+  `${api.GetProducts}?CategoryId=${useAllFoodesTypes().value[1]?.id}&type=B2B`
+);
+
+// Function to group products into arrays of 4
+const groupedProducts = computed(() => {
+  const groups = [];
+  for (let i = 0; i < Products.value.data.length; i += 4) {
+    groups.push(Products.value.data.slice(i, i + 4));
+  }
+  return groups;
+});
+</script>
+<style lang="scss" scoped>
+.offers {
+  padding: 100px 0px;
+  position: relative;
+  background: url("/photos/31-1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  .container {
+    h1 {
+      font-weight: bold;
+      span {
+        -webkit-background-clip: text;
+        font-weight: bold;
+        background-color: #146890;
+        background-image: linear-gradient(45deg, #146890, #45b2e9, #146890);
+        background-repeat: repeat;
+        background-size: 100%;
+        -webkit-text-fill-color: transparent;
+        -moz-background-clip: text;
+        -moz-text-fill-color: transparent;
+      }
+    }
+  }
+  .products {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    row-gap: 40px;
+    column-gap: 20px;
+    @media (max-width: 1200px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    .product {
+      height: 500px;
+      width: 250px;
+      border-radius: 300px;
+      box-shadow: 0px 0px 7px 0px $main;
+      position: relative;
+    }
+  }
+  .products-mob {
+    display: flex;
+    justify-content: center;
+    .product {
+      height: 500px;
+      width: 250px;
+      border-radius: 300px;
+      box-shadow: 0px 0px 7px 0px $main;
+      position: relative;
+    }
+  }
+}
+.swiper {
+  padding: 80px 0px;
+  &.sliderPc {
+    display: block;
+  }
+  &.sliderMob {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    &.sliderPc {
+      display: none !important;
+    }
+    &.sliderMob {
+      display: block !important;
+    }
+  }
+}
+
+.offers {
+  &.ar {
+    h1 {
+      &:last-of-type {
+        margin-left: 0px !important;
+        margin-right: 50px;
+        &::after {
+          right: auto !important;
+          left: 0;
+          width: calc(100% - 150px) !important;
+          @media (max-width: 768px) {
+            width: calc(100% - 100px) !important;
+          }
+        }
+      }
+    }
+  }
+}
+</style>
