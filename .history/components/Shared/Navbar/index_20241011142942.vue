@@ -9,7 +9,7 @@
           <!-- logo for pc -->
           <div>
             <nuxt-link to="/" class="logo" style="border: none !important">
-              <img src="/logo/nabtaty3.png" alt="" />
+              <!-- <img src="/logo/nabtaty-03.png" alt="" /> -->
             </nuxt-link>
           </div>
 
@@ -142,7 +142,7 @@
         <!-- logo for mobile -->
         <div v-if="mobile">
           <nuxt-link to="/" class="logo" style="border: none !important">
-            <img src="/logo/nabtaty3.png" alt="" />
+            <img src="/logo/nabtaty8.png" alt="" />
           </nuxt-link>
         </div>
 
