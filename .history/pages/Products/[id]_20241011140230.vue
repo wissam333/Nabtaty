@@ -97,7 +97,7 @@
 
           <div class="title">
             <h1 class="d-flex align-items-center">
-              <!-- <img width="70" src="/logo/nabtaty-08.png" alt="" /> -->
+              <img width="70" src="/logo/nabtaty-08.png" alt="" />
               <span class="underline">
                 {{
                   $i18n.locale === "ar"
