@@ -266,18 +266,6 @@
         <v-tab class="tabs2" value="four">{{
           $i18n.locale == "en" ? "Fretilizing" : "التسميد"
         }}</v-tab>
-        <v-tab class="tabs2" value="five">{{
-          $i18n.locale == "en" ? "Problems & Pests" : "المشاكل والآفات"
-        }}</v-tab>
-        <v-tab class="tabs2" value="six">{{
-          $i18n.locale == "en" ? "Temperature" : "درجة حرارة"
-        }}</v-tab>
-        <v-tab class="tabs2" value="seven">{{
-          $i18n.locale == "en" ? "Solid & Repotting" : "التربة"
-        }}</v-tab>
-        <v-tab class="tabs2" value="eight">{{
-          $i18n.locale == "en" ? "Characteristics" : "الميزات"
-        }}</v-tab>
       </v-tabs>
     </div>
 
@@ -344,87 +332,6 @@
           </div>
         </v-window-item>
         <v-window-item value="four" style="color: #333 !important; opacity: 1">
-          <div class="row">
-            <div class="col-lg-6 desc">
-              <h2>{{ $i18n.locale === "ar" ? "الوصف" : "Description" }}</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-                exercitationem eligendi laudantium numquam consequuntur libero
-                veniam, facilis perferendis sapiente ab ut est porro in maxime
-                accusantium deleniti quisquam nemo ipsam!
-              </p>
-              <h5>Plant height with basin 35 cm</h5>
-              <h5>Basin width 10 cm</h5>
-              <h5>There is no drain hole under the sink.</h5>
-            </div>
-
-            <div class="col-lg-6 img">
-              <img src="/photos/gifts.png" alt="" />
-            </div>
-          </div>
-        </v-window-item>
-        <v-window-item value="five" style="color: #333 !important; opacity: 1">
-          <div class="row">
-            <div class="col-lg-6 desc">
-              <h2>{{ $i18n.locale === "ar" ? "الوصف" : "Description" }}</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-                exercitationem eligendi laudantium numquam consequuntur libero
-                veniam, facilis perferendis sapiente ab ut est porro in maxime
-                accusantium deleniti quisquam nemo ipsam!
-              </p>
-              <h5>Plant height with basin 35 cm</h5>
-              <h5>Basin width 10 cm</h5>
-              <h5>There is no drain hole under the sink.</h5>
-            </div>
-
-            <div class="col-lg-6 img">
-              <img src="/photos/gifts.png" alt="" />
-            </div>
-          </div>
-        </v-window-item>
-
-        <v-window-item value="six" style="color: #333 !important; opacity: 1">
-          <div class="row">
-            <div class="col-lg-6 desc">
-              <h2>{{ $i18n.locale === "ar" ? "الوصف" : "Description" }}</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-                exercitationem eligendi laudantium numquam consequuntur libero
-                veniam, facilis perferendis sapiente ab ut est porro in maxime
-                accusantium deleniti quisquam nemo ipsam!
-              </p>
-              <h5>Plant height with basin 35 cm</h5>
-              <h5>Basin width 10 cm</h5>
-              <h5>There is no drain hole under the sink.</h5>
-            </div>
-
-            <div class="col-lg-6 img">
-              <img src="/photos/gifts.png" alt="" />
-            </div>
-          </div>
-        </v-window-item>
-        <v-window-item value="seven" style="color: #333 !important; opacity: 1">
-          <div class="row">
-            <div class="col-lg-6 desc">
-              <h2>{{ $i18n.locale === "ar" ? "الوصف" : "Description" }}</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-                exercitationem eligendi laudantium numquam consequuntur libero
-                veniam, facilis perferendis sapiente ab ut est porro in maxime
-                accusantium deleniti quisquam nemo ipsam!
-              </p>
-              <h5>Plant height with basin 35 cm</h5>
-              <h5>Basin width 10 cm</h5>
-              <h5>There is no drain hole under the sink.</h5>
-            </div>
-
-            <div class="col-lg-6 img">
-              <img src="/photos/gifts.png" alt="" />
-            </div>
-          </div>
-        </v-window-item>
-        <v-window-item value="eight" style="color: #333 !important; opacity: 1">
           <div class="row">
             <div class="col-lg-6 desc">
               <h2>{{ $i18n.locale === "ar" ? "الوصف" : "Description" }}</h2>

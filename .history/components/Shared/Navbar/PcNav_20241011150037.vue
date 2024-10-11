@@ -28,7 +28,7 @@
             </div>
           </div> -->
           <div>
-            <nuxt-link class="button" to="/Products/3">
+            <nuxt-link class="button" :to="menu?.pageUrl">
               {{ $i18n.locale === "ar" ? menu.name : menu.englishName }}
             </nuxt-link>
           </div>

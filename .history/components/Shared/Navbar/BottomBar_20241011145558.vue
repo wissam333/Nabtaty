@@ -36,7 +36,7 @@
       class="cart pointer mx-2 item"
       style="position: relative"
     >
-      <font-awesome :icon="['fas', 'heart']" />
+      <font-awesome :icon="['fas', 'cart-shopping']" />
       <p>{{ $i18n.locale === "ar" ? "المفضلة" : "Favourite" }}</p>
     </nuxt-link>
 
