@@ -1,20 +1,11 @@
 <template>
   <div>
-    <ClientOnly>
-      <div :class="locale == 'ar' ? 'bodyAR' : 'bodyEN'">
-        <SharedNavbar />
-        <slot />
-
-        <SharedFooter />
-      </div>
-    </ClientOnly>
+    <Home />
   </div>
 </template>
 
 <script setup>
 const { locale } = useI18n();
-useLang().value = locale;
-
 // get the country
 const arabicCountries = [
   "SA",
@@ -56,4 +47,5 @@ watchEffect(() => {
   }
 });
 </script>
+
 <style lang="scss" scoped></style>

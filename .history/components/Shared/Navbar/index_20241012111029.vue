@@ -34,7 +34,7 @@
           <!-- buttons -->
           <div class="buttons" :class="locale === 'ar' ? 'ar' : ''" style="">
             <!-- user -->
-            <!-- <nuxt-link
+            <nuxt-link
               v-if="!isAuth.isAuthenticated"
               to="/auth/Login"
               class="login mx-2 pointer"
@@ -69,7 +69,7 @@
                   }}</NuxtLink
                 >
               </li>
-            </ul> -->
+            </ul>
             <!-- cart -->
             <nuxt-link
               to="/Cart"
@@ -132,7 +132,7 @@
               <font-awesome
                 v-if="!ProductForFavorite?.isFavorite"
                 @click="AddToFavorite()"
-                :icon="['fas', 'heart']"
+                :icon="['far', 'heart']"
                 class="pointer"
               ></font-awesome>
             </nuxt-link>
@@ -386,7 +386,7 @@ input:not(:placeholder-shown) ~ .reset {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: linear-gradient(45deg, #e7a3ec, #fbc2ff, #e7a3ec);
+  background: linear-gradient(45deg, #ec9605, #ffc35f, #ec9605);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -132,7 +132,7 @@
               <font-awesome
                 v-if="!ProductForFavorite?.isFavorite"
                 @click="AddToFavorite()"
-                :icon="['fas', 'heart']"
+                :icon="['far', 'heart']"
                 class="pointer"
               ></font-awesome>
             </nuxt-link>
