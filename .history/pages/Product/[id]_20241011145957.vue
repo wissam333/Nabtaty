@@ -9,9 +9,9 @@
     </div>
     <div v-else class="container" style="position: relative">
       <!-- Back Link-->
-      <!-- <div class="go-back" @click="router.back()">
+      <div class="go-back" @click="router.back()">
         <font-awesome :icon="['fas', 'arrow-left']" />
-      </div> -->
+      </div>
 
       <!-- Short Links-->
       <h5 class="links mb-10">
@@ -21,7 +21,7 @@
         /
         <span
           class="pointer"
-          @click="router.push(`/Products/${Product?.categoryId}`)"
+          @click="router.push(`/FoodByCategory/${Product?.categoryId}`)"
         >
           {{
             $i18n.locale === "ar"
@@ -782,8 +782,7 @@ const removeFromFavorite = async () => {
 .links {
   color: #333;
   font-weight: bold;
-  padding: 40px 0px 10px 0px;
-  // padding: 40px 12px 10px 60px;
+  padding: 40px 12px 10px 60px;
 }
 .product {
   height: 500px;
@@ -823,7 +822,7 @@ const removeFromFavorite = async () => {
   margin-top: 80px;
   margin-bottom: 50px;
   .tabs2 {
-    color: rgba(190, 86, 198, 0.766);
+    color: rgba(190, 86, 198, 0.4941176471);
     font-weight: bold;
     &.v-slide-group-item--active,
     &.v-tab--selected {

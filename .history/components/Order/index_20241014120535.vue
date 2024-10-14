@@ -94,9 +94,8 @@
                 value="Login"
                 class="background btn px-10 py-2 text-black w-50 btn-block m-auto"
                 :class="{ background: formMeta.valid }"
-                :disabled="true"
+                :disabled="!formMeta.valid || isLoading"
               >
-              <!-- !formMeta.valid || isLoading -->
                 <span class="text-white" v-if="!isLoading">
                   {{ $i18n.locale === "ar" ? "أطلب الآن" : "Order Now" }}
                 </span>
@@ -188,72 +187,6 @@ const schema = object({
   currencyId: string().required(),
 });
 
-//map
-const map = ref(null);
-let marker = ref({
-  latitude: 33.5102,
-  longitude: 36.29128,
-});
-
-const zoom = ref(10);
-let clientGeoLocation = ref({
-  latitude: 33.5102,
-  longitude: 36.29128,
-});
-
-if (process.client) {
-  const suc = (res) => {
-    console.log(res);
-    //map
-    clientGeoLocation.value.latitude = Number(res.coords.latitude);
-    clientGeoLocation.value.longitude = Number(res.coords.longitude);
-    //marker
-    marker.value.latitude = res.coords.latitude;
-    marker.value.longitude = res.coords.longitude;
-  };
-
-  const er = async () => {
-    console.log(
-      "Unable to get client geo location from navigator, using IP geolocation."
-    );
-    try {
-      const response = await useFetch("https://ipapi.co/json/");
-      const data = response.data;
-      clientGeoLocation.value.latitude = data.coords.latitude;
-      clientGeoLocation.value.longitude = data.coords.longitude;
-      marker.value = {
-        latitude: data.coords.latitude,
-        longitude: data.coords.longitude,
-      };
-    } catch (error) {
-      console.error("IP Geolocation failed", error);
-    }
-  };
-
-  navigator.geolocation.getCurrentPosition(suc, er);
-}
-
-const updatLatLng = async (res) => {
-  marker.value = {
-    latitude: res.lat,
-    longitude: res.lng,
-  };
-  const response = await useFetch(
-    `${apiBase}${
-      api.FinalOrdinaryOrders
-    }/GetShippingCost?ClientGeoLocation=${`LAT:${marker.value.latitude},LNG:${marker.value.longitude}`}&RestaurantId=10`,
-    {
-      baseURL: apiBase,
-      method: "GET",
-      headers: {
-        Authorization: `Bearer ${useMainToken().value}`,
-      },
-    }
-  );
-  console.log(response.data.value.data.shippingCost);
-  shippingCostMap().value = response.data.value.data.shippingCost;
-};
-
 const changeCity = (payload) => {
   allcities.forEach((city) => {
     if (city.id == payload) {
@@ -262,7 +195,6 @@ const changeCity = (payload) => {
   });
 };
 
-// func
 let selectCountry = ref();
 const changeCountry = (payload) => {
   countries.forEach((city) => {

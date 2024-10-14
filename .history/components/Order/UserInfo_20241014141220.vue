@@ -38,7 +38,7 @@
         <label
           for="buttondisplay"
           class="fw-bold d-block color"
-          style="margin-bottom: -16px; color: #8cc63e"
+          style="margin-bottom: -20px"
         >
           {{ $t("City") }}
         </label>
@@ -52,19 +52,6 @@
           :placeholder="$t('City')"
           astricts="false"
           style="margin-bottom: 20px"
-        />
-      </div>
-
-      <div class="col-lg-6">
-        <ElementsFormVTextInput
-          border_color="8cc63e"
-          color="8cc63e"
-          type="text"
-          name="address"
-          id="address"
-          :label="$t('address')"
-          :placeholder="$t('address')"
-          astricts="true"
         />
       </div>
 

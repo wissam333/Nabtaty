@@ -9,9 +9,9 @@
     </div>
     <div v-else class="container" style="position: relative">
       <!-- Back Link-->
-      <!-- <div class="go-back" @click="router.back()">
+      <div class="go-back" @click="router.back()">
         <font-awesome :icon="['fas', 'arrow-left']" />
-      </div> -->
+      </div>
 
       <!-- Short Links-->
       <h5 class="links mb-10">
@@ -21,7 +21,7 @@
         /
         <span
           class="pointer"
-          @click="router.push(`/Products/${Product?.categoryId}`)"
+          @click="router.push(`/FoodByCategory/${Product?.categoryId}`)"
         >
           {{
             $i18n.locale === "ar"

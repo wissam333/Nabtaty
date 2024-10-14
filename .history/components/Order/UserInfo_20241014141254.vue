@@ -38,7 +38,7 @@
         <label
           for="buttondisplay"
           class="fw-bold d-block color"
-          style="margin-bottom: -16px; color: #8cc63e"
+          style="margin-bottom: -20px"
         >
           {{ $t("City") }}
         </label>
@@ -65,6 +65,7 @@
           :label="$t('address')"
           :placeholder="$t('address')"
           astricts="true"
+          :readonly="true"
         />
       </div>
 

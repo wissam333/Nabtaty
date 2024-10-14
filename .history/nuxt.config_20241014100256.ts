@@ -12,7 +12,6 @@ export default defineNuxtConfig({
     "@vee-validate/nuxt",
     "@primevue/nuxt-module",
     "nuxt-vue3-google-signin",
-    "@nuxtjs/leaflet",
   ],
   googleSignIn: {
     clientId: "508145345514-ok1e5qv5lb208op3kmnsruji3oq55m91.apps.googleusercontent.com", // Replace with your actual Google Client ID

@@ -21,7 +21,7 @@
         /
         <span
           class="pointer"
-          @click="router.push(`/Products/${Product?.categoryId}`)"
+          @click="router.push(`/FoodByCategory/${Product?.categoryId}`)"
         >
           {{
             $i18n.locale === "ar"

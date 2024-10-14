@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/leaflet": "^1.2.3",
     "@primevue/themes": "^4.0.4",
     "@vee-validate/i18n": "^4.12.6",
     "@vee-validate/nuxt": "^4.12.6",

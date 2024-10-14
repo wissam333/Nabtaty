@@ -94,9 +94,8 @@
                 value="Login"
                 class="background btn px-10 py-2 text-black w-50 btn-block m-auto"
                 :class="{ background: formMeta.valid }"
-                :disabled="true"
+                :disabled="!formMeta.valid || isLoading"
               >
-              <!-- !formMeta.valid || isLoading -->
                 <span class="text-white" v-if="!isLoading">
                   {{ $i18n.locale === "ar" ? "أطلب الآن" : "Order Now" }}
                 </span>
@@ -205,8 +204,8 @@ if (process.client) {
   const suc = (res) => {
     console.log(res);
     //map
-    clientGeoLocation.value.latitude = Number(res.coords.latitude);
-    clientGeoLocation.value.longitude = Number(res.coords.longitude);
+    clientGeoLocation.value.latitude = res.coords.latitude;
+    clientGeoLocation.value.longitude = res.coords.longitude;
     //marker
     marker.value.latitude = res.coords.latitude;
     marker.value.longitude = res.coords.longitude;
@@ -216,21 +215,8 @@ if (process.client) {
     console.log(
       "Unable to get client geo location from navigator, using IP geolocation."
     );
-    try {
-      const response = await useFetch("https://ipapi.co/json/");
-      const data = response.data;
-      clientGeoLocation.value.latitude = data.coords.latitude;
-      clientGeoLocation.value.longitude = data.coords.longitude;
-      marker.value = {
-        latitude: data.coords.latitude,
-        longitude: data.coords.longitude,
-      };
-    } catch (error) {
-      console.error("IP Geolocation failed", error);
-    }
   };
-
-  navigator.geolocation.getCurrentPosition(suc, er);
+  navigator.geolocation.getCurrentPosition(er, suc);
 }
 
 const updatLatLng = async (res) => {

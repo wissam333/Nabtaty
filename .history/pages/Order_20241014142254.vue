@@ -1,6 +1,10 @@
 <template>
   <div>
-    <Order v-if="allcities" :allcities="allcities.data"></Order>
+    <Order
+      v-if="allcities && countries"
+      :allcities="allcities.data"
+      :countries="countries.data"
+    ></Order>
   </div>
 </template>
 
@@ -77,10 +81,22 @@ const allcities = ref({
       parentPrincedomId: null,
       parentPrincedom: null,
     },
+    {
+      id: 10,
+      nameAr: "rrrrrrr",
+      nameEn: "rrrrrr",
+      nationId: 1,
+      nation: null,
+      shippingCost: 130.0,
+      parentPrincedomId: 1,
+      parentPrincedom: null,
+    },
   ],
   messages: [],
   succeeded: true,
 });
+
+const countries = ref([]);
 </script>
 
 <style lang="scss" scoped></style>

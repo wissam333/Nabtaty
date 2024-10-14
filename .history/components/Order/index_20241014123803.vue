@@ -66,8 +66,8 @@
                   ref="map"
                   :zoom="zoom"
                   :center="[
-                    clientGeoLocation.latitude,
-                    clientGeoLocation.longitude,
+                    clientGeoLocationLatitude,
+                    clientGeoLocationLongitude,
                   ]"
                   :use-global-leaflet="false"
                 >
@@ -94,9 +94,8 @@
                 value="Login"
                 class="background btn px-10 py-2 text-black w-50 btn-block m-auto"
                 :class="{ background: formMeta.valid }"
-                :disabled="true"
+                :disabled="!formMeta.valid || isLoading"
               >
-              <!-- !formMeta.valid || isLoading -->
                 <span class="text-white" v-if="!isLoading">
                   {{ $i18n.locale === "ar" ? "أطلب الآن" : "Order Now" }}
                 </span>
@@ -196,17 +195,16 @@ let marker = ref({
 });
 
 const zoom = ref(10);
-let clientGeoLocation = ref({
-  latitude: 33.5102,
-  longitude: 36.29128,
-});
+
+let clientGeoLocationLatitude = ref(33.5102);
+let clientGeoLocationLongitude = ref(36.29128);
 
 if (process.client) {
   const suc = (res) => {
     console.log(res);
     //map
-    clientGeoLocation.value.latitude = Number(res.coords.latitude);
-    clientGeoLocation.value.longitude = Number(res.coords.longitude);
+    clientGeoLocationLatitude = res.coords.latitude;
+    clientGeoLocationLongitude = res.coords.longitude;
     //marker
     marker.value.latitude = res.coords.latitude;
     marker.value.longitude = res.coords.longitude;

@@ -94,9 +94,8 @@
                 value="Login"
                 class="background btn px-10 py-2 text-black w-50 btn-block m-auto"
                 :class="{ background: formMeta.valid }"
-                :disabled="true"
+                :disabled="!formMeta.valid || isLoading"
               >
-              <!-- !formMeta.valid || isLoading -->
                 <span class="text-white" v-if="!isLoading">
                   {{ $i18n.locale === "ar" ? "أطلب الآن" : "Order Now" }}
                 </span>

@@ -38,13 +38,13 @@
         <label
           for="buttondisplay"
           class="fw-bold d-block color"
-          style="margin-bottom: -16px; color: #8cc63e"
+          style="margin-bottom: -20px"
         >
           {{ $t("City") }}
         </label>
         <ElementsFormVSelect
           border_color="8cc63e"
-          color="8cc63e"
+          color="#8cc63e"
           @change="changeCity"
           name="cityName"
           :items="allcities"
