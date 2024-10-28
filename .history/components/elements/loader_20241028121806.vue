@@ -1,7 +1,7 @@
 <template>
   <div>
     <ClientOnly>
-      <div class="main-loader-overlay" v-if="data.show">
+      <div class="main-loader-overlay" v-if="!data.show">
         <div id="preloader">
           <div id="preloaders" class="preloader">
             <img
@@ -138,7 +138,7 @@ onBeforeUnmount(() => clear);
 img.logoLoader {
   // height: 130px;
   // width: 350px;
-  top: 20%;
+  top: 30%;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);

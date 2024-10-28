@@ -195,7 +195,7 @@ const cart = useCart();
   position: sticky;
   width: 100%;
   z-index: 100;
-  height: 148px;
+  height: 146px;
   // border-bottom: 2px solid $second;
   @media (max-width: 991px) {
     height: 80px;
@@ -205,7 +205,7 @@ const cart = useCart();
     display: flex;
     align-items: flex-start;
     width: 100vw;
-    height: 148px;
+    height: 146px;
     flex-direction: column;
     background: rgba(255, 255, 255, 0.279);
     // border-radius: 16px;

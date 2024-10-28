@@ -1,7 +1,7 @@
 <template>
   <div>
     <ClientOnly>
-      <div class="main-loader-overlay" v-if="data.show">
+      <div class="main-loader-overlay" v-if="!data.show">
         <div id="preloader">
           <div id="preloaders" class="preloader">
             <img
