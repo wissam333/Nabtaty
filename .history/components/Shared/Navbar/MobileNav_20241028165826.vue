@@ -343,10 +343,10 @@ const logout = async () => {
   right: 20%;
   padding: 12px 32px;
   @media (max-width: 991px) {
-    padding: 89.5px 11px;
+    padding: 76.5px 10px 0px 10px;
   }
   @media (max-width: 768px) {
-    padding: 88.5px 10px 0px 10px;
+    padding: 73.5px 9px 0px 10px;
   }
 
   .img {
@@ -366,10 +366,10 @@ const logout = async () => {
     right: auto !important;
     padding: 12px 32px;
     @media (max-width: 991px) {
-      padding: 89.5px 11px;
+      padding: 76.5px 10px;
     }
     @media (max-width: 768px) {
-      padding: 88.5px 10px 0px 10px;
+      padding: 73.5px 9px 0px 10px;
     }
   }
   img {

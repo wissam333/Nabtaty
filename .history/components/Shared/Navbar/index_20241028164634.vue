@@ -142,7 +142,7 @@
         <!-- logo for mobile -->
         <div v-if="mobile">
           <nuxt-link to="/" class="logo" style="border: none !important">
-            <img src="/photos/g.png" alt="" />
+            <img src="/photos/nabt.png" alt="" />
           </nuxt-link>
         </div>
 
@@ -250,11 +250,11 @@ const cart = useCart();
       margin: 2px;
       cursor: pointer;
       @media (max-width: 1250px) {
-        width: 200px;
+        width: 130px;
       }
 
       @media (max-width: 991px) {
-        width: 130px;
+        width: 80px;
         margin: 0px;
       }
 

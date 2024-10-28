@@ -176,6 +176,10 @@
                 </div>
               </v-tab>
 
+              <v-tab class="tabs" value="four">{{
+                $i18n.locale == "en" ? "Easy" : "سهل"
+              }}</v-tab>
+
               <v-tab class="tabs" value="five">
                 <font-awesome :icon="['fas', 'sun']" />
               </v-tab>
@@ -231,6 +235,23 @@
                     ipsum inventore rerum voluptatibus! rerum voluptatibus!r
                     sit, amet consectetur adipisicing elit. Autem placeat facere
                     facilis modi sed earum,
+                  </p>
+                </v-window-item>
+
+                <v-window-item
+                  value="four"
+                  style="color: #333 !important; opacity: 1"
+                >
+                  <h5 style="color: #78c044; font-weight: bold">
+                    <font-awesome :icon="['fas', 'droplet']" />
+                    {{ $i18n.locale == "en" ? "Easy" : "سهل" }}
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Autem placeat facereut ex aspernatur aliquam officiis libero
+                    sint nesciunt ipsum inventore rerum voluptatibus! facilis
+                    modi sed earum, voluptates praesentium ea ut ex aspernatur
+                    aliquam off
                   </p>
                 </v-window-item>
 
