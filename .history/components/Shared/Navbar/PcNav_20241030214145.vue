@@ -28,7 +28,7 @@
             </div>
           </div> -->
           <div>
-            <nuxt-link class="button" :to="`/Products/${menu.id}`">
+            <nuxt-link class="button" to="/Products/3">
               {{ menu.category_name }}
             </nuxt-link>
           </div>
@@ -106,7 +106,7 @@ const cart = useCart();
 let Menus = ref();
 if (locale.value === "ar") {
   const { data: MenusData, pending } = await useFetch(
-    `${api.findAllCategories}`,
+    `https://fakestoreapi.com/products`,
     {
       baseURL: apiBase,
       headers: {
@@ -123,7 +123,7 @@ if (locale.value === "ar") {
   });
 } else {
   const { data: MenusData, pending } = await useFetch(
-    `${api.findAllCategories}`,
+    `https://fakestoreapi.com/products`,
     {
       baseURL: apiBase,
       headers: {

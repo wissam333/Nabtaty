@@ -111,6 +111,13 @@ const {
 const { data: MainImg, pending } = await useFetch(`${api.GetHomePhotos}`, {
   baseURL: apiBase,
   method: "GET",
+  headers: {
+    Accept: "*/*",
+    "If-None-Match": 'W/"139-jjMN49Fkk/hSnhesscGnu1M6SyU"', // Ensure this is correct
+    "Cache-Control": "no-cache", // Optional, try without caching
+    Referer: "http://localhost:3000/",
+    Origin: "http://localhost:3000",
+  },
 });
 
 let mobile = ref(false);

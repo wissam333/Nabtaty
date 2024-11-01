@@ -142,16 +142,98 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    serverApiBase:
-      "https://beautiful-mirzakhani.194-238-27-109.plesk.page/api/",
-    serverApi: {},
+    serverApiBase: "https://beautiful-mirzakhani.194-238-27-109.plesk.page/",
+    serverApi: {
+      AuthLoginApi: "/api/identity/token",
+      CurrencyGetDefaultApi: "/api/v1/Currencies/Defualt",
+      CountriesGetAllApi: "/api/v1/Countries",
+      NationalityGetAllApi: "api/v1/nations",
+
+      BlocksApi: "/api/Blocks",
+
+      //categories
+      ProductsCategories: "/api/productcategories",
+
+      // Menus
+      MenusByCategoryId: "/api/menus",
+      Menus: "/api/Menus",
+      SoceialMediaApi: "/api/v1/menus/GetMenuMaster?categoryId=3",
+
+      //pages
+      GetPagesDetail: "/api/Pages",
+    },
     public: {
-      apiBase: "https://beautiful-mirzakhani.194-238-27-109.plesk.page/api/",
+      apiBase: "https://beautiful-mirzakhani.194-238-27-109.plesk.page/",
       api: {
-        //home photos
-        GetHomePhotos: "/findAllHomePhotos",
-        //get all cats
-        findAllCategories: "/findAllCategories",
+        // Auth
+        RegisterNewEmail: "/api/identity/user",
+        AuthLoginApi: "/api/identity/token",
+        AuthRefreshTokenApi: "/api/identity/token/refresh",
+        PersonClientsEditProfileApi: "/api/identity/account/UpdateProfile",
+        ChangePasswordAdminApi: "/api/identity/account/ChangePassword",
+        CompanyClientsApi: "/api/v1/Companies",
+        PersonClientsApi: "/api/v1/Persons",
+        MenusMasterGetByCategoryApi: "/api/v1/menus/GetMenuMaster",
+
+        // Menus
+        MenusGetAllApi: "/api/v1/Menus/All",
+        GetMenuDetail: "/api/menus",
+        MenusByCategoryId: "/api/v1/Menus",
+        Menus: "/api/Menus",
+
+        //categories
+        ProductsCategories: "/api/productcategories",
+        MainCategories: "/api/ProductCategories/main",
+        SubCategories: "/api/ProductCategories/subcategories",
+
+        //products
+        GetProducts: "/api/v1/products/GetAllPaged",
+        ProductdetailsApi: "/api/Products",
+        ProductImages: "/api/v1/ProductImages/GetAllByProduct/",
+        GetRelatedItems: "api/v1/Products/GetAllRelatedProducts",
+        Newcollection: "/api/Products/newcollection",
+        AllNewCollection: "/api/Products/allnewcollectionproducts",
+        GetAllProductsById: "/api/Products/allproducts",
+
+        //pages
+        GetPagesDetail: "/api/Pages",
+
+        //contact
+        Contact: "/api/v1/ContactUS",
+
+        //cities
+        cityIdApi: "/api/v1/Princedoms",
+
+        //order
+        FinalOrdinaryOrders: "/api/v1/FinalOrdinaryOrders",
+        GetAllPagedFinalOrdinaryOrders:
+          "/api/v1/FinalOrdinaryOrders/GetAllPagedFinalOrdinaryOrders",
+
+        //cost
+        ShippingCostsApi: "api/v1/ShippingCosts/GetAll",
+
+        //offers
+        GetProductsOffers: "/api/v1/ProductOffers/GetAllPaged",
+
+        //points
+        GetPoints: "/api/v1/Points",
+
+        //fav
+        AddToFav: "/api/v1/Products/AddToFavorite",
+        RemoveFromFav: "/api/v1/Products/DeleteProductFromFavorites",
+        GetAllFav: "/api/v1/Products/GetAllFavoriteProducts",
+
+        //password
+        ChangePasswordFromAccount: "/api/identity/account/ChangePassword",
+
+        // Blocks
+        Blocks: "/api/blocks",
+        BlocksCategories: "/api/blockcategories",
+
+        // Countries
+        NationsApi: "/api/v1/nations",
+        CitiesApi: "/api/Cities",
+        CountriesGetAllApi: "/api/v1/Countries",
       },
       globalDefaultImage: "/images/parfume-2.jpg",
       cachedTime: 60 * 60 * 2 * 1000, // 60: second(1 minutes), 60: minutes(1 hours), 2 hours, 1000: milliseconds

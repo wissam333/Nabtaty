@@ -26,7 +26,10 @@ export const useGetSiteApi = () => {
       baseURL: apiBase,
       server: isServer,
       lazy: isLazy,
-      
+      headers: {
+        "If-Match": 'W/"351-JHcWHhLbWg0dy51efl32CyEeLyg"',
+        "If-Unmodified-Since": "Wed, 01 Nov 2023 12:00:00 GMT",
+      },
       transform(input) {
         const transformed = {
           ...input,

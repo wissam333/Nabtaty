@@ -150,6 +150,7 @@ export default defineNuxtConfig({
       api: {
         //home photos
         GetHomePhotos: "/findAllHomePhotos",
+        
         //get all cats
         findAllCategories: "/findAllCategories",
       },

@@ -26,7 +26,9 @@ export const useGetSiteApi = () => {
       baseURL: apiBase,
       server: isServer,
       lazy: isLazy,
-      
+      headers: {
+        "If-Match": "your-etag-value",
+      },
       transform(input) {
         const transformed = {
           ...input,

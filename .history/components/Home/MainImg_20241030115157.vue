@@ -23,11 +23,20 @@
             clickable: true,
           }"
         >
-          <SwiperSlide v-if="!mobile" v-for="image in MainImg" :key="image.id">
+          <!-- <SwiperSlide
+            v-if="!mobile"
+            v-for="image in MainImg?.items[0]?.blockPhotos"
+            :key="image.id"
+          >
             <div class="main-img">
-              <img class="main" :src="`${apiBase}${image.photo}`" />
+              <img
+                v-if="image?.image"
+                class="main"
+                :src="`${apiBase}${image?.image}`"
+              />
+              <img v-else class="main" src="/photos/4-1.png" />
             </div>
-          </SwiperSlide>
+          </SwiperSlide> -->
 
           <!-- <SwiperSlide
             v-if="mobile"
@@ -44,7 +53,7 @@
             </div>
           </SwiperSlide> -->
 
-          <!-- <SwiperSlide>
+          <SwiperSlide>
             <div class="main-img">
               <img class="main" src="/photos/mainImg.jpg" />
             </div>
@@ -96,7 +105,7 @@
                 </button>
               </div>
             </div>
-          </SwiperSlide> -->
+          </SwiperSlide>
         </Swiper>
       </div>
     </div>
@@ -108,10 +117,9 @@ const {
   public: { apiBase, api },
 } = useRuntimeConfig();
 
-const { data: MainImg, pending } = await useFetch(`${api.GetHomePhotos}`, {
-  baseURL: apiBase,
-  method: "GET",
-});
+const { data: MainImg, pending } = await useGetSiteApi().GetAll(
+  `${api.GetHomePhotos}`
+);
 
 let mobile = ref(false);
 

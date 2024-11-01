@@ -72,7 +72,6 @@
 const {
   public: { api, apiBase },
 } = useRuntimeConfig();
-const { locale } = useI18n();
 
 let Products = ref();
 if (locale.value === "ar") {

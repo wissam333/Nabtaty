@@ -26,7 +26,6 @@ export const useGetSiteApi = () => {
       baseURL: apiBase,
       server: isServer,
       lazy: isLazy,
-      
       transform(input) {
         const transformed = {
           ...input,

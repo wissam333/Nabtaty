@@ -104,14 +104,45 @@
 </template>
 
 <script setup>
-const {
-  public: { apiBase, api },
-} = useRuntimeConfig();
+// const {
+//   public: { apiBase, api },
+// } = useRuntimeConfig();
 
-const { data: MainImg, pending } = await useFetch(`${api.GetHomePhotos}`, {
-  baseURL: apiBase,
-  method: "GET",
-});
+// const { data: MainImg, pending } = await useFetch(`${api.GetHomePhotos}`, {
+//   baseURL: apiBase,
+//   method: "GET",
+//   headers: {
+//     "Content-Type": "",
+//   },
+//   credentials: "include", // Add this if authentication or cookies are needed
+// });
+
+const apiUrl =
+  "https://beautiful-mirzakhani.194-238-27-109.plesk.page/api/findAllHomePhotos";
+
+async function fetchData() {
+  try {
+    const response = await fetch(apiUrl, {
+      method: "GET",
+      headers: {
+        Accept: "*/*",
+        "Content-Type": "application/json",
+      },
+      credentials: "include", // Include credentials like cookies if needed
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+
+    const data = await response.json(); // or response.text() based on response type
+    console.log(data);
+  } catch (error) {
+    console.error("Fetch error:", error);
+  }
+}
+
+fetchData();
 
 let mobile = ref(false);
 

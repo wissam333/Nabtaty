@@ -28,7 +28,7 @@
             </div>
           </div> -->
           <div>
-            <nuxt-link class="button" :to="`/Products/${menu.id}`">
+            <nuxt-link class="button" to="/Products/3">
               {{ menu.category_name }}
             </nuxt-link>
           </div>

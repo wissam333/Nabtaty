@@ -111,6 +111,12 @@ const {
 const { data: MainImg, pending } = await useFetch(`${api.GetHomePhotos}`, {
   baseURL: apiBase,
   method: "GET",
+  headers: {
+    Accept: "*/*",
+    "Accept-Encoding": "gzip, deflate, br",
+    Connection: "keep-alive",
+    "If-None-Match": "some-etag-value", // Replace with actual ETag if available
+  },
 });
 
 let mobile = ref(false);

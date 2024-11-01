@@ -49,21 +49,23 @@
             },
           }"
         >
-          <SwiperSlide v-for="review in Reviews">
+          <SwiperSlide v-for="review in 4">
             <div class="review">
               <div class="leaf">
                 <img src="/photos/leaf.png" alt="" />
               </div>
               <div class="title">
                 <img width="40" src="/photos/user.png" alt="" />
-                <h2 class="mx-3">{{ review.customer_name }}</h2>
+                <h2 class="mx-3">Lorem Apsum</h2>
               </div>
               <div class="desc">
-                {{ review.message }}
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad hic
+                sequi inventore sunt reiciendis, ratione dolores animi itaque ut
+                exercitationem iure eligendi.
               </div>
               <div class="rate">
-                <Rating v-model="review.rate" readonly />
-                <!-- <span>3.5K</span> -->
+                <Rating v-model="rate" readonly />
+                <span>3.5K</span>
               </div>
             </div>
           </SwiperSlide>

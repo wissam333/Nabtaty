@@ -26,7 +26,9 @@ export const useGetSiteApi = () => {
       baseURL: apiBase,
       server: isServer,
       lazy: isLazy,
-      
+      headers: {
+        "Accept-Language": "en-US",
+      },
       transform(input) {
         const transformed = {
           ...input,

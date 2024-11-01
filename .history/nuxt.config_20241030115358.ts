@@ -142,16 +142,13 @@ export default defineNuxtConfig({
     },
   },
   runtimeConfig: {
-    serverApiBase:
-      "https://beautiful-mirzakhani.194-238-27-109.plesk.page/api/",
+    serverApiBase: "beautiful-mirzakhani.194-238-27-109.plesk.page/api/",
     serverApi: {},
     public: {
-      apiBase: "https://beautiful-mirzakhani.194-238-27-109.plesk.page/api/",
+      apiBase: "beautiful-mirzakhani.194-238-27-109.plesk.page/api/",
       api: {
         //home photos
         GetHomePhotos: "/findAllHomePhotos",
-        //get all cats
-        findAllCategories: "/findAllCategories",
       },
       globalDefaultImage: "/images/parfume-2.jpg",
       cachedTime: 60 * 60 * 2 * 1000, // 60: second(1 minutes), 60: minutes(1 hours), 2 hours, 1000: milliseconds

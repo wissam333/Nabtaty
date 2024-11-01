@@ -28,7 +28,7 @@
             </div>
           </div> -->
           <div>
-            <nuxt-link class="button" :to="`/Products/${menu.id}`">
+            <nuxt-link class="button" to="/Products/3">
               {{ menu.category_name }}
             </nuxt-link>
           </div>
@@ -114,13 +114,7 @@ if (locale.value === "ar") {
       },
     }
   );
-  watchEffect(() => {
-    if (process.client) {
-      if (MenusData.value) {
-        Menus.value = MenusData.value;
-      }
-    }
-  });
+  Menus.value = MenusData.value;
 } else {
   const { data: MenusData, pending } = await useFetch(
     `${api.findAllCategories}`,
@@ -131,14 +125,9 @@ if (locale.value === "ar") {
       },
     }
   );
-  watchEffect(() => {
-    if (process.client) {
-      if (MenusData.value) {
-        Menus.value = MenusData.value;
-      }
-    }
-  });
+  Menus.value = MenusData.value;
 }
+
 
 // const Menus = [
 //   { id: 3, englishName: "Green Plants", name: "النباتات الخضراء" },

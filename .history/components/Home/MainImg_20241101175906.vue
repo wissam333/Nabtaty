@@ -111,6 +111,11 @@ const {
 const { data: MainImg, pending } = await useFetch(`${api.GetHomePhotos}`, {
   baseURL: apiBase,
   method: "GET",
+  headers: {
+    Accept: "*/*",
+    "Content-Type": "application/json",
+  },
+  credentials: "include", // Add this if authentication or cookies are needed
 });
 
 let mobile = ref(false);

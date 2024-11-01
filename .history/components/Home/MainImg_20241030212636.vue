@@ -108,10 +108,9 @@ const {
   public: { apiBase, api },
 } = useRuntimeConfig();
 
-const { data: MainImg, pending } = await useFetch(`${api.GetHomePhotos}`, {
-  baseURL: apiBase,
-  method: "GET",
-});
+const { data: MainImg, pending } = await useGetSiteApi().GetAll(
+  `${api.GetHomePhotos}`
+);
 
 let mobile = ref(false);
 

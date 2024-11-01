@@ -63,7 +63,7 @@
               </div>
               <div class="rate">
                 <Rating v-model="review.rate" readonly />
-                <!-- <span>3.5K</span> -->
+                <span>3.5K</span>
               </div>
             </div>
           </SwiperSlide>

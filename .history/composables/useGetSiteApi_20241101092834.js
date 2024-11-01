@@ -26,7 +26,9 @@ export const useGetSiteApi = () => {
       baseURL: apiBase,
       server: isServer,
       lazy: isLazy,
-      
+      headers: {
+        "If-Match": 'W/"351-JHcWHhLbWg0dy51efl32CyEeLyg"',
+      },
       transform(input) {
         const transformed = {
           ...input,

@@ -28,7 +28,7 @@
             </div>
           </div> -->
           <div>
-            <nuxt-link class="button" :to="`/Products/${menu.id}`">
+            <nuxt-link class="button" to="/Products/3">
               {{ menu.category_name }}
             </nuxt-link>
           </div>
@@ -103,42 +103,9 @@ const toggle = (event) => {
 const isAuth = useAuth().value;
 const cart = useCart();
 
-let Menus = ref();
-if (locale.value === "ar") {
-  const { data: MenusData, pending } = await useFetch(
-    `${api.findAllCategories}`,
-    {
-      baseURL: apiBase,
-      headers: {
-        "accept-language": "ar",
-      },
-    }
-  );
-  watchEffect(() => {
-    if (process.client) {
-      if (MenusData.value) {
-        Menus.value = MenusData.value;
-      }
-    }
-  });
-} else {
-  const { data: MenusData, pending } = await useFetch(
-    `${api.findAllCategories}`,
-    {
-      baseURL: apiBase,
-      headers: {
-        "accept-language": "en",
-      },
-    }
-  );
-  watchEffect(() => {
-    if (process.client) {
-      if (MenusData.value) {
-        Menus.value = MenusData.value;
-      }
-    }
-  });
-}
+const { data: Menus, pending } = await useGetSiteApi().GetAll(
+  `${api.findAllCategories}`
+);
 
 // const Menus = [
 //   { id: 3, englishName: "Green Plants", name: "النباتات الخضراء" },

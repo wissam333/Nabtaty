@@ -26,7 +26,12 @@ export const useGetSiteApi = () => {
       baseURL: apiBase,
       server: isServer,
       lazy: isLazy,
-      
+      headers: {
+        "Accept-Encoding": "gzip, deflate, br",
+        Accept: "*/*",
+        "accept-language": "en",
+        Connection: "keep-alive",
+      },
       transform(input) {
         const transformed = {
           ...input,

@@ -110,7 +110,7 @@ const {
 
 const { data: MainImg, pending } = await useFetch(`${api.GetHomePhotos}`, {
   baseURL: apiBase,
-  method: "GET",
+  headers: {},
 });
 
 let mobile = ref(false);
