@@ -3,19 +3,19 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build --preset=iis_node",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxtjs/leaflet": "^1.2.3",
     "@primevue/themes": "^4.0.4",
     "@vee-validate/i18n": "^4.12.6",
     "@vee-validate/nuxt": "^4.12.6",
     "aos": "^2.3.4",
     "nuxt": "^3.11.0",
-    "nuxt-vue3-google-signin": "^0.0.11",
     "primevue": "^4.0.4",
     "vue": "^3.4.21",
     "vue-flux": "^7.0.0-beta.6",
