@@ -1,0 +1,1 @@
+import{a4 as a,a as u,u as s,r,L as o}from"./CXtdoAC0.js";import"./CrJwlRX1.js";const c=a(()=>{{const e=u(),t=s().value;if(!e.value.isAuthenticated)return r("/newsite/auth/login",{redirectCode:301});if(!t.items.length&&t.totalQty<0||t.totalQty==0)return o().back()}});export{c as default};
