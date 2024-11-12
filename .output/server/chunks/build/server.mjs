@@ -1,4 +1,4 @@
-import { hasInjectionContext, inject as inject$1, version as version$1, defineAsyncComponent, toRef, isRef, computed, toValue, reactive, ref, defineComponent as defineComponent$1, provide, createElementBlock, createVNode, mergeProps, Transition, toRefs, shallowRef, watch, nextTick, watchEffect, onScopeDispose, withDirectives, vShow, Fragment, resolveDirective, onUnmounted, createTextVNode, capitalize as capitalize$1, h, getCurrentInstance as getCurrentInstance$1, unref, shallowReactive, Suspense, onServerPrefetch, readonly, camelize, toRaw, TransitionGroup, Text, resolveDynamicComponent, effectScope, warn as warn$1, Teleport, cloneVNode, withModifiers, toDisplayString as toDisplayString$1, vModelText, useSSRContext, createApp, isVNode as isVNode$1, Comment, withAsyncContext, withCtx, onErrorCaptured, isReadonly, isShallow, isReactive } from 'vue';
+import { hasInjectionContext, inject as inject$1, version as version$1, defineAsyncComponent, toRef, isRef, computed, toValue, reactive, ref, defineComponent as defineComponent$1, provide, createElementBlock, createVNode, mergeProps, Transition, toRefs, shallowRef, watch, nextTick, watchEffect, onScopeDispose, withDirectives, vShow, Fragment, resolveDirective, onUnmounted, createTextVNode, capitalize as capitalize$1, h, getCurrentInstance as getCurrentInstance$1, unref, shallowReactive, Suspense, readonly, onServerPrefetch, camelize, toRaw, TransitionGroup, Text, resolveDynamicComponent, effectScope, warn as warn$1, Teleport, cloneVNode, withModifiers, toDisplayString as toDisplayString$1, vModelText, useSSRContext, createApp, isVNode as isVNode$1, Comment, withAsyncContext, withCtx, onErrorCaptured, isReadonly, isShallow, isReactive } from 'vue';
 import { d as useRuntimeConfig$1, $ as $fetch, l as hash, m as klona, p as parse$2, n as getRequestHeader, o as defu, q as sanitizeStatusCode, r as destr, t as isEqual$2, v as setCookie, w as getCookie, x as deleteCookie, y as createHooks, h as createError$1, z as toRouteMatcher, A as createRouter$1, B as getRequestHeaders } from '../runtime.mjs';
 import { getActiveHead } from 'unhead';
 import { defineHeadPlugin, composableNames } from '@unhead/shared';
@@ -972,7 +972,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./About-BX6RT_RJ.mjs').then((m) => m.default || m)
+    component: () => import('./About-DyJ7KrnR.mjs').then((m) => m.default || m)
   },
   {
     name: "Cart",
@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Cart-7euw1Eft.mjs').then((m) => m.default || m)
+    component: () => import('./Cart-BF3hiwHK.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-D1PpFm5B.mjs').then((m) => m.default || m)
+    component: () => import('./index-DcUIpCkb.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-C3CR-VYK.mjs').then((m) => m.default || m)
+    component: () => import('./Order-C3eUNbSl.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1004,7 +1004,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Photos-zSljNqwH.mjs').then((m) => m.default || m)
+    component: () => import('./Photos-CgAnBmFH.mjs').then((m) => m.default || m)
   },
   {
     name: "PrivacyPolicy",
@@ -1012,7 +1012,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./PrivacyPolicy-BAFwT8QU.mjs').then((m) => m.default || m)
+    component: () => import('./PrivacyPolicy-_E0hGGud.mjs').then((m) => m.default || m)
   },
   {
     name: "Product-id",
@@ -1020,7 +1020,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-C-YCYzzp.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-Cd3rrcnb.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1138,11 +1138,11 @@ const globalMiddleware = [
   manifest_45route_45rule
 ];
 const namedMiddleware = {
-  "auth-product-exists": () => import('./auth-product-exists-C5wr8Pnj.mjs'),
-  auth: () => import('./auth-69dnyAFR.mjs'),
-  "not-authorize": () => import('./not-authorize-Bn4KmJ7F.mjs'),
-  "supplier-company": () => import('./supplierCompany-ByV9xak9.mjs'),
-  "validate-id-digital": () => import('./validate-id-digital-CId5Q5nH.mjs')
+  "auth-product-exists": () => import('./auth-product-exists-K7E_-Z--.mjs'),
+  auth: () => import('./auth-C6sz_kWT.mjs'),
+  "not-authorize": () => import('./not-authorize-JPSibg_B.mjs'),
+  "supplier-company": () => import('./supplierCompany-DEeuMCBE.mjs'),
+  "validate-id-digital": () => import('./validate-id-digital-BUWX8pxd.mjs')
 };
 const plugin = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
@@ -1347,8 +1347,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-BMazt1ys.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-BAu8vAYt.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-CSSWdFIM.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-tjf-5n17.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -1360,352 +1360,6 @@ const components_plugin_KR1HBZs4kY = /* @__PURE__ */ defineNuxtPlugin({
       nuxtApp.vueApp.component(name, component);
       nuxtApp.vueApp.component("Lazy" + name, component);
     }
-  }
-});
-const isDefer = (dedupe) => dedupe === "defer" || dedupe === false;
-function useAsyncData(...args) {
-  var _b;
-  const autoKey = typeof args[args.length - 1] === "string" ? args.pop() : void 0;
-  if (typeof args[0] !== "string") {
-    args.unshift(autoKey);
-  }
-  let [key, _handler, options2 = {}] = args;
-  if (typeof key !== "string") {
-    throw new TypeError("[nuxt] [asyncData] key must be a string.");
-  }
-  if (typeof _handler !== "function") {
-    throw new TypeError("[nuxt] [asyncData] handler must be a function.");
-  }
-  const nuxtApp = /* @__PURE__ */ useNuxtApp();
-  const handler = _handler ;
-  const getDefault = () => null;
-  const getDefaultCachedData = () => nuxtApp.isHydrating ? nuxtApp.payload.data[key] : nuxtApp.static.data[key];
-  options2.server = options2.server ?? true;
-  options2.default = options2.default ?? getDefault;
-  options2.getCachedData = options2.getCachedData ?? getDefaultCachedData;
-  options2.lazy = options2.lazy ?? false;
-  options2.immediate = options2.immediate ?? true;
-  options2.deep = options2.deep ?? asyncDataDefaults.deep;
-  options2.dedupe = options2.dedupe ?? "cancel";
-  const hasCachedData = () => options2.getCachedData(key, nuxtApp) != null;
-  if (!nuxtApp._asyncData[key] || !options2.immediate) {
-    (_b = nuxtApp.payload._errors)[key] ?? (_b[key] = null);
-    const _ref = options2.deep ? ref : shallowRef;
-    nuxtApp._asyncData[key] = {
-      data: _ref(options2.getCachedData(key, nuxtApp) ?? options2.default()),
-      pending: ref(!hasCachedData()),
-      error: toRef(nuxtApp.payload._errors, key),
-      status: ref("idle")
-    };
-  }
-  const asyncData = { ...nuxtApp._asyncData[key] };
-  asyncData.refresh = asyncData.execute = (opts = {}) => {
-    if (nuxtApp._asyncDataPromises[key]) {
-      if (isDefer(opts.dedupe ?? options2.dedupe)) {
-        return nuxtApp._asyncDataPromises[key];
-      }
-      nuxtApp._asyncDataPromises[key].cancelled = true;
-    }
-    if ((opts._initial || nuxtApp.isHydrating && opts._initial !== false) && hasCachedData()) {
-      return Promise.resolve(options2.getCachedData(key, nuxtApp));
-    }
-    asyncData.pending.value = true;
-    asyncData.status.value = "pending";
-    const promise = new Promise(
-      (resolve2, reject) => {
-        try {
-          resolve2(handler(nuxtApp));
-        } catch (err) {
-          reject(err);
-        }
-      }
-    ).then(async (_result) => {
-      if (promise.cancelled) {
-        return nuxtApp._asyncDataPromises[key];
-      }
-      let result = _result;
-      if (options2.transform) {
-        result = await options2.transform(_result);
-      }
-      if (options2.pick) {
-        result = pick$2(result, options2.pick);
-      }
-      nuxtApp.payload.data[key] = result;
-      asyncData.data.value = result;
-      asyncData.error.value = null;
-      asyncData.status.value = "success";
-    }).catch((error) => {
-      if (promise.cancelled) {
-        return nuxtApp._asyncDataPromises[key];
-      }
-      asyncData.error.value = createError(error);
-      asyncData.data.value = unref(options2.default());
-      asyncData.status.value = "error";
-    }).finally(() => {
-      if (promise.cancelled) {
-        return;
-      }
-      asyncData.pending.value = false;
-      delete nuxtApp._asyncDataPromises[key];
-    });
-    nuxtApp._asyncDataPromises[key] = promise;
-    return nuxtApp._asyncDataPromises[key];
-  };
-  asyncData.clear = () => clearNuxtDataByKey(nuxtApp, key);
-  const initialFetch = () => asyncData.refresh({ _initial: true });
-  const fetchOnServer = options2.server !== false && nuxtApp.payload.serverRendered;
-  if (fetchOnServer && options2.immediate) {
-    const promise = initialFetch();
-    if (getCurrentInstance$1()) {
-      onServerPrefetch(() => promise);
-    } else {
-      nuxtApp.hook("app:created", async () => {
-        await promise;
-      });
-    }
-  }
-  const asyncDataPromise = Promise.resolve(nuxtApp._asyncDataPromises[key]).then(() => asyncData);
-  Object.assign(asyncDataPromise, asyncData);
-  return asyncDataPromise;
-}
-function clearNuxtDataByKey(nuxtApp, key) {
-  if (key in nuxtApp.payload.data) {
-    nuxtApp.payload.data[key] = void 0;
-  }
-  if (key in nuxtApp.payload._errors) {
-    nuxtApp.payload._errors[key] = null;
-  }
-  if (nuxtApp._asyncData[key]) {
-    nuxtApp._asyncData[key].data.value = void 0;
-    nuxtApp._asyncData[key].error.value = null;
-    nuxtApp._asyncData[key].pending.value = false;
-    nuxtApp._asyncData[key].status.value = "idle";
-  }
-  if (key in nuxtApp._asyncDataPromises) {
-    nuxtApp._asyncDataPromises[key].cancelled = true;
-    nuxtApp._asyncDataPromises[key] = void 0;
-  }
-}
-function pick$2(obj, keys2) {
-  const newObj = {};
-  for (const key of keys2) {
-    newObj[key] = obj[key];
-  }
-  return newObj;
-}
-const useStateKeyPrefix = "$s";
-function useState(...args) {
-  const autoKey = typeof args[args.length - 1] === "string" ? args.pop() : void 0;
-  if (typeof args[0] !== "string") {
-    args.unshift(autoKey);
-  }
-  const [_key, init] = args;
-  if (!_key || typeof _key !== "string") {
-    throw new TypeError("[nuxt] [useState] key must be a string: " + _key);
-  }
-  if (init !== void 0 && typeof init !== "function") {
-    throw new Error("[nuxt] [useState] init must be a function: " + init);
-  }
-  const key = useStateKeyPrefix + _key;
-  const nuxtApp = /* @__PURE__ */ useNuxtApp();
-  const state = toRef(nuxtApp.payload.state, key);
-  if (state.value === void 0 && init) {
-    const initialValue = init();
-    if (isRef(initialValue)) {
-      nuxtApp.payload.state[key] = initialValue;
-      return initialValue;
-    }
-    state.value = initialValue;
-  }
-  return state;
-}
-function useRequestEvent(nuxtApp = /* @__PURE__ */ useNuxtApp()) {
-  var _a2;
-  return (_a2 = nuxtApp.ssrContext) == null ? void 0 : _a2.event;
-}
-function useRequestHeaders(include) {
-  const event = useRequestEvent();
-  const _headers = event ? getRequestHeaders(event) : {};
-  if (!include || !event) {
-    return _headers;
-  }
-  const headers = /* @__PURE__ */ Object.create(null);
-  for (const _key of include) {
-    const key = _key.toLowerCase();
-    const header = _headers[key];
-    if (header) {
-      headers[key] = header;
-    }
-  }
-  return headers;
-}
-function useRequestFetch() {
-  var _a2;
-  return ((_a2 = useRequestEvent()) == null ? void 0 : _a2.$fetch) || globalThis.$fetch;
-}
-function useFetch(request, arg1, arg2) {
-  const [opts = {}, autoKey] = typeof arg1 === "string" ? [{}, arg1] : [arg1, arg2];
-  const _request = computed(() => toValue(request));
-  const _key = opts.key || hash([autoKey, typeof _request.value === "string" ? _request.value : "", ...generateOptionSegments(opts)]);
-  if (!_key || typeof _key !== "string") {
-    throw new TypeError("[nuxt] [useFetch] key must be a string: " + _key);
-  }
-  if (!request) {
-    throw new Error("[nuxt] [useFetch] request is missing.");
-  }
-  const key = _key === autoKey ? "$f" + _key : _key;
-  if (!opts.baseURL && typeof _request.value === "string" && (_request.value[0] === "/" && _request.value[1] === "/")) {
-    throw new Error('[nuxt] [useFetch] the request URL must not start with "//".');
-  }
-  const {
-    server,
-    lazy,
-    default: defaultFn,
-    transform: transform2,
-    pick: pick2,
-    watch: watch2,
-    immediate,
-    getCachedData,
-    deep,
-    dedupe,
-    ...fetchOptions
-  } = opts;
-  const _fetchOptions = reactive({
-    ...fetchDefaults,
-    ...fetchOptions,
-    cache: typeof opts.cache === "boolean" ? void 0 : opts.cache
-  });
-  const _asyncDataOptions = {
-    server,
-    lazy,
-    default: defaultFn,
-    transform: transform2,
-    pick: pick2,
-    immediate,
-    getCachedData,
-    deep,
-    dedupe,
-    watch: watch2 === false ? [] : [_fetchOptions, _request, ...watch2 || []]
-  };
-  let controller;
-  const asyncData = useAsyncData(key, () => {
-    var _a2;
-    (_a2 = controller == null ? void 0 : controller.abort) == null ? void 0 : _a2.call(controller);
-    controller = typeof AbortController !== "undefined" ? new AbortController() : {};
-    const timeoutLength = toValue(opts.timeout);
-    if (timeoutLength) {
-      setTimeout(() => controller.abort(), timeoutLength);
-    }
-    let _$fetch = opts.$fetch || globalThis.$fetch;
-    if (!opts.$fetch) {
-      const isLocalFetch = typeof _request.value === "string" && _request.value[0] === "/" && (!toValue(opts.baseURL) || toValue(opts.baseURL)[0] === "/");
-      if (isLocalFetch) {
-        _$fetch = useRequestFetch();
-      }
-    }
-    return _$fetch(_request.value, { signal: controller.signal, ..._fetchOptions });
-  }, _asyncDataOptions);
-  return asyncData;
-}
-function generateOptionSegments(opts) {
-  var _a2;
-  const segments = [
-    ((_a2 = toValue(opts.method)) == null ? void 0 : _a2.toUpperCase()) || "GET",
-    toValue(opts.baseURL)
-  ];
-  for (const _obj of [opts.params || opts.query]) {
-    const obj = toValue(_obj);
-    if (!obj) {
-      continue;
-    }
-    const unwrapped = {};
-    for (const [key, value] of Object.entries(obj)) {
-      unwrapped[toValue(key)] = toValue(value);
-    }
-    segments.push(unwrapped);
-  }
-  return segments;
-}
-const CookieDefaults = {
-  path: "/",
-  watch: true,
-  decode: (val) => destr(decodeURIComponent(val)),
-  encode: (val) => encodeURIComponent(typeof val === "string" ? val : JSON.stringify(val))
-};
-function useCookie(name, _opts) {
-  var _a2;
-  const opts = { ...CookieDefaults, ..._opts };
-  const cookies = readRawCookies(opts) || {};
-  let delay;
-  if (opts.maxAge !== void 0) {
-    delay = opts.maxAge * 1e3;
-  } else if (opts.expires) {
-    delay = opts.expires.getTime() - Date.now();
-  }
-  const hasExpired = delay !== void 0 && delay <= 0;
-  const cookieValue = klona(hasExpired ? void 0 : cookies[name] ?? ((_a2 = opts.default) == null ? void 0 : _a2.call(opts)));
-  const cookie = ref(cookieValue);
-  {
-    const nuxtApp = /* @__PURE__ */ useNuxtApp();
-    const writeFinalCookieValue = () => {
-      if (opts.readonly || isEqual$2(cookie.value, cookies[name])) {
-        return;
-      }
-      writeServerCookie(useRequestEvent(nuxtApp), name, cookie.value, opts);
-    };
-    const unhook = nuxtApp.hooks.hookOnce("app:rendered", writeFinalCookieValue);
-    nuxtApp.hooks.hookOnce("app:error", () => {
-      unhook();
-      return writeFinalCookieValue();
-    });
-  }
-  return cookie;
-}
-function readRawCookies(opts = {}) {
-  {
-    return parse$2(getRequestHeader(useRequestEvent(), "cookie") || "", opts);
-  }
-}
-function writeServerCookie(event, name, value, opts = {}) {
-  if (event) {
-    if (value !== null && value !== void 0) {
-      return setCookie(event, name, value, opts);
-    }
-    if (getCookie(event, name) !== void 0) {
-      return deleteCookie(event, name, opts);
-    }
-  }
-}
-const clientOnlySymbol = Symbol.for("nuxt:client-only");
-const __nuxt_component_0$1 = defineComponent$1({
-  name: "ClientOnly",
-  inheritAttrs: false,
-  // eslint-disable-next-line vue/require-prop-types
-  props: ["fallback", "placeholder", "placeholderTag", "fallbackTag"],
-  setup(_, { slots, attrs }) {
-    const mounted2 = ref(false);
-    provide(clientOnlySymbol, true);
-    return (props) => {
-      var _a2;
-      if (mounted2.value) {
-        return (_a2 = slots.default) == null ? void 0 : _a2.call(slots);
-      }
-      const slot = slots.fallback || slots.placeholder;
-      if (slot) {
-        return slot();
-      }
-      const fallbackStr = props.fallback || props.placeholder || "";
-      const fallbackTag = props.fallbackTag || props.placeholderTag || "span";
-      return createElementBlock(fallbackTag, attrs, fallbackStr);
-    };
-  }
-});
-const plugin_eskviOYyLt = /* @__PURE__ */ defineNuxtPlugin(async (nuxtApp) => {
-  let __temp, __restore;
-  const { googleSignIn } = (/* @__PURE__ */ useRuntimeConfig()).public;
-  if (googleSignIn) {
-    const plugin2 = ([__temp, __restore] = executeAsync(() => import('vue3-google-signin')), __temp = await __temp, __restore(), __temp);
-    nuxtApp.vueApp.use(plugin2.default, { clientId: googleSignIn.clientId });
   }
 });
 var FilterMatchMode = {
@@ -2621,6 +2275,344 @@ const primevue_plugin_egKpok8Auk = /* @__PURE__ */ defineNuxtPlugin(({ vueApp })
   const pt = {};
   const theme3 = { theme: options2 == null ? void 0 : options2.theme };
   usePrimeVue && vueApp.use(PrimeVue, { ...options2, ...pt, ...theme3 });
+});
+const isDefer = (dedupe) => dedupe === "defer" || dedupe === false;
+function useAsyncData(...args) {
+  var _b;
+  const autoKey = typeof args[args.length - 1] === "string" ? args.pop() : void 0;
+  if (typeof args[0] !== "string") {
+    args.unshift(autoKey);
+  }
+  let [key, _handler, options2 = {}] = args;
+  if (typeof key !== "string") {
+    throw new TypeError("[nuxt] [asyncData] key must be a string.");
+  }
+  if (typeof _handler !== "function") {
+    throw new TypeError("[nuxt] [asyncData] handler must be a function.");
+  }
+  const nuxtApp = /* @__PURE__ */ useNuxtApp();
+  const handler = _handler ;
+  const getDefault = () => null;
+  const getDefaultCachedData = () => nuxtApp.isHydrating ? nuxtApp.payload.data[key] : nuxtApp.static.data[key];
+  options2.server = options2.server ?? true;
+  options2.default = options2.default ?? getDefault;
+  options2.getCachedData = options2.getCachedData ?? getDefaultCachedData;
+  options2.lazy = options2.lazy ?? false;
+  options2.immediate = options2.immediate ?? true;
+  options2.deep = options2.deep ?? asyncDataDefaults.deep;
+  options2.dedupe = options2.dedupe ?? "cancel";
+  const hasCachedData = () => options2.getCachedData(key, nuxtApp) != null;
+  if (!nuxtApp._asyncData[key] || !options2.immediate) {
+    (_b = nuxtApp.payload._errors)[key] ?? (_b[key] = null);
+    const _ref = options2.deep ? ref : shallowRef;
+    nuxtApp._asyncData[key] = {
+      data: _ref(options2.getCachedData(key, nuxtApp) ?? options2.default()),
+      pending: ref(!hasCachedData()),
+      error: toRef(nuxtApp.payload._errors, key),
+      status: ref("idle")
+    };
+  }
+  const asyncData = { ...nuxtApp._asyncData[key] };
+  asyncData.refresh = asyncData.execute = (opts = {}) => {
+    if (nuxtApp._asyncDataPromises[key]) {
+      if (isDefer(opts.dedupe ?? options2.dedupe)) {
+        return nuxtApp._asyncDataPromises[key];
+      }
+      nuxtApp._asyncDataPromises[key].cancelled = true;
+    }
+    if ((opts._initial || nuxtApp.isHydrating && opts._initial !== false) && hasCachedData()) {
+      return Promise.resolve(options2.getCachedData(key, nuxtApp));
+    }
+    asyncData.pending.value = true;
+    asyncData.status.value = "pending";
+    const promise = new Promise(
+      (resolve2, reject) => {
+        try {
+          resolve2(handler(nuxtApp));
+        } catch (err) {
+          reject(err);
+        }
+      }
+    ).then(async (_result) => {
+      if (promise.cancelled) {
+        return nuxtApp._asyncDataPromises[key];
+      }
+      let result = _result;
+      if (options2.transform) {
+        result = await options2.transform(_result);
+      }
+      if (options2.pick) {
+        result = pick$2(result, options2.pick);
+      }
+      nuxtApp.payload.data[key] = result;
+      asyncData.data.value = result;
+      asyncData.error.value = null;
+      asyncData.status.value = "success";
+    }).catch((error) => {
+      if (promise.cancelled) {
+        return nuxtApp._asyncDataPromises[key];
+      }
+      asyncData.error.value = createError(error);
+      asyncData.data.value = unref(options2.default());
+      asyncData.status.value = "error";
+    }).finally(() => {
+      if (promise.cancelled) {
+        return;
+      }
+      asyncData.pending.value = false;
+      delete nuxtApp._asyncDataPromises[key];
+    });
+    nuxtApp._asyncDataPromises[key] = promise;
+    return nuxtApp._asyncDataPromises[key];
+  };
+  asyncData.clear = () => clearNuxtDataByKey(nuxtApp, key);
+  const initialFetch = () => asyncData.refresh({ _initial: true });
+  const fetchOnServer = options2.server !== false && nuxtApp.payload.serverRendered;
+  if (fetchOnServer && options2.immediate) {
+    const promise = initialFetch();
+    if (getCurrentInstance$1()) {
+      onServerPrefetch(() => promise);
+    } else {
+      nuxtApp.hook("app:created", async () => {
+        await promise;
+      });
+    }
+  }
+  const asyncDataPromise = Promise.resolve(nuxtApp._asyncDataPromises[key]).then(() => asyncData);
+  Object.assign(asyncDataPromise, asyncData);
+  return asyncDataPromise;
+}
+function clearNuxtDataByKey(nuxtApp, key) {
+  if (key in nuxtApp.payload.data) {
+    nuxtApp.payload.data[key] = void 0;
+  }
+  if (key in nuxtApp.payload._errors) {
+    nuxtApp.payload._errors[key] = null;
+  }
+  if (nuxtApp._asyncData[key]) {
+    nuxtApp._asyncData[key].data.value = void 0;
+    nuxtApp._asyncData[key].error.value = null;
+    nuxtApp._asyncData[key].pending.value = false;
+    nuxtApp._asyncData[key].status.value = "idle";
+  }
+  if (key in nuxtApp._asyncDataPromises) {
+    nuxtApp._asyncDataPromises[key].cancelled = true;
+    nuxtApp._asyncDataPromises[key] = void 0;
+  }
+}
+function pick$2(obj, keys2) {
+  const newObj = {};
+  for (const key of keys2) {
+    newObj[key] = obj[key];
+  }
+  return newObj;
+}
+const useStateKeyPrefix = "$s";
+function useState(...args) {
+  const autoKey = typeof args[args.length - 1] === "string" ? args.pop() : void 0;
+  if (typeof args[0] !== "string") {
+    args.unshift(autoKey);
+  }
+  const [_key, init] = args;
+  if (!_key || typeof _key !== "string") {
+    throw new TypeError("[nuxt] [useState] key must be a string: " + _key);
+  }
+  if (init !== void 0 && typeof init !== "function") {
+    throw new Error("[nuxt] [useState] init must be a function: " + init);
+  }
+  const key = useStateKeyPrefix + _key;
+  const nuxtApp = /* @__PURE__ */ useNuxtApp();
+  const state = toRef(nuxtApp.payload.state, key);
+  if (state.value === void 0 && init) {
+    const initialValue = init();
+    if (isRef(initialValue)) {
+      nuxtApp.payload.state[key] = initialValue;
+      return initialValue;
+    }
+    state.value = initialValue;
+  }
+  return state;
+}
+function useRequestEvent(nuxtApp = /* @__PURE__ */ useNuxtApp()) {
+  var _a2;
+  return (_a2 = nuxtApp.ssrContext) == null ? void 0 : _a2.event;
+}
+function useRequestHeaders(include) {
+  const event = useRequestEvent();
+  const _headers = event ? getRequestHeaders(event) : {};
+  if (!include || !event) {
+    return _headers;
+  }
+  const headers = /* @__PURE__ */ Object.create(null);
+  for (const _key of include) {
+    const key = _key.toLowerCase();
+    const header = _headers[key];
+    if (header) {
+      headers[key] = header;
+    }
+  }
+  return headers;
+}
+function useRequestFetch() {
+  var _a2;
+  return ((_a2 = useRequestEvent()) == null ? void 0 : _a2.$fetch) || globalThis.$fetch;
+}
+function useFetch(request, arg1, arg2) {
+  const [opts = {}, autoKey] = typeof arg1 === "string" ? [{}, arg1] : [arg1, arg2];
+  const _request = computed(() => toValue(request));
+  const _key = opts.key || hash([autoKey, typeof _request.value === "string" ? _request.value : "", ...generateOptionSegments(opts)]);
+  if (!_key || typeof _key !== "string") {
+    throw new TypeError("[nuxt] [useFetch] key must be a string: " + _key);
+  }
+  if (!request) {
+    throw new Error("[nuxt] [useFetch] request is missing.");
+  }
+  const key = _key === autoKey ? "$f" + _key : _key;
+  if (!opts.baseURL && typeof _request.value === "string" && (_request.value[0] === "/" && _request.value[1] === "/")) {
+    throw new Error('[nuxt] [useFetch] the request URL must not start with "//".');
+  }
+  const {
+    server,
+    lazy,
+    default: defaultFn,
+    transform: transform2,
+    pick: pick2,
+    watch: watch2,
+    immediate,
+    getCachedData,
+    deep,
+    dedupe,
+    ...fetchOptions
+  } = opts;
+  const _fetchOptions = reactive({
+    ...fetchDefaults,
+    ...fetchOptions,
+    cache: typeof opts.cache === "boolean" ? void 0 : opts.cache
+  });
+  const _asyncDataOptions = {
+    server,
+    lazy,
+    default: defaultFn,
+    transform: transform2,
+    pick: pick2,
+    immediate,
+    getCachedData,
+    deep,
+    dedupe,
+    watch: watch2 === false ? [] : [_fetchOptions, _request, ...watch2 || []]
+  };
+  let controller;
+  const asyncData = useAsyncData(key, () => {
+    var _a2;
+    (_a2 = controller == null ? void 0 : controller.abort) == null ? void 0 : _a2.call(controller);
+    controller = typeof AbortController !== "undefined" ? new AbortController() : {};
+    const timeoutLength = toValue(opts.timeout);
+    if (timeoutLength) {
+      setTimeout(() => controller.abort(), timeoutLength);
+    }
+    let _$fetch = opts.$fetch || globalThis.$fetch;
+    if (!opts.$fetch) {
+      const isLocalFetch = typeof _request.value === "string" && _request.value[0] === "/" && (!toValue(opts.baseURL) || toValue(opts.baseURL)[0] === "/");
+      if (isLocalFetch) {
+        _$fetch = useRequestFetch();
+      }
+    }
+    return _$fetch(_request.value, { signal: controller.signal, ..._fetchOptions });
+  }, _asyncDataOptions);
+  return asyncData;
+}
+function generateOptionSegments(opts) {
+  var _a2;
+  const segments = [
+    ((_a2 = toValue(opts.method)) == null ? void 0 : _a2.toUpperCase()) || "GET",
+    toValue(opts.baseURL)
+  ];
+  for (const _obj of [opts.params || opts.query]) {
+    const obj = toValue(_obj);
+    if (!obj) {
+      continue;
+    }
+    const unwrapped = {};
+    for (const [key, value] of Object.entries(obj)) {
+      unwrapped[toValue(key)] = toValue(value);
+    }
+    segments.push(unwrapped);
+  }
+  return segments;
+}
+const CookieDefaults = {
+  path: "/",
+  watch: true,
+  decode: (val) => destr(decodeURIComponent(val)),
+  encode: (val) => encodeURIComponent(typeof val === "string" ? val : JSON.stringify(val))
+};
+function useCookie(name, _opts) {
+  var _a2;
+  const opts = { ...CookieDefaults, ..._opts };
+  const cookies = readRawCookies(opts) || {};
+  let delay;
+  if (opts.maxAge !== void 0) {
+    delay = opts.maxAge * 1e3;
+  } else if (opts.expires) {
+    delay = opts.expires.getTime() - Date.now();
+  }
+  const hasExpired = delay !== void 0 && delay <= 0;
+  const cookieValue = klona(hasExpired ? void 0 : cookies[name] ?? ((_a2 = opts.default) == null ? void 0 : _a2.call(opts)));
+  const cookie = ref(cookieValue);
+  {
+    const nuxtApp = /* @__PURE__ */ useNuxtApp();
+    const writeFinalCookieValue = () => {
+      if (opts.readonly || isEqual$2(cookie.value, cookies[name])) {
+        return;
+      }
+      writeServerCookie(useRequestEvent(nuxtApp), name, cookie.value, opts);
+    };
+    const unhook = nuxtApp.hooks.hookOnce("app:rendered", writeFinalCookieValue);
+    nuxtApp.hooks.hookOnce("app:error", () => {
+      unhook();
+      return writeFinalCookieValue();
+    });
+  }
+  return cookie;
+}
+function readRawCookies(opts = {}) {
+  {
+    return parse$2(getRequestHeader(useRequestEvent(), "cookie") || "", opts);
+  }
+}
+function writeServerCookie(event, name, value, opts = {}) {
+  if (event) {
+    if (value !== null && value !== void 0) {
+      return setCookie(event, name, value, opts);
+    }
+    if (getCookie(event, name) !== void 0) {
+      return deleteCookie(event, name, opts);
+    }
+  }
+}
+const clientOnlySymbol = Symbol.for("nuxt:client-only");
+const __nuxt_component_0$1 = defineComponent$1({
+  name: "ClientOnly",
+  inheritAttrs: false,
+  // eslint-disable-next-line vue/require-prop-types
+  props: ["fallback", "placeholder", "placeholderTag", "fallbackTag"],
+  setup(_, { slots, attrs }) {
+    const mounted2 = ref(false);
+    provide(clientOnlySymbol, true);
+    return (props) => {
+      var _a2;
+      if (mounted2.value) {
+        return (_a2 = slots.default) == null ? void 0 : _a2.call(slots);
+      }
+      const slot = slots.fallback || slots.placeholder;
+      if (slot) {
+        return slot();
+      }
+      const fallbackStr = props.fallback || props.placeholder || "";
+      const fallbackTag = props.fallbackTag || props.placeholderTag || "span";
+      return createElementBlock(fallbackTag, attrs, fallbackStr);
+    };
+  }
 });
 function useToggleScope(source, fn) {
   let scope;
@@ -31319,7 +31311,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-BB05Cq_S.mjs'
+    './i18n.config-Ad6KBHFT.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];
@@ -32744,7 +32736,6 @@ const plugins = [
   plugin,
   revive_payload_server_eJ33V7gbc6,
   components_plugin_KR1HBZs4kY,
-  plugin_eskviOYyLt,
   primevue_plugin_egKpok8Auk,
   templates_plugin_65cc21d1_ckNFhQCPRT,
   fontawesome_a3gDgrBaWH,
@@ -32841,7 +32832,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0d9a60e2"]]);
 const layouts = {
-  default: () => import('./default-BwPoDYSM.mjs').then((m) => m.default || m)
+  default: () => import('./default-DWraJ8yl.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent$1({
   name: "LayoutLoader",

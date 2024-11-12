@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "nuxt-aos",
     "@vee-validate/nuxt",
     "@primevue/nuxt-module",
+    "nuxt-vue3-google-signin",
     "@nuxtjs/leaflet",
   ],
   veeValidate: {
