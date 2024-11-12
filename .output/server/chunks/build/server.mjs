@@ -1020,7 +1020,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_--lf4fYk_.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-DUQOmngJ.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1355,8 +1355,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-BGa4ttlV.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-CmtUDJEa.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-B1y53nWh.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-C872f9HZ.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
