@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Cart-DMJdX5L3.mjs').then((m) => m.default || m)
+    component: () => import('./Cart-B1fCpjgs.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-BPuSRTAv.mjs').then((m) => m.default || m)
+    component: () => import('./index-BtTITxUW.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-C3xTH1Lu.mjs').then((m) => m.default || m)
+    component: () => import('./Order-D4X7y6gR.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1020,7 +1020,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-DYZ88znf.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-CuyF6oUF.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1028,7 +1028,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-D8yOuZZ0.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-CMT9zE-b.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1347,8 +1347,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-Bry4RbMP.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-Diljkc05.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-ezoOQPHN.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-s-44S2T7.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -32618,7 +32618,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0d9a60e2"]]);
 const layouts = {
-  default: () => import('./default-CztzOMiN.mjs').then((m) => m.default || m)
+  default: () => import('./default-Cc8qhwkx.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent$1({
   name: "LayoutLoader",

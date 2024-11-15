@@ -217,7 +217,7 @@ console.log(cart.value);
 
 const login = () => {
   let user = JSON.parse(localStorage.getItem("userInfo"));
-  if (user.email) {
+  if (user.firstName) {
     navigateTo("/order");
   } else {
     const backendURL = "https://server.nabtaty.com";

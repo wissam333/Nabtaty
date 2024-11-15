@@ -65,7 +65,7 @@ if (process.client) {
 const { data } = await useFetch(`https://server.nabtaty.com/api/findMyInfo`);
 watchEffect(() => {
   if (process.client) {
-    if (data.value.firstName) {
+    if (data.value) {
       localStorage.setItem("userInfo", data.value);
     }
   }

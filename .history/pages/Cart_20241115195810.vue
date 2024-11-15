@@ -214,16 +214,6 @@ const removeFromCart = (id) => {
   useShoppingCartComposable().removeItemFromCart(id);
 };
 console.log(cart.value);
-
-const login = () => {
-  let user = JSON.parse(localStorage.getItem("userInfo"));
-  if (user.email) {
-    navigateTo("/order");
-  } else {
-    const backendURL = "https://server.nabtaty.com";
-    window.location.href = `${backendURL}/auth/providers/google`;
-  }
-};
 </script>
 
 <style lang="scss" scoped>
