@@ -1,5 +1,5 @@
-import { hasInjectionContext, inject as inject$1, version as version$1, defineAsyncComponent, toRef, isRef, computed, toValue, reactive, ref, defineComponent as defineComponent$1, provide, createElementBlock, createVNode, mergeProps, Transition, toRefs, shallowRef, watch, nextTick, watchEffect, onScopeDispose, withDirectives, vShow, Fragment, resolveDirective, onUnmounted, createTextVNode, capitalize as capitalize$1, h, getCurrentInstance as getCurrentInstance$1, unref, shallowReactive, Suspense, readonly, onServerPrefetch, camelize, toRaw, TransitionGroup, Text, resolveDynamicComponent, effectScope, warn as warn$1, Teleport, cloneVNode, withModifiers, toDisplayString as toDisplayString$1, vModelText, useSSRContext, createApp, isVNode as isVNode$1, Comment, withAsyncContext, withCtx, onErrorCaptured, isReadonly, isShallow, isReactive } from 'vue';
-import { d as useRuntimeConfig$1, $ as $fetch, l as hash, m as klona, p as parse$2, n as getRequestHeader, o as defu, q as sanitizeStatusCode, r as destr, t as isEqual$2, v as setCookie, w as getCookie, x as deleteCookie, y as createHooks, h as createError$1, z as toRouteMatcher, A as createRouter$1, B as getRequestHeaders } from '../runtime.mjs';
+import { hasInjectionContext, inject as inject$1, version as version$1, defineAsyncComponent, toRef, isRef, ref, defineComponent as defineComponent$1, provide, createElementBlock, createVNode, mergeProps, Transition, toRefs, shallowRef, computed, watch, nextTick, watchEffect, onScopeDispose, withDirectives, vShow, Fragment, resolveDirective, reactive, onUnmounted, createTextVNode, capitalize as capitalize$1, h, getCurrentInstance as getCurrentInstance$1, unref, shallowReactive, Suspense, readonly, camelize, toRaw, TransitionGroup, Text, resolveDynamicComponent, effectScope, warn as warn$1, Teleport, cloneVNode, withModifiers, toDisplayString as toDisplayString$1, vModelText, useSSRContext, createApp, isVNode as isVNode$1, Comment, withCtx, onErrorCaptured, onServerPrefetch, isReadonly, isShallow, isReactive } from 'vue';
+import { d as useRuntimeConfig$1, $ as $fetch, h as createError$1, l as klona, p as parse$2, m as getRequestHeader, n as defu, o as sanitizeStatusCode, q as destr, r as isEqual$2, t as setCookie, v as getCookie, w as deleteCookie, x as createHooks, y as toRouteMatcher, z as createRouter$1, A as getRequestHeaders } from '../runtime.mjs';
 import { getActiveHead } from 'unhead';
 import { defineHeadPlugin, composableNames } from '@unhead/shared';
 import { useRoute as useRoute$2, RouterView, createMemoryHistory, createRouter, START_LOCATION } from 'vue-router';
@@ -364,33 +364,33 @@ function parseURL(input = "", defaultProto) {
   if (protocol === "file:") {
     path = path.replace(/\/(?=[A-Za-z]:)/, "");
   }
-  const { pathname, search, hash: hash2 } = parsePath(path);
+  const { pathname, search, hash } = parsePath(path);
   return {
     protocol: protocol.toLowerCase(),
     auth: auth ? auth.slice(0, Math.max(0, auth.length - 1)) : "",
     host,
     pathname,
     search,
-    hash: hash2,
+    hash,
     [protocolRelative]: !protocol
   };
 }
 function parsePath(input = "") {
-  const [pathname = "", search = "", hash2 = ""] = (input.match(/([^#?]*)(\?[^#]*)?(#.*)?/) || []).splice(1);
+  const [pathname = "", search = "", hash = ""] = (input.match(/([^#?]*)(\?[^#]*)?(#.*)?/) || []).splice(1);
   return {
     pathname,
     search,
-    hash: hash2
+    hash
   };
 }
 function stringifyParsedURL(parsed) {
   const pathname = parsed.pathname || "";
   const search = parsed.search ? (parsed.search.startsWith("?") ? "" : "?") + parsed.search : "";
-  const hash2 = parsed.hash || "";
+  const hash = parsed.hash || "";
   const auth = parsed.auth ? parsed.auth + "@" : "";
   const host = parsed.host || "";
   const proto = parsed.protocol || parsed[protocolRelative] ? (parsed.protocol || "") + "//" : "";
-  return proto + auth + host + pathname + search + hash2;
+  return proto + auth + host + pathname + search + hash;
 }
 const appConfig = useRuntimeConfig$1().app;
 const baseURL = () => appConfig.baseURL;
@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Cart-BF3hiwHK.mjs').then((m) => m.default || m)
+    component: () => import('./Cart-DMJdX5L3.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-DcUIpCkb.mjs').then((m) => m.default || m)
+    component: () => import('./index-BPuSRTAv.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-C3eUNbSl.mjs').then((m) => m.default || m)
+    component: () => import('./Order-C3xTH1Lu.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1004,7 +1004,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Photos-CgAnBmFH.mjs').then((m) => m.default || m)
+    component: () => import('./Photos-DaeKz_Uy.mjs').then((m) => m.default || m)
   },
   {
     name: "PrivacyPolicy",
@@ -1020,7 +1020,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-C2iT9g-z.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-DYZ88znf.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1028,7 +1028,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-NaMEPVFO.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-D8yOuZZ0.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1138,11 +1138,11 @@ const globalMiddleware = [
   manifest_45route_45rule
 ];
 const namedMiddleware = {
-  "auth-product-exists": () => import('./auth-product-exists-K7E_-Z--.mjs'),
-  auth: () => import('./auth-C6sz_kWT.mjs'),
-  "not-authorize": () => import('./not-authorize-JPSibg_B.mjs'),
-  "supplier-company": () => import('./supplierCompany-DEeuMCBE.mjs'),
-  "validate-id-digital": () => import('./validate-id-digital-BUWX8pxd.mjs')
+  "auth-product-exists": () => import('./auth-product-exists-DszajnHQ.mjs'),
+  auth: () => import('./auth-A8dPZR4k.mjs'),
+  "not-authorize": () => import('./not-authorize-CVlmTZ9S.mjs'),
+  "supplier-company": () => import('./supplierCompany-CpOzgcZ7.mjs'),
+  "validate-id-digital": () => import('./validate-id-digital-BoSCe13P.mjs')
 };
 const plugin = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
@@ -1347,8 +1347,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-B6DdDBQz.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DJHbKf9W.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-Bry4RbMP.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-Diljkc05.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -2276,137 +2276,6 @@ const primevue_plugin_egKpok8Auk = /* @__PURE__ */ defineNuxtPlugin(({ vueApp })
   const theme3 = { theme: options2 == null ? void 0 : options2.theme };
   usePrimeVue && vueApp.use(PrimeVue, { ...options2, ...pt, ...theme3 });
 });
-const isDefer = (dedupe) => dedupe === "defer" || dedupe === false;
-function useAsyncData(...args) {
-  var _b;
-  const autoKey = typeof args[args.length - 1] === "string" ? args.pop() : void 0;
-  if (typeof args[0] !== "string") {
-    args.unshift(autoKey);
-  }
-  let [key, _handler, options2 = {}] = args;
-  if (typeof key !== "string") {
-    throw new TypeError("[nuxt] [asyncData] key must be a string.");
-  }
-  if (typeof _handler !== "function") {
-    throw new TypeError("[nuxt] [asyncData] handler must be a function.");
-  }
-  const nuxtApp = /* @__PURE__ */ useNuxtApp();
-  const handler = _handler ;
-  const getDefault = () => null;
-  const getDefaultCachedData = () => nuxtApp.isHydrating ? nuxtApp.payload.data[key] : nuxtApp.static.data[key];
-  options2.server = options2.server ?? true;
-  options2.default = options2.default ?? getDefault;
-  options2.getCachedData = options2.getCachedData ?? getDefaultCachedData;
-  options2.lazy = options2.lazy ?? false;
-  options2.immediate = options2.immediate ?? true;
-  options2.deep = options2.deep ?? asyncDataDefaults.deep;
-  options2.dedupe = options2.dedupe ?? "cancel";
-  const hasCachedData = () => options2.getCachedData(key, nuxtApp) != null;
-  if (!nuxtApp._asyncData[key] || !options2.immediate) {
-    (_b = nuxtApp.payload._errors)[key] ?? (_b[key] = null);
-    const _ref = options2.deep ? ref : shallowRef;
-    nuxtApp._asyncData[key] = {
-      data: _ref(options2.getCachedData(key, nuxtApp) ?? options2.default()),
-      pending: ref(!hasCachedData()),
-      error: toRef(nuxtApp.payload._errors, key),
-      status: ref("idle")
-    };
-  }
-  const asyncData = { ...nuxtApp._asyncData[key] };
-  asyncData.refresh = asyncData.execute = (opts = {}) => {
-    if (nuxtApp._asyncDataPromises[key]) {
-      if (isDefer(opts.dedupe ?? options2.dedupe)) {
-        return nuxtApp._asyncDataPromises[key];
-      }
-      nuxtApp._asyncDataPromises[key].cancelled = true;
-    }
-    if ((opts._initial || nuxtApp.isHydrating && opts._initial !== false) && hasCachedData()) {
-      return Promise.resolve(options2.getCachedData(key, nuxtApp));
-    }
-    asyncData.pending.value = true;
-    asyncData.status.value = "pending";
-    const promise = new Promise(
-      (resolve2, reject) => {
-        try {
-          resolve2(handler(nuxtApp));
-        } catch (err) {
-          reject(err);
-        }
-      }
-    ).then(async (_result) => {
-      if (promise.cancelled) {
-        return nuxtApp._asyncDataPromises[key];
-      }
-      let result = _result;
-      if (options2.transform) {
-        result = await options2.transform(_result);
-      }
-      if (options2.pick) {
-        result = pick$2(result, options2.pick);
-      }
-      nuxtApp.payload.data[key] = result;
-      asyncData.data.value = result;
-      asyncData.error.value = null;
-      asyncData.status.value = "success";
-    }).catch((error) => {
-      if (promise.cancelled) {
-        return nuxtApp._asyncDataPromises[key];
-      }
-      asyncData.error.value = createError(error);
-      asyncData.data.value = unref(options2.default());
-      asyncData.status.value = "error";
-    }).finally(() => {
-      if (promise.cancelled) {
-        return;
-      }
-      asyncData.pending.value = false;
-      delete nuxtApp._asyncDataPromises[key];
-    });
-    nuxtApp._asyncDataPromises[key] = promise;
-    return nuxtApp._asyncDataPromises[key];
-  };
-  asyncData.clear = () => clearNuxtDataByKey(nuxtApp, key);
-  const initialFetch = () => asyncData.refresh({ _initial: true });
-  const fetchOnServer = options2.server !== false && nuxtApp.payload.serverRendered;
-  if (fetchOnServer && options2.immediate) {
-    const promise = initialFetch();
-    if (getCurrentInstance$1()) {
-      onServerPrefetch(() => promise);
-    } else {
-      nuxtApp.hook("app:created", async () => {
-        await promise;
-      });
-    }
-  }
-  const asyncDataPromise = Promise.resolve(nuxtApp._asyncDataPromises[key]).then(() => asyncData);
-  Object.assign(asyncDataPromise, asyncData);
-  return asyncDataPromise;
-}
-function clearNuxtDataByKey(nuxtApp, key) {
-  if (key in nuxtApp.payload.data) {
-    nuxtApp.payload.data[key] = void 0;
-  }
-  if (key in nuxtApp.payload._errors) {
-    nuxtApp.payload._errors[key] = null;
-  }
-  if (nuxtApp._asyncData[key]) {
-    nuxtApp._asyncData[key].data.value = void 0;
-    nuxtApp._asyncData[key].error.value = null;
-    nuxtApp._asyncData[key].pending.value = false;
-    nuxtApp._asyncData[key].status.value = "idle";
-  }
-  if (key in nuxtApp._asyncDataPromises) {
-    nuxtApp._asyncDataPromises[key].cancelled = true;
-    nuxtApp._asyncDataPromises[key] = void 0;
-  }
-}
-function pick$2(obj, keys2) {
-  const newObj = {};
-  for (const key of keys2) {
-    newObj[key] = obj[key];
-  }
-  return newObj;
-}
 const useStateKeyPrefix = "$s";
 function useState(...args) {
   const autoKey = typeof args[args.length - 1] === "string" ? args.pop() : void 0;
@@ -2456,89 +2325,6 @@ function useRequestHeaders(include) {
 function useRequestFetch() {
   var _a2;
   return ((_a2 = useRequestEvent()) == null ? void 0 : _a2.$fetch) || globalThis.$fetch;
-}
-function useFetch(request, arg1, arg2) {
-  const [opts = {}, autoKey] = typeof arg1 === "string" ? [{}, arg1] : [arg1, arg2];
-  const _request = computed(() => toValue(request));
-  const _key = opts.key || hash([autoKey, typeof _request.value === "string" ? _request.value : "", ...generateOptionSegments(opts)]);
-  if (!_key || typeof _key !== "string") {
-    throw new TypeError("[nuxt] [useFetch] key must be a string: " + _key);
-  }
-  if (!request) {
-    throw new Error("[nuxt] [useFetch] request is missing.");
-  }
-  const key = _key === autoKey ? "$f" + _key : _key;
-  if (!opts.baseURL && typeof _request.value === "string" && (_request.value[0] === "/" && _request.value[1] === "/")) {
-    throw new Error('[nuxt] [useFetch] the request URL must not start with "//".');
-  }
-  const {
-    server,
-    lazy,
-    default: defaultFn,
-    transform: transform2,
-    pick: pick2,
-    watch: watch2,
-    immediate,
-    getCachedData,
-    deep,
-    dedupe,
-    ...fetchOptions
-  } = opts;
-  const _fetchOptions = reactive({
-    ...fetchDefaults,
-    ...fetchOptions,
-    cache: typeof opts.cache === "boolean" ? void 0 : opts.cache
-  });
-  const _asyncDataOptions = {
-    server,
-    lazy,
-    default: defaultFn,
-    transform: transform2,
-    pick: pick2,
-    immediate,
-    getCachedData,
-    deep,
-    dedupe,
-    watch: watch2 === false ? [] : [_fetchOptions, _request, ...watch2 || []]
-  };
-  let controller;
-  const asyncData = useAsyncData(key, () => {
-    var _a2;
-    (_a2 = controller == null ? void 0 : controller.abort) == null ? void 0 : _a2.call(controller);
-    controller = typeof AbortController !== "undefined" ? new AbortController() : {};
-    const timeoutLength = toValue(opts.timeout);
-    if (timeoutLength) {
-      setTimeout(() => controller.abort(), timeoutLength);
-    }
-    let _$fetch = opts.$fetch || globalThis.$fetch;
-    if (!opts.$fetch) {
-      const isLocalFetch = typeof _request.value === "string" && _request.value[0] === "/" && (!toValue(opts.baseURL) || toValue(opts.baseURL)[0] === "/");
-      if (isLocalFetch) {
-        _$fetch = useRequestFetch();
-      }
-    }
-    return _$fetch(_request.value, { signal: controller.signal, ..._fetchOptions });
-  }, _asyncDataOptions);
-  return asyncData;
-}
-function generateOptionSegments(opts) {
-  var _a2;
-  const segments = [
-    ((_a2 = toValue(opts.method)) == null ? void 0 : _a2.toUpperCase()) || "GET",
-    toValue(opts.baseURL)
-  ];
-  for (const _obj of [opts.params || opts.query]) {
-    const obj = toValue(_obj);
-    if (!obj) {
-      continue;
-    }
-    const unwrapped = {};
-    for (const [key, value] of Object.entries(obj)) {
-      unwrapped[toValue(key)] = toValue(value);
-    }
-    segments.push(unwrapped);
-  }
-  return segments;
 }
 const CookieDefaults = {
   path: "/",
@@ -2773,7 +2559,7 @@ function keys(o) {
 function has(obj, key) {
   return key.every((k) => obj.hasOwnProperty(k));
 }
-function pick$1(obj, paths) {
+function pick(obj, paths) {
   const found = {};
   const keys2 = new Set(Object.keys(obj));
   for (const path of paths) {
@@ -3764,7 +3550,7 @@ function defineComponent(options2) {
     options2.props = propsFactory(options2.props ?? {}, options2.name)();
     const propKeys = Object.keys(options2.props).filter((key) => key !== "class" && key !== "style");
     options2.filterProps = function filterProps(props) {
-      return pick$1(props, propKeys);
+      return pick(props, propKeys);
     };
     options2.props._as = String;
     options2.setup = function setup2(props, ctx) {
@@ -13766,7 +13552,7 @@ const VField = genericComponent()({
 });
 function filterFieldProps(attrs) {
   const keys2 = Object.keys(VField.props).filter((k) => !isOn(k) && k !== "class" && k !== "style");
-  return pick$1(attrs, keys2);
+  return pick(attrs, keys2);
 }
 const activeTypes = ["color", "file", "time", "date", "datetime-local", "week", "month"];
 const makeVTextFieldProps = propsFactory({
@@ -31311,7 +31097,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-Ad6KBHFT.mjs'
+    './i18n.config-zSJ6INO2.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];
@@ -31541,12 +31327,12 @@ function split(str, index) {
   return result;
 }
 function routeToObject(route) {
-  const { fullPath, query, hash: hash2, name, path, params, meta, redirectedFrom, matched } = route;
+  const { fullPath, query, hash, name, path, params, meta, redirectedFrom, matched } = route;
   return {
     fullPath,
     params,
     query,
-    hash: hash2,
+    hash,
     name,
     path,
     meta,
@@ -31610,9 +31396,9 @@ function resolveRoute(common, route, locale) {
   let _route;
   if (isString(route)) {
     if (route[0] === "/") {
-      const { pathname: path, search, hash: hash2 } = parsePath(route);
+      const { pathname: path, search, hash } = parsePath(route);
       const query = parseQuery(search);
-      _route = { path, query, hash: hash2 };
+      _route = { path, query, hash };
     } else {
       _route = { name: route };
     }
@@ -32832,7 +32618,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0d9a60e2"]]);
 const layouts = {
-  default: () => import('./default-DWraJ8yl.mjs').then((m) => m.default || m)
+  default: () => import('./default-CztzOMiN.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent$1({
   name: "LayoutLoader",
@@ -33074,96 +32860,11 @@ function hasChildrenRoutes(fork, newRoute, Component) {
   });
   return index < newRoute.matched.length - 1;
 }
-const pick = (obj, ...keys2) => {
-  return keys2.reduce((result, key) => {
-    if (obj && key in obj) {
-      result[key] = obj[key];
-    }
-    return result;
-  }, {});
-};
-const useGetSiteApi = () => {
-  const {
-    serverApiBase,
-    public: { apiBase, api, cachedTime }
-  } = /* @__PURE__ */ useRuntimeConfig();
-  const nuxtApp = /* @__PURE__ */ useNuxtApp();
-  const GetAll = async (endpoint, fields = [], isServer = true, isLazy = false) => {
-    return useFetch(() => `${endpoint}`, {
-      key: `${endpoint}`,
-      baseURL: apiBase,
-      server: isServer,
-      lazy: isLazy,
-      transform(input) {
-        const transformed = {
-          ...input,
-          fetchedAt: /* @__PURE__ */ new Date()
-        };
-        if (fields.length) {
-          if (input.items && Array.isArray(input.items)) {
-            transformed.items = input.items.map(
-              (item) => pick(item, ...fields)
-            );
-          } else {
-            return pick(transformed, ...fields);
-          }
-        }
-        return transformed;
-      },
-      getCachedData(key) {
-        return handleCachingDataTime(key);
-      }
-    }, "$ZClKFvD9Nb");
-  };
-  const GetById = async (endpointWithoutId, fields = [], id, isServer = true, isLazy = false) => {
-    return useFetch(() => `${endpointWithoutId}${id}`, {
-      key: `${endpointWithoutId}${id}`,
-      baseURL: apiBase,
-      server: isServer,
-      lazy: isLazy,
-      transform(input) {
-        const transformed = {
-          ...input,
-          fetchedAt: /* @__PURE__ */ new Date()
-        };
-        if (fields.length) {
-          return pick(transformed, ...fields);
-        }
-        return transformed;
-      },
-      getCachedData(key) {
-        return handleCachingDataTime(key);
-      }
-    }, "$TGG8Mkno4i");
-  };
-  const handleCachingDataTime = (key) => {
-    const data = nuxtApp.payload.data[key] || nuxtApp.static.data[key];
-    if (!data)
-      return;
-    const expirationDate = new Date(data.fetchedAt);
-    expirationDate.setTime(expirationDate.getTime() + cachedTime);
-    const isExpired = expirationDate.getTime() < Date.now();
-    if (isExpired)
-      return;
-    return data;
-  };
-  return {
-    GetAll,
-    GetById
-  };
-};
 const _imports_0 = publicAssetsURL("/photos/whatsup.png");
 const _sfc_main$2 = {
   __name: "app",
   __ssrInlineRender: true,
-  async setup(__props) {
-    let __temp, __restore;
-    const {
-      public: { apiBase, api }
-    } = /* @__PURE__ */ useRuntimeConfig();
-    [__temp, __restore] = withAsyncContext(() => useGetSiteApi().GetAll(`${api.GetMyInfo}`)), __temp = await __temp, __restore();
-    watchEffect(() => {
-    });
+  setup(__props) {
     const { locale } = useI18n();
     const titles = {
       en: "Nabtaty",
@@ -33176,7 +32877,7 @@ const _sfc_main$2 = {
       const _component_ElementsLoader = __nuxt_component_0;
       const _component_NuxtLayout = __nuxt_component_1;
       const _component_NuxtPage = __nuxt_component_2;
-      _push(`<!--[--><div class="${ssrRenderClass([_ctx.$i18n.locale === "ar" ? "ar" : "", "whatsupp pointer"])}" data-v-7eb8bfeb><a${ssrRenderAttr("href", `https://wa.me/`)} target="_blank" class="mx-2" data-v-7eb8bfeb><img${ssrRenderAttr("src", _imports_0)} alt="" data-v-7eb8bfeb></a></div><div data-v-7eb8bfeb>`);
+      _push(`<!--[--><div class="${ssrRenderClass([_ctx.$i18n.locale === "ar" ? "ar" : "", "whatsupp pointer"])}" data-v-1702a8ce><a${ssrRenderAttr("href", `https://wa.me/`)} target="_blank" class="mx-2" data-v-1702a8ce><img${ssrRenderAttr("src", _imports_0)} alt="" data-v-1702a8ce></a></div><div data-v-1702a8ce>`);
       _push(ssrRenderComponent(_component_ElementsLoader, null, null, _parent));
       _push(ssrRenderComponent(_component_NuxtLayout, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -33200,7 +32901,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-7eb8bfeb"]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-1702a8ce"]]);
 const _sfc_main$1 = {
   __name: "error",
   __ssrInlineRender: true,
@@ -33301,5 +33002,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { BaseStyle as B, FilterService as F, PrimeVueService as P, _export_sfc as _, useRouter$1 as a, parseURL as b, parseQuery as c, navigateTo as d, entry$1 as default, withoutTrailingSlash as e, useState as f, useNuxtApp as g, hasProtocol as h, useGetSiteApi as i, joinURL as j, useI18n as k, useFetch as l, __nuxt_component_0$1 as m, nuxtLinkDefaults as n, useRoute$1 as o, publicAssetsURL as p, defineNuxtRouteMiddleware as q, useCookie as r, useRuntimeConfig as u, withTrailingSlash as w };
+export { BaseStyle as B, FilterService as F, PrimeVueService as P, _export_sfc as _, useRouter$1 as a, parseURL as b, parseQuery as c, navigateTo as d, entry$1 as default, withoutTrailingSlash as e, useState as f, useNuxtApp as g, hasProtocol as h, useI18n as i, joinURL as j, asyncDataDefaults as k, createError as l, fetchDefaults as m, nuxtLinkDefaults as n, useRequestFetch as o, publicAssetsURL as p, __nuxt_component_0$1 as q, useRoute$1 as r, defineNuxtRouteMiddleware as s, useCookie as t, useRuntimeConfig as u, withTrailingSlash as w };
 //# sourceMappingURL=server.mjs.map
