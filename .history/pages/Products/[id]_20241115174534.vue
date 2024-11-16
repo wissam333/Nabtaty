@@ -254,18 +254,19 @@ watchEffect(() => {
 });
 
 async function fetchProductsForCategory(subCategories) {
-  const { data: product } = await useFetch(
-    `${api.GetPlantByCat}/${route.params.id}`,
-    {
-      baseURL: apiBase,
-      headers: {
-        "accept-language": locale.value === "ar" ? "ar" : "en",
-      },
-    }
-  );
-
-  Products.value.push(...(product.value || []));
-  console.log("Fetched products for", subCat.id);
+  for (const subCat of subCategories) {
+    const { data: product } = await useFetch(
+      `${api.GetPlantByCat}/${subCat.id}`,
+      {
+        baseURL: apiBase,
+        headers: {
+          "accept-language": locale.value === "ar" ? "ar" : "en",
+        },
+      }
+    );
+    Products.value.push(...(product.value || []));
+    console.log("Fetched products for", subCat.id);
+  }
 }
 
 const searchText = ref("Default sorting");
