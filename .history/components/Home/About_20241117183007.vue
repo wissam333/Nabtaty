@@ -12,7 +12,11 @@
         >
           <div class="title">
             <h1 class="d-flex align-items-center">
-              <img width="70" src="/photos/nabtaty8.png" alt="" />
+              <img
+                width="70"
+                :src="`${apiBase}/${About?.data[0]?.photo}`"
+                alt=""
+              />
               <span class="underline">
                 {{ $t("AboutUs") }}
               </span>
@@ -33,7 +37,7 @@
           ></div> -->
 
           <div class="desc" :class="$i18n.locale === 'ar' ? 'ar' : ''">
-            {{ About[0]?.description }}
+            {{ About?.data[0]?.description }}
           </div>
 
           <div class="mt-7 d-flex justify-content-end">
@@ -50,7 +54,7 @@
           data-aos-duration="800"
         >
           <!-- <img v-if="About?.image" :src="`${apiBase}${About?.image}`" alt="" /> -->
-          <img :src="`${apiBase}/${About[0]?.photo}`" alt="" />
+          <img src="/photos/rose.png" alt="" />
         </div>
       </div>
     </div>
