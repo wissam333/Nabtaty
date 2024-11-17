@@ -972,7 +972,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./About-DyJ7KrnR.mjs').then((m) => m.default || m)
+    component: () => import('./About-By2xrliw.mjs').then((m) => m.default || m)
   },
   {
     name: "Cart",
@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Cart-Dekp_c52.mjs').then((m) => m.default || m)
+    component: () => import('./Cart-CgELzew-.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-CgrUvKWX.mjs').then((m) => m.default || m)
+    component: () => import('./index-DVlDYfJZ.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-D4X7y6gR.mjs').then((m) => m.default || m)
+    component: () => import('./Order-CRJT4g1p.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1004,7 +1004,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Photos-DaeKz_Uy.mjs').then((m) => m.default || m)
+    component: () => import('./Photos-Bz9H5ij4.mjs').then((m) => m.default || m)
   },
   {
     name: "PrivacyPolicy",
@@ -1020,7 +1020,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-B9I6Qawt.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-Bc5cEPWn.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1028,7 +1028,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-RkayPX53.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-DSzTGZtb.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Search-id",
+    path: "/Search/:id()",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./_id_-CrJSHCIq.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1142,7 +1150,7 @@ const namedMiddleware = {
   auth: () => import('./auth-A8dPZR4k.mjs'),
   "not-authorize": () => import('./not-authorize-CVlmTZ9S.mjs'),
   "supplier-company": () => import('./supplierCompany-CpOzgcZ7.mjs'),
-  "validate-id-digital": () => import('./validate-id-digital-BoSCe13P.mjs')
+  "validate-id-digital": () => import('./validate-id-digital-DmReItOo.mjs')
 };
 const plugin = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
@@ -1347,8 +1355,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-DTAte9se.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DCNW5Aft.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-ByzDqKb0.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-EzL8U4XO.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -32618,7 +32626,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0d9a60e2"]]);
 const layouts = {
-  default: () => import('./default-Cc8qhwkx.mjs').then((m) => m.default || m)
+  default: () => import('./default-gV0fLTxY.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent$1({
   name: "LayoutLoader",
@@ -33002,5 +33010,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { BaseStyle as B, FilterService as F, PrimeVueService as P, _export_sfc as _, useRouter$1 as a, parseURL as b, parseQuery as c, navigateTo as d, entry$1 as default, withoutTrailingSlash as e, useState as f, useNuxtApp as g, hasProtocol as h, useI18n as i, joinURL as j, asyncDataDefaults as k, createError as l, fetchDefaults as m, nuxtLinkDefaults as n, useRequestFetch as o, publicAssetsURL as p, __nuxt_component_0$1 as q, useRoute$1 as r, defineNuxtRouteMiddleware as s, useCookie as t, useRuntimeConfig as u, withTrailingSlash as w };
+export { BaseStyle as B, FilterService as F, PrimeVueService as P, _export_sfc as _, useRuntimeConfig as a, asyncDataDefaults as b, useNuxtApp as c, createError as d, entry$1 as default, useRequestFetch as e, fetchDefaults as f, useRouter$1 as g, hasProtocol as h, parseURL as i, joinURL as j, parseQuery as k, navigateTo as l, withoutTrailingSlash as m, nuxtLinkDefaults as n, useState as o, publicAssetsURL as p, __nuxt_component_0$1 as q, useRoute$1 as r, defineNuxtRouteMiddleware as s, useCookie as t, useI18n as u, withTrailingSlash as w };
 //# sourceMappingURL=server.mjs.map
