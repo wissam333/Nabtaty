@@ -1,0 +1,1 @@
+import{a2 as r,n as d}from"./CwhFTHFS.js";import"./Bm3a7n3s.js";const n=r((e,a)=>{if(e.params.id!==void 0&&!/^\d+$/.test(e.params.id))return d("/404",{redirectCode:301});if(e.params.productId!==void 0&&!/^\d+$/.test(e.params.productId))return d("/404",{redirectCode:301})});export{n as default};

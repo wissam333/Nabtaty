@@ -172,7 +172,7 @@ if (locale.value === "ar") {
   const { data: MenusData, pending } = await useFetch(
     `${api.findAllCategories}`,
     {
-      credentials: "include",
+      credentials: 'include', 
       baseURL: apiBase,
       headers: {
         "accept-language": "ar",
@@ -181,7 +181,7 @@ if (locale.value === "ar") {
   );
   // const { data: MenusData2, pending2 } = await useFetch(`${api.GetSubCat}`, {
   //   baseURL: apiBase,
-  //   credentials: 'include',
+  //   credentials: 'include', 
   //   headers: {
   //     "accept-language": "ar",
   //   },
@@ -198,7 +198,7 @@ if (locale.value === "ar") {
   const { data: MenusData, pending } = await useFetch(
     `${api.findAllCategories}`,
     {
-      credentials: "include",
+      credentials: 'include', 
       baseURL: apiBase,
       headers: {
         "accept-language": "en",
@@ -207,7 +207,7 @@ if (locale.value === "ar") {
   );
   // const { data: MenusData2, pending2 } = await useFetch(`${api.GetSubCat}`, {
   //   baseURL: apiBase,
-  //   credentials: 'include',
+  //   credentials: 'include', 
   //   headers: {
   //     "accept-language": "en",
   //   },
@@ -261,7 +261,7 @@ async function fetchProductsForCategory(subCategories) {
   const { data: product } = await useFetch(
     `${api.GetPlantByCat}/${route.params.id}`,
     {
-      credentials: "include",
+      credentials: 'include', 
       baseURL: apiBase,
       headers: {
         "accept-language": locale.value === "ar" ? "ar" : "en",
@@ -314,7 +314,7 @@ const setselectedId = async (item, hasSubmenu) => {
       const { data: ProductsByCat, pending } = await useFetch(
         `${api.GetPlantByCat}/${selectedId.value}`,
         {
-          credentials: "include",
+          credentials: 'include', 
           baseURL: apiBase,
           headers: {
             Authorization: `Bearer ${useMainToken().value}`,
@@ -328,7 +328,7 @@ const setselectedId = async (item, hasSubmenu) => {
       const { data: ProductsByCat, pending } = await useFetch(
         `${api.GetPlantByCat}/${selectedId.value}`,
         {
-          credentials: "include",
+          credentials: 'include', 
           baseURL: apiBase,
           headers: {
             Authorization: `Bearer ${useMainToken().value}`,
