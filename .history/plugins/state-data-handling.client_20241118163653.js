@@ -34,8 +34,6 @@ export default defineNuxtPlugin(async (nuxtApp) => {
     useAuth().value.isAuthenticated = false;
     useUserInfo().value = null;
   } else {
-    // make global isAuthenticated state true
-    useAuth().value.isAuthenticated = userInfo ? true : false;
     // store userinfo in the store
     useUserInfo().value = userInfo;
   }

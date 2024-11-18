@@ -153,7 +153,7 @@ const {
   public: { apiBase, api },
 } = useRuntimeConfig();
 
-let user = ref(useUserInfo().value);
+let user = useUserInfo().value;
 
 let mobile = ref(false);
 const checkWindowSize = () => {
@@ -185,7 +185,6 @@ const logout = async () => {
     method: "GET",
   });
 
-  useUserInfo().value = null;
   localStorage.removeItem("userInfo");
   if (localStorage.getItem("cart")) {
     localStorage.removeItem("cart");

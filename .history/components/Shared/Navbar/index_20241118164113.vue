@@ -153,7 +153,7 @@ const {
   public: { apiBase, api },
 } = useRuntimeConfig();
 
-let user = ref(useUserInfo().value);
+let user = useUserInfo().value;
 
 let mobile = ref(false);
 const checkWindowSize = () => {
