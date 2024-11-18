@@ -972,7 +972,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./About-By2xrliw.mjs').then((m) => m.default || m)
+    component: () => import('./About-B8AXN0TD.mjs').then((m) => m.default || m)
   },
   {
     name: "Cart",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-BgSZ_6s6.mjs').then((m) => m.default || m)
+    component: () => import('./index-hERvd8PQ.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-CRJT4g1p.mjs').then((m) => m.default || m)
+    component: () => import('./Order-DmPbPril.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1004,7 +1004,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Photos-Bz9H5ij4.mjs').then((m) => m.default || m)
+    component: () => import('./Photos-BkHFdoYb.mjs').then((m) => m.default || m)
   },
   {
     name: "PrivacyPolicy",
@@ -1020,7 +1020,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-CS4A9tj8.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-Vv-AKyFB.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1028,7 +1028,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-DSzTGZtb.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-BuWI0zMm.mjs').then((m) => m.default || m)
   },
   {
     name: "Search-id",
@@ -1036,7 +1036,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-CrJSHCIq.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-DBXD_Xc4.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1355,8 +1355,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-SgvaZTWE.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-B0QvWxax.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-CImx2JxO.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-JVoBhr2r.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -32626,7 +32626,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0d9a60e2"]]);
 const layouts = {
-  default: () => import('./default-gV0fLTxY.mjs').then((m) => m.default || m)
+  default: () => import('./default-DIhxCJCw.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent$1({
   name: "LayoutLoader",
