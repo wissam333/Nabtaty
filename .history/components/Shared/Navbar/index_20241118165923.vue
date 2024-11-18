@@ -42,7 +42,7 @@
               data-bs-toggle="dropdown"
             >
               <div class="image">
-                <img :src="user?.thumbnail" alt="" />
+                <img :src="user.thumbnail" alt="" />
               </div>
             </div>
             <ul class="dropdown-menu">
