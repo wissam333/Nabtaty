@@ -1,0 +1,6 @@
+const ProductInfoTable_vue_vue_type_style_index_0_scoped_ff77adc2_lang = "h6[data-v-ff77adc2]{color:#000}thead tr[data-v-ff77adc2]{background-color:rgba(190,86,198,.494);color:#fff;text-align:center}.headen tr th[data-v-ff77adc2]:first-child,.headen tr th[data-v-ff77adc2]:nth-child(2),.headen tr th[data-v-ff77adc2]:nth-child(3){border-right:1px solid #fff}.headar tr th[data-v-ff77adc2]:first-child,.headar tr th[data-v-ff77adc2]:nth-child(2),.headar tr th[data-v-ff77adc2]:nth-child(3){border-left:1px solid #fff}tbody tr[data-v-ff77adc2]:nth-child(2n),tbody tr[data-v-ff77adc2]:nth-child(odd){background-color:#fff;border:1px solid #b6b5b6;color:#000;cursor:pointer;text-align:center}tbody tr[data-v-ff77adc2]:last-child{background-color:rgba(190,86,198,.494)!important;text-align:center!important}tbody tr[data-v-ff77adc2]:last-child,tbody tr:last-child td[data-v-ff77adc2]{color:#fff!important}.product-img[data-v-ff77adc2]{-o-object-fit:contain;object-fit:contain}";
+
+const ProductInfoTableStyles_D9nOReiU = [ProductInfoTable_vue_vue_type_style_index_0_scoped_ff77adc2_lang];
+
+export { ProductInfoTableStyles_D9nOReiU as default };
+//# sourceMappingURL=ProductInfoTable-styles.D9nOReiU.mjs.map

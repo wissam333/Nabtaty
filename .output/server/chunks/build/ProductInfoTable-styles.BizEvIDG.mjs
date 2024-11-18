@@ -1,6 +1,0 @@
-const ProductInfoTable_vue_vue_type_style_index_0_scoped_2ab2456a_lang = "h6[data-v-2ab2456a]{color:#000}thead tr[data-v-2ab2456a]{background-color:rgba(190,86,198,.494);color:#fff;text-align:center}.headen tr th[data-v-2ab2456a]:first-child,.headen tr th[data-v-2ab2456a]:nth-child(2),.headen tr th[data-v-2ab2456a]:nth-child(3){border-right:1px solid #fff}.headar tr th[data-v-2ab2456a]:first-child,.headar tr th[data-v-2ab2456a]:nth-child(2),.headar tr th[data-v-2ab2456a]:nth-child(3){border-left:1px solid #fff}tbody tr[data-v-2ab2456a]:nth-child(2n),tbody tr[data-v-2ab2456a]:nth-child(odd){background-color:#fff;border:1px solid #b6b5b6;color:#000;cursor:pointer;text-align:center}tbody tr[data-v-2ab2456a]:last-child{background-color:rgba(190,86,198,.494)!important;text-align:center!important}tbody tr[data-v-2ab2456a]:last-child,tbody tr:last-child td[data-v-2ab2456a]{color:#fff!important}.product-img[data-v-2ab2456a]{-o-object-fit:contain;object-fit:contain}";
-
-const ProductInfoTableStyles_BizEvIDG = [ProductInfoTable_vue_vue_type_style_index_0_scoped_2ab2456a_lang];
-
-export { ProductInfoTableStyles_BizEvIDG as default };
-//# sourceMappingURL=ProductInfoTable-styles.BizEvIDG.mjs.map

@@ -980,7 +980,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Cart-CgELzew-.mjs').then((m) => m.default || m)
+    component: () => import('./Cart-B3_qguBP.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -988,7 +988,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-hERvd8PQ.mjs').then((m) => m.default || m)
+    component: () => import('./index-C0D1bEKp.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -996,7 +996,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-DmPbPril.mjs').then((m) => m.default || m)
+    component: () => import('./Order-BN-A9aZ8.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1020,7 +1020,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-DORjpwq4.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-DS0BtfEC.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1028,7 +1028,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-74Xr0PG6.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-xevwLCAd.mjs').then((m) => m.default || m)
   },
   {
     name: "Search-id",
@@ -1355,8 +1355,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-7JY1n9N8.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DHYNTpAY.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-Bn_9PI8F.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-CdC4snBd.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
