@@ -38,8 +38,7 @@
               <a
                 href="https://admin.nabtaty.com/"
                 target="_blank"
-                class="fw-bold"
-                style="color: #073e2f"
+                class="fw-bold color"
                 >{{ $i18n.locale === "ar" ? "لوحة التحكم" : "Admin Panel" }}</a
               >
             </div>

@@ -55,21 +55,6 @@
             {{ $i18n.locale === "ar" ? "تسجيل الخروج" : "Log out" }}
           </div>
         </li>
-        <li
-          v-if="useUserInfo().value?.isAdmin"
-          class="menu-item color"
-          style="padding: 16px 12px"
-        >
-          <div>
-            <a
-              href="https://admin.nabtaty.com/"
-              target="_blank"
-              class="fw-bold"
-              style="color: #073e2f"
-              >{{ $i18n.locale === "ar" ? "لوحة التحكم" : "Admin Panel" }}</a
-            >
-          </div>
-        </li>
       </ul>
     </div>
     <!-- logout modal -->

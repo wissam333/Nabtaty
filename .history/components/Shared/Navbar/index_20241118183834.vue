@@ -35,13 +35,9 @@
           <div class="buttons" :class="locale === 'ar' ? 'ar' : ''" style="">
             <!-- user -->
             <div v-if="useUserInfo().value?.isAdmin">
-              <a
-                href="https://admin.nabtaty.com/"
-                target="_blank"
-                class="fw-bold"
-                style="color: #073e2f"
-                >{{ $i18n.locale === "ar" ? "لوحة التحكم" : "Admin Panel" }}</a
-              >
+              <span class="fw-bold">{{
+                $i18n.locale === "ar" ? "لوحة التحكم" : "Admin Panel"
+              }}</span>
             </div>
             <div
               v-if="useUserInfo().value?.email"
@@ -60,10 +56,7 @@
                   class="px-3 text-white"
                   style="background-color: #073e2f; padding: 10px"
                 >
-                  {{
-                    useUserInfo().value?.firstName +
-                    useUserInfo().value?.lastName
-                  }}
+                  {{ useUserInfo().value?.firstName + useUserInfo().value?.lastName }}
                 </div>
               </div>
               <li class="dropdown-item" @click.stop="logout">
@@ -164,6 +157,8 @@ const { $awn } = useNuxtApp();
 const {
   public: { apiBase, api },
 } = useRuntimeConfig();
+
+let user = ref(useUserInfo().value);
 
 let mobile = ref(false);
 const checkWindowSize = () => {

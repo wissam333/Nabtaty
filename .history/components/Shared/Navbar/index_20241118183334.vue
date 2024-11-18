@@ -34,36 +34,29 @@
           <!-- buttons -->
           <div class="buttons" :class="locale === 'ar' ? 'ar' : ''" style="">
             <!-- user -->
-            <div v-if="useUserInfo().value?.isAdmin">
-              <a
-                href="https://admin.nabtaty.com/"
-                target="_blank"
-                class="fw-bold"
-                style="color: #073e2f"
-                >{{ $i18n.locale === "ar" ? "لوحة التحكم" : "Admin Panel" }}</a
-              >
+            <div v-if="user?.isAdmin">
+              <span class="fw-bold">{{
+                $i18n.locale === "ar" ? "لوحة التحكم" : "Admin Panel"
+              }}</span>
             </div>
             <div
-              v-if="useUserInfo().value?.email"
+              v-if="user?.email"
               class="pointer profile text-center dropdown mx-2"
               aria-current="page"
               aria-expanded="false"
               data-bs-toggle="dropdown"
             >
               <div class="image">
-                <img :src="useUserInfo().value?.thumbnail" alt="" />
+                <img :src="user?.thumbnail" alt="" />
               </div>
             </div>
-            <ul class="dropdown-menu" v-if="useUserInfo().value?.email">
+            <ul class="dropdown-menu">
               <div class="" style="border-bottom: none">
                 <div
                   class="px-3 text-white"
                   style="background-color: #073e2f; padding: 10px"
                 >
-                  {{
-                    useUserInfo().value?.firstName +
-                    useUserInfo().value?.lastName
-                  }}
+                  {{ user?.firstName + user?.lastName }}
                 </div>
               </div>
               <li class="dropdown-item" @click.stop="logout">
@@ -164,6 +157,8 @@ const { $awn } = useNuxtApp();
 const {
   public: { apiBase, api },
 } = useRuntimeConfig();
+
+let user = ref(useUserInfo().value);
 
 let mobile = ref(false);
 const checkWindowSize = () => {
