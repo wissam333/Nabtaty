@@ -9,10 +9,10 @@ import { isClient, setAttributes, setAttribute, isExist } from '@primeuix/utils/
 import { EventBus } from '@primeuix/utils/eventbus';
 import { mergeKeys } from '@primeuix/utils';
 import { config, library } from '@fortawesome/fontawesome-svg-core';
-import { faMinus, faPlus, faAngleDown, faAngleUp, faLink, faGlobe, faArrowLeft, faXmark, faCaretDown, faPhone, faLocationDot, faEnvelope, faFax, faBox, faEye, faHeart, faMagnifyingGlass, faPowerOff, faCartShopping, faFilePdf, faSliders, faSnowflake, faCloudSun, faDroplet, faTemperatureHigh, faSun } from '@fortawesome/free-solid-svg-icons';
+import { faMinus, faPlus, faAngleDown, faAngleUp, faLink, faGlobe, faArrowLeft, faXmark, faCaretDown, faPhone, faLocationDot, faEnvelope, faFax, faBox, faEye, faHeart, faMagnifyingGlass, faPowerOff, faCartShopping, faFilePdf, faSliders, faSnowflake, faCloudSun, faDroplet, faTemperatureHigh, faSun, faUpload, faRotateRight, faChartSimple, faList, faUsers, faBoxesStacked, faSeedling, faLanguage, faCheck, faPenToSquare, faTrash, faTruck } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faXTwitter, faLinkedin, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faHeart as faHeart$1, faUser } from '@fortawesome/free-regular-svg-icons';
-import { ssrRenderAttrs, ssrRenderComponent, ssrRenderClass, ssrRenderAttr, ssrRenderStyle, ssrInterpolate, ssrRenderSuspense, ssrRenderVNode } from 'vue/server-renderer';
+import { ssrRenderAttrs, ssrRenderComponent, ssrRenderStyle, ssrInterpolate, ssrRenderSuspense, ssrRenderVNode } from 'vue/server-renderer';
 import 'node:http';
 import 'node:https';
 import 'fs';
@@ -965,6 +965,58 @@ async function getRouteRules(url) {
     return defu({}, ..._routeRulesMatcher.matchAll(url).reverse());
   }
 }
+const __nuxt_page_meta$k = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$j = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$i = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$h = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$g = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$f = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$e = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$d = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$c = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$b = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$a = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$9 = {
+  layout: false
+  // This will disable the default layout
+};
+const __nuxt_page_meta$8 = {
+  layout: "admin"
+  // This will disable the default layout
+};
 const _routes = [
   {
     name: "About",
@@ -975,12 +1027,116 @@ const _routes = [
     component: () => import('./About-B8AXN0TD.mjs').then((m) => m.default || m)
   },
   {
+    name: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.name) ?? "admin-About",
+    path: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.path) ?? "/admin/About",
+    meta: __nuxt_page_meta$k || {},
+    alias: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.alias) || [],
+    redirect: __nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.redirect,
+    component: () => import('./About-DbB1jl7w.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.name) ?? "admin-AddProduct",
+    path: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.path) ?? "/admin/AddProduct",
+    meta: __nuxt_page_meta$j || {},
+    alias: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.alias) || [],
+    redirect: __nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.redirect,
+    component: () => import('./AddProduct-Bl47AVEC.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.name) ?? "admin-Category",
+    path: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.path) ?? "/admin/Category",
+    meta: __nuxt_page_meta$i || {},
+    alias: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.alias) || [],
+    redirect: __nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.redirect,
+    component: () => import('./Category-wCyRQo9H.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.name) ?? "admin-ContactInfo",
+    path: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.path) ?? "/admin/ContactInfo",
+    meta: __nuxt_page_meta$h || {},
+    alias: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.alias) || [],
+    redirect: __nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.redirect,
+    component: () => import('./ContactInfo-D3FPiAQT.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.name) ?? "admin-Customers",
+    path: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.path) ?? "/admin/Customers",
+    meta: __nuxt_page_meta$g || {},
+    alias: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.alias) || [],
+    redirect: __nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.redirect,
+    component: () => import('./Customers-Cuf8Zbt6.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.name) ?? "admin-EditProduct-id",
+    path: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.path) ?? "/admin/EditProduct/:id()",
+    meta: __nuxt_page_meta$f || {},
+    alias: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.alias) || [],
+    redirect: __nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.redirect,
+    component: () => import('./_id_-DrieU0ZN.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.name) ?? "admin",
+    path: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.path) ?? "/admin",
+    meta: __nuxt_page_meta$e || {},
+    alias: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.alias) || [],
+    redirect: __nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.redirect,
+    component: () => import('./index-B4NxqLAE.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.name) ?? "admin-ListProduct",
+    path: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.path) ?? "/admin/ListProduct",
+    meta: __nuxt_page_meta$d || {},
+    alias: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.alias) || [],
+    redirect: __nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.redirect,
+    component: () => import('./ListProduct-t3YOH2n8.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.name) ?? "admin-Locations",
+    path: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.path) ?? "/admin/Locations",
+    meta: __nuxt_page_meta$c || {},
+    alias: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.alias) || [],
+    redirect: __nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.redirect,
+    component: () => import('./Locations-m0-2bgPC.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.name) ?? "admin-Messages",
+    path: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.path) ?? "/admin/Messages",
+    meta: __nuxt_page_meta$b || {},
+    alias: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.alias) || [],
+    redirect: __nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.redirect,
+    component: () => import('./Messages-C8OVaDzA.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$a == null ? void 0 : __nuxt_page_meta$a.name) ?? "admin-Orders",
+    path: (__nuxt_page_meta$a == null ? void 0 : __nuxt_page_meta$a.path) ?? "/admin/Orders",
+    meta: __nuxt_page_meta$a || {},
+    alias: (__nuxt_page_meta$a == null ? void 0 : __nuxt_page_meta$a.alias) || [],
+    redirect: __nuxt_page_meta$a == null ? void 0 : __nuxt_page_meta$a.redirect,
+    component: () => import('./Orders-8j4DPiCC.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$9 == null ? void 0 : __nuxt_page_meta$9.name) ?? "admin-SignIn",
+    path: (__nuxt_page_meta$9 == null ? void 0 : __nuxt_page_meta$9.path) ?? "/admin/SignIn",
+    meta: __nuxt_page_meta$9 || {},
+    alias: (__nuxt_page_meta$9 == null ? void 0 : __nuxt_page_meta$9.alias) || [],
+    redirect: __nuxt_page_meta$9 == null ? void 0 : __nuxt_page_meta$9.redirect,
+    component: () => import('./SignIn-F080ssry.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$8 == null ? void 0 : __nuxt_page_meta$8.name) ?? "admin-Website",
+    path: (__nuxt_page_meta$8 == null ? void 0 : __nuxt_page_meta$8.path) ?? "/admin/Website",
+    meta: __nuxt_page_meta$8 || {},
+    alias: (__nuxt_page_meta$8 == null ? void 0 : __nuxt_page_meta$8.alias) || [],
+    redirect: __nuxt_page_meta$8 == null ? void 0 : __nuxt_page_meta$8.redirect,
+    component: () => import('./Website-C48neecc.mjs').then((m) => m.default || m)
+  },
+  {
     name: "Cart",
     path: "/Cart",
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Cart-BdNA_Nrd.mjs').then((m) => m.default || m)
+    component: () => import('./Cart-ZuKD4Wm6.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -988,7 +1144,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-C77CAK8k.mjs').then((m) => m.default || m)
+    component: () => import('./index-Svz7xENw.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -996,7 +1152,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-BN-A9aZ8.mjs').then((m) => m.default || m)
+    component: () => import('./Order-BoWoQ3BJ.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1004,7 +1160,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Photos-BkHFdoYb.mjs').then((m) => m.default || m)
+    component: () => import('./Photos-Bzt2fcCa.mjs').then((m) => m.default || m)
   },
   {
     name: "PrivacyPolicy",
@@ -1020,7 +1176,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-Iifonb3u.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-BVkWiuvK.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1028,7 +1184,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-xevwLCAd.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-LX3ehdbE.mjs').then((m) => m.default || m)
   },
   {
     name: "Search-id",
@@ -1036,7 +1192,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-DBXD_Xc4.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-C_uhOKii.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1146,11 +1302,11 @@ const globalMiddleware = [
   manifest_45route_45rule
 ];
 const namedMiddleware = {
-  "auth-product-exists": () => import('./auth-product-exists-DszajnHQ.mjs'),
-  auth: () => import('./auth-A8dPZR4k.mjs'),
-  "not-authorize": () => import('./not-authorize-CVlmTZ9S.mjs'),
-  "supplier-company": () => import('./supplierCompany-CpOzgcZ7.mjs'),
-  "validate-id-digital": () => import('./validate-id-digital-DmReItOo.mjs')
+  "auth-product-exists": () => import('./auth-product-exists-BDCjKMDa.mjs'),
+  auth: () => import('./auth-DMLJVdw4.mjs'),
+  "not-authorize": () => import('./not-authorize-DGRoc_5A.mjs'),
+  "supplier-company": () => import('./supplierCompany-B95WoqlN.mjs'),
+  "validate-id-digital": () => import('./validate-id-digital-BWtVkcUj.mjs')
 };
 const plugin = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
@@ -1355,8 +1511,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-rRF36HrR.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-B8uonc68.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-C-UMlDps.mjs').then((r) => r.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DfHOY0jW.mjs').then((r) => r.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -27175,7 +27331,7 @@ const templates_plugin_65cc21d1_ckNFhQCPRT = /* @__PURE__ */ defineNuxtPlugin((n
     }
   };
 });
-const icons = { freeFasFaMinus: faMinus, freeFasFaPlus: faPlus, freeFasFaAngleDown: faAngleDown, freeFasFaAngleUp: faAngleUp, freeFasFaLink: faLink, freeFasFaGlobe: faGlobe, freeFasFaArrowLeft: faArrowLeft, freeFasFaXmark: faXmark, freeFasFaCaretDown: faCaretDown, freeFasFaPhone: faPhone, freeFasFaLocationDot: faLocationDot, freeFasFaEnvelope: faEnvelope, freeFasFaFax: faFax, freeFasFaBox: faBox, freeFasFaEye: faEye, freeFasFaHeart: faHeart, freeFasFaMagnifyingGlass: faMagnifyingGlass, freeFasFaPowerOff: faPowerOff, freeFasFaCartShopping: faCartShopping, freeFasFaFilePdf: faFilePdf, freeFasFaSliders: faSliders, freeFasFaSnowflake: faSnowflake, freeFasFaCloudSun: faCloudSun, freeFasFaDroplet: faDroplet, freeFasFaTemperatureHigh: faTemperatureHigh, freeFasFaSun: faSun, freeFabFaFacebook: faFacebook, freeFabFaXTwitter: faXTwitter, freeFabFaLinkedin: faLinkedin, freeFabFaWhatsapp: faWhatsapp, freeFabFaInstagram: faInstagram, freeFabFaYoutube: faYoutube, freeFarFaHeart: faHeart$1, freeFarFaUser: faUser };
+const icons = { freeFasFaMinus: faMinus, freeFasFaPlus: faPlus, freeFasFaAngleDown: faAngleDown, freeFasFaAngleUp: faAngleUp, freeFasFaLink: faLink, freeFasFaGlobe: faGlobe, freeFasFaArrowLeft: faArrowLeft, freeFasFaXmark: faXmark, freeFasFaCaretDown: faCaretDown, freeFasFaPhone: faPhone, freeFasFaLocationDot: faLocationDot, freeFasFaEnvelope: faEnvelope, freeFasFaFax: faFax, freeFasFaBox: faBox, freeFasFaEye: faEye, freeFasFaHeart: faHeart, freeFasFaMagnifyingGlass: faMagnifyingGlass, freeFasFaPowerOff: faPowerOff, freeFasFaCartShopping: faCartShopping, freeFasFaFilePdf: faFilePdf, freeFasFaSliders: faSliders, freeFasFaSnowflake: faSnowflake, freeFasFaCloudSun: faCloudSun, freeFasFaDroplet: faDroplet, freeFasFaTemperatureHigh: faTemperatureHigh, freeFasFaSun: faSun, freeFasFaUpload: faUpload, freeFasFaRotateRight: faRotateRight, freeFasFaChartSimple: faChartSimple, freeFasFaList: faList, freeFasFaUsers: faUsers, freeFasFaBoxesStacked: faBoxesStacked, freeFasFaSeedling: faSeedling, freeFasFaLanguage: faLanguage, freeFasFaCheck: faCheck, freeFasFaPenToSquare: faPenToSquare, freeFasFaTrash: faTrash, freeFasFaTruck: faTruck, freeFabFaFacebook: faFacebook, freeFabFaXTwitter: faXTwitter, freeFabFaLinkedin: faLinkedin, freeFabFaWhatsapp: faWhatsapp, freeFabFaInstagram: faInstagram, freeFabFaYoutube: faYoutube, freeFarFaHeart: faHeart$1, freeFarFaUser: faUser };
 config.autoAddCss = false;
 const fontawesome_a3gDgrBaWH = /* @__PURE__ */ defineNuxtPlugin(() => {
   library.add(icons);
@@ -31105,7 +31261,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-zSJ6INO2.mjs'
+    './i18n.config-gE1gKUj_.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];
@@ -32539,8 +32695,8 @@ const intervalError = "[nuxt] `setInterval` should not be used on the server. Co
 const setInterval = () => {
   console.error(intervalError);
 };
-publicAssetsURL("/photos/nabt.png");
-publicAssetsURL("/loading/loadingnew2.svg");
+const _imports_0$1 = publicAssetsURL("/photos/nabt.png");
+const _imports_0 = publicAssetsURL("/loading/loadingnew2.svg");
 const _export_sfc = (sfc, props) => {
   const target = sfc.__vccOpts || sfc;
   for (const [key, val] of props) {
@@ -32626,7 +32782,8 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0d9a60e2"]]);
 const layouts = {
-  default: () => import('./default-DIhxCJCw.mjs').then((m) => m.default || m)
+  admin: () => import('./Admin-L2FOJGde.mjs').then((m) => m.default || m),
+  default: () => import('./default-DMujjuGI.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent$1({
   name: "LayoutLoader",
@@ -32868,7 +33025,6 @@ function hasChildrenRoutes(fork, newRoute, Component) {
   });
   return index < newRoute.matched.length - 1;
 }
-const _imports_0 = publicAssetsURL("/photos/whatsup.png");
 const _sfc_main$2 = {
   __name: "app",
   __ssrInlineRender: true,
@@ -32885,7 +33041,7 @@ const _sfc_main$2 = {
       const _component_ElementsLoader = __nuxt_component_0;
       const _component_NuxtLayout = __nuxt_component_1;
       const _component_NuxtPage = __nuxt_component_2;
-      _push(`<!--[--><div class="${ssrRenderClass([_ctx.$i18n.locale === "ar" ? "ar" : "", "whatsupp pointer"])}" data-v-1702a8ce><a${ssrRenderAttr("href", `https://wa.me/`)} target="_blank" class="mx-2" data-v-1702a8ce><img${ssrRenderAttr("src", _imports_0)} alt="" data-v-1702a8ce></a></div><div data-v-1702a8ce>`);
+      _push(`<div${ssrRenderAttrs(_attrs)} data-v-8ae1c07a>`);
       _push(ssrRenderComponent(_component_ElementsLoader, null, null, _parent));
       _push(ssrRenderComponent(_component_NuxtLayout, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -32899,7 +33055,7 @@ const _sfc_main$2 = {
         }),
         _: 1
       }, _parent));
-      _push(`</div><!--]-->`);
+      _push(`</div>`);
     };
   }
 };
@@ -32909,7 +33065,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-1702a8ce"]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-8ae1c07a"]]);
 const _sfc_main$1 = {
   __name: "error",
   __ssrInlineRender: true,
@@ -33010,5 +33166,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { BaseStyle as B, FilterService as F, PrimeVueService as P, _export_sfc as _, useRuntimeConfig as a, asyncDataDefaults as b, useNuxtApp as c, createError as d, entry$1 as default, useRequestFetch as e, fetchDefaults as f, useRouter$1 as g, hasProtocol as h, parseURL as i, joinURL as j, parseQuery as k, navigateTo as l, withoutTrailingSlash as m, nuxtLinkDefaults as n, useState as o, publicAssetsURL as p, __nuxt_component_0$1 as q, useRoute$1 as r, defineNuxtRouteMiddleware as s, useCookie as t, useI18n as u, withTrailingSlash as w };
+export { BaseStyle as B, FilterService as F, PrimeVueService as P, _export_sfc as _, useRuntimeConfig as a, asyncDataDefaults as b, useNuxtApp as c, createError as d, entry$1 as default, useRequestFetch as e, fetchDefaults as f, _imports_0 as g, useState as h, useRouter$1 as i, hasProtocol as j, joinURL as k, parseURL as l, parseQuery as m, nuxtLinkDefaults as n, navigateTo as o, publicAssetsURL as p, withoutTrailingSlash as q, useRoute$1 as r, _imports_0$1 as s, __nuxt_component_0$1 as t, useI18n as u, defineNuxtRouteMiddleware as v, withTrailingSlash as w, useCookie as x };
 //# sourceMappingURL=server.mjs.map
