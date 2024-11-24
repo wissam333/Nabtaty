@@ -1084,7 +1084,7 @@ const _routes = [
     meta: __nuxt_page_meta$o || {},
     alias: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.alias) || [],
     redirect: __nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.redirect,
-    component: () => import('./Customers-BNtegYRP.mjs').then((m) => m.default || m)
+    component: () => import('./Customers-adrm1l-K.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.name) ?? "admin-EditProduct-id",
@@ -1252,7 +1252,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-Dp3GGqfM.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-BQWoXSZ_.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1595,8 +1595,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-D3h3ZCWa.mjs').then((r2) => r2.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-BqsbBHvL.mjs').then((r2) => r2.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-DIV24MZH.mjs').then((r2) => r2.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-C987T3Rz.mjs').then((r2) => r2.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -33144,20 +33144,20 @@ const _sfc_main$2 = {
       }, 1e4);
     };
     onUnmounted(() => {
-      (void 0).removeEventListener("keypress", handleKeypress);
+      (void 0).removeEventListener("keydown", handleKeypress);
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_ElementsLoader = __nuxt_component_0;
       const _component_NuxtLayout = __nuxt_component_1;
       const _component_NuxtPage = __nuxt_component_2;
-      _push(`<div${ssrRenderAttrs(_attrs)} data-v-16995210>`);
+      _push(`<div${ssrRenderAttrs(_attrs)} data-v-b8ed4d65>`);
       if (unref(s)) {
-        _push(`<div class="o" data-v-16995210></div>`);
+        _push(`<div class="o" data-v-b8ed4d65></div>`);
       } else {
         _push(`<!---->`);
       }
       if (unref(s)) {
-        _push(`<div class="k" data-v-16995210><div class="tenor-gif-embed kono" data-postid="10495378" data-share-method="host" data-aspect-ratio="0.75" data-width="100%" data-v-16995210><a href="https://tenor.com/view/konosuba-dance-dancing-anime-gif-10495378" data-v-16995210> Konosuba Dance GIF </a> from <a href="https://tenor.com/search/konosuba-gifs" data-v-16995210>Konosuba GIFs</a></div></div>`);
+        _push(`<div class="k" data-v-b8ed4d65><div class="tenor-gif-embed kono" data-postid="10495378" data-share-method="host" data-aspect-ratio="0.75" data-width="100%" data-v-b8ed4d65><a href="https://tenor.com/view/konosuba-dance-dancing-anime-gif-10495378" data-v-b8ed4d65> Konosuba Dance GIF </a> from <a href="https://tenor.com/search/konosuba-gifs" data-v-b8ed4d65>Konosuba GIFs</a></div></div>`);
       } else {
         _push(`<!---->`);
       }
@@ -33184,7 +33184,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-16995210"]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-b8ed4d65"]]);
 const _sfc_main$1 = {
   __name: "error",
   __ssrInlineRender: true,
