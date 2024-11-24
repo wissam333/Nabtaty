@@ -19,7 +19,8 @@
     "primevue": "^4.0.4",
     "vue": "^3.4.21",
     "vue-flux": "^7.0.0-beta.6",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",

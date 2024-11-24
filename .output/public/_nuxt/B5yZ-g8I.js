@@ -1,1 +1,0 @@
-import{a8 as a,i as s,y as u,n as i,S as o}from"./Cvcrh2Yh.js";import"./BUNOv-RT.js";const c=a(()=>{{const e=s(),t=u().value;if(!e.value.isAuthenticated)return i("/newsite/auth/login",{redirectCode:301});if(!t.items.length&&t.totalQty<0||t.totalQty==0)return o().back()}});export{c as default};

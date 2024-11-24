@@ -9,7 +9,7 @@ import { isClient, setAttributes, setAttribute, isExist } from '@primeuix/utils/
 import { EventBus } from '@primeuix/utils/eventbus';
 import { mergeKeys } from '@primeuix/utils';
 import { config, library } from '@fortawesome/fontawesome-svg-core';
-import { faMinus, faPlus, faAngleDown, faAngleUp, faLink, faGlobe, faArrowLeft, faXmark, faCaretDown, faPhone, faLocationDot, faEnvelope, faFax, faBox, faEye, faHeart, faMagnifyingGlass, faPowerOff, faCartShopping, faFilePdf, faSliders, faSnowflake, faCloudSun, faDroplet, faTemperatureHigh, faSun, faUpload, faRotateRight, faChartSimple, faList, faUsers, faBoxesStacked, faSeedling, faLanguage, faCheck, faPenToSquare, faTrash, faTruck } from '@fortawesome/free-solid-svg-icons';
+import { faMinus, faPlus, faAngleDown, faAngleUp, faLink, faGlobe, faArrowLeft, faXmark, faCaretDown, faPhone, faLocationDot, faEnvelope, faFax, faBox, faEye, faHeart, faMagnifyingGlass, faPowerOff, faCartShopping, faFilePdf, faSliders, faSnowflake, faCloudSun, faDroplet, faTemperatureHigh, faSun, faUpload, faRotateRight, faChartSimple, faList, faUsers, faBoxesStacked, faSeedling, faLanguage, faCheck, faPenToSquare, faTrash, faTruck, faHandsHolding, faSquare, faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faXTwitter, faLinkedin, faWhatsapp, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faHeart as faHeart$1, faUser } from '@fortawesome/free-regular-svg-icons';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderStyle, ssrInterpolate, ssrRenderSuspense, ssrRenderVNode } from 'vue/server-renderer';
@@ -536,7 +536,7 @@ async function applyPlugins(nuxtApp, plugins2) {
         }
       });
       if (plugin2.parallel) {
-        parallels.push(promise.catch((e) => errors.push(e)));
+        parallels.push(promise.catch((e2) => errors.push(e2)));
       } else {
         await promise;
       }
@@ -730,8 +730,8 @@ const createError = (error) => {
   return nuxtError;
 };
 version$1.startsWith("3");
-function resolveUnref(r) {
-  return typeof r === "function" ? r() : unref(r);
+function resolveUnref(r2) {
+  return typeof r2 === "function" ? r2() : unref(r2);
 }
 function resolveUnrefHeadInput(ref2, lastKey = "") {
   if (ref2 instanceof Promise)
@@ -740,7 +740,7 @@ function resolveUnrefHeadInput(ref2, lastKey = "") {
   if (!ref2 || !root)
     return root;
   if (Array.isArray(root))
-    return root.map((r) => resolveUnrefHeadInput(r, lastKey));
+    return root.map((r2) => resolveUnrefHeadInput(r2, lastKey));
   if (typeof root === "object") {
     return Object.fromEntries(
       Object.entries(root).map(([k, v]) => {
@@ -790,8 +790,8 @@ function clientUseHead(head, input, options2 = {}) {
     resolvedInput.value = deactivated.value ? {} : resolveUnrefHeadInput(input);
   });
   const entry2 = head.push(resolvedInput.value, options2);
-  watch(resolvedInput, (e) => {
-    entry2.patch(e);
+  watch(resolvedInput, (e2) => {
+    entry2.patch(e2);
   });
   getCurrentInstance$1();
   return entry2;
@@ -881,11 +881,11 @@ function createContext(opts = {}) {
       const onLeave = () => currentInstance === instance ? onRestore : void 0;
       asyncHandlers.add(onLeave);
       try {
-        const r = als ? als.run(instance, callback) : callback();
+        const r2 = als ? als.run(instance, callback) : callback();
         if (!isSingleton) {
           currentInstance = void 0;
         }
-        return await r;
+        return await r2;
       } finally {
         asyncHandlers.delete(onLeave);
       }
@@ -932,9 +932,9 @@ function executeAsync(function_) {
   return [awaitable, restore];
 }
 const interpolatePath = (route, match) => {
-  return match.path.replace(/(:\w+)\([^)]+\)/g, "$1").replace(/(:\w+)[?+*]/g, "$1").replace(/:\w+/g, (r) => {
+  return match.path.replace(/(:\w+)\([^)]+\)/g, "$1").replace(/(:\w+)[?+*]/g, "$1").replace(/:\w+/g, (r2) => {
     var _a2;
-    return ((_a2 = route.params[r.slice(1)]) == null ? void 0 : _a2.toString()) || "";
+    return ((_a2 = route.params[r2.slice(1)]) == null ? void 0 : _a2.toString()) || "";
   });
 };
 const generateRouteKey$1 = (routeProps, override) => {
@@ -965,6 +965,38 @@ async function getRouteRules(url) {
     return defu({}, ..._routeRulesMatcher.matchAll(url).reverse());
   }
 }
+const __nuxt_page_meta$s = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$r = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$q = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$p = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$o = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$n = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$m = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$l = {
+  layout: "admin"
+  // This will disable the default layout
+};
 const __nuxt_page_meta$k = {
   layout: "admin"
   // This will disable the default layout
@@ -986,7 +1018,7 @@ const __nuxt_page_meta$g = {
   // This will disable the default layout
 };
 const __nuxt_page_meta$f = {
-  layout: "admin"
+  layout: false
   // This will disable the default layout
 };
 const __nuxt_page_meta$e = {
@@ -1005,18 +1037,6 @@ const __nuxt_page_meta$b = {
   layout: "admin"
   // This will disable the default layout
 };
-const __nuxt_page_meta$a = {
-  layout: "admin"
-  // This will disable the default layout
-};
-const __nuxt_page_meta$9 = {
-  layout: false
-  // This will disable the default layout
-};
-const __nuxt_page_meta$8 = {
-  layout: "admin"
-  // This will disable the default layout
-};
 const _routes = [
   {
     name: "About",
@@ -1027,108 +1047,148 @@ const _routes = [
     component: () => import('./About-B8AXN0TD.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.name) ?? "admin-About",
-    path: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.path) ?? "/admin/About",
+    name: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.name) ?? "admin-About",
+    path: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.path) ?? "/admin/About",
+    meta: __nuxt_page_meta$s || {},
+    alias: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.alias) || [],
+    redirect: __nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.redirect,
+    component: () => import('./About-Danz-69U.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.name) ?? "admin-AddProduct",
+    path: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.path) ?? "/admin/AddProduct",
+    meta: __nuxt_page_meta$r || {},
+    alias: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.alias) || [],
+    redirect: __nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.redirect,
+    component: () => import('./AddProduct-DSeMIRqz.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.name) ?? "admin-Category",
+    path: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.path) ?? "/admin/Category",
+    meta: __nuxt_page_meta$q || {},
+    alias: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.alias) || [],
+    redirect: __nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.redirect,
+    component: () => import('./Category-k40wYEw6.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.name) ?? "admin-ContactInfo",
+    path: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.path) ?? "/admin/ContactInfo",
+    meta: __nuxt_page_meta$p || {},
+    alias: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.alias) || [],
+    redirect: __nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.redirect,
+    component: () => import('./ContactInfo-3Ghu9GON.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.name) ?? "admin-Customers",
+    path: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.path) ?? "/admin/Customers",
+    meta: __nuxt_page_meta$o || {},
+    alias: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.alias) || [],
+    redirect: __nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.redirect,
+    component: () => import('./Customers-BNtegYRP.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.name) ?? "admin-EditProduct-id",
+    path: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.path) ?? "/admin/EditProduct/:id()",
+    meta: __nuxt_page_meta$n || {},
+    alias: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.alias) || [],
+    redirect: __nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.redirect,
+    component: () => import('./_id_-pG8dvh-t.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.name) ?? "admin",
+    path: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.path) ?? "/admin",
+    meta: __nuxt_page_meta$m || {},
+    alias: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.alias) || [],
+    redirect: __nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.redirect,
+    component: () => import('./index-VPmEA9Gh.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.name) ?? "admin-ListProduct",
+    path: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.path) ?? "/admin/ListProduct",
+    meta: __nuxt_page_meta$l || {},
+    alias: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.alias) || [],
+    redirect: __nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.redirect,
+    component: () => import('./ListProduct-ZS5kbVS9.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.name) ?? "admin-Locations",
+    path: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.path) ?? "/admin/Locations",
     meta: __nuxt_page_meta$k || {},
     alias: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.alias) || [],
     redirect: __nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.redirect,
-    component: () => import('./About-DbB1jl7w.mjs').then((m) => m.default || m)
+    component: () => import('./Locations-zjOVZ6Fa.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.name) ?? "admin-AddProduct",
-    path: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.path) ?? "/admin/AddProduct",
+    name: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.name) ?? "admin-Logo",
+    path: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.path) ?? "/admin/Logo",
     meta: __nuxt_page_meta$j || {},
     alias: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.alias) || [],
     redirect: __nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.redirect,
-    component: () => import('./AddProduct-Bl47AVEC.mjs').then((m) => m.default || m)
+    component: () => import('./Logo-CVQWTcxi.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.name) ?? "admin-Category",
-    path: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.path) ?? "/admin/Category",
+    name: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.name) ?? "admin-Messages",
+    path: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.path) ?? "/admin/Messages",
     meta: __nuxt_page_meta$i || {},
     alias: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.alias) || [],
     redirect: __nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.redirect,
-    component: () => import('./Category-wCyRQo9H.mjs').then((m) => m.default || m)
+    component: () => import('./Messages-Dnb2UMy-.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.name) ?? "admin-ContactInfo",
-    path: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.path) ?? "/admin/ContactInfo",
+    name: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.name) ?? "admin-Orders",
+    path: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.path) ?? "/admin/Orders",
     meta: __nuxt_page_meta$h || {},
     alias: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.alias) || [],
     redirect: __nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.redirect,
-    component: () => import('./ContactInfo-D3FPiAQT.mjs').then((m) => m.default || m)
+    component: () => import('./Orders-B93h7cOz.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.name) ?? "admin-Customers",
-    path: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.path) ?? "/admin/Customers",
+    name: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.name) ?? "admin-PrivacyPolicy",
+    path: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.path) ?? "/admin/PrivacyPolicy",
     meta: __nuxt_page_meta$g || {},
     alias: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.alias) || [],
     redirect: __nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.redirect,
-    component: () => import('./Customers-Cuf8Zbt6.mjs').then((m) => m.default || m)
+    component: () => import('./PrivacyPolicy-CMeHBmQZ.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.name) ?? "admin-EditProduct-id",
-    path: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.path) ?? "/admin/EditProduct/:id()",
+    name: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.name) ?? "admin-SignIn",
+    path: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.path) ?? "/admin/SignIn",
     meta: __nuxt_page_meta$f || {},
     alias: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.alias) || [],
     redirect: __nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.redirect,
-    component: () => import('./_id_-DrieU0ZN.mjs').then((m) => m.default || m)
-  },
-  {
-    name: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.name) ?? "admin",
-    path: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.path) ?? "/admin",
-    meta: __nuxt_page_meta$e || {},
-    alias: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.alias) || [],
-    redirect: __nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.redirect,
-    component: () => import('./index-B4NxqLAE.mjs').then((m) => m.default || m)
-  },
-  {
-    name: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.name) ?? "admin-ListProduct",
-    path: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.path) ?? "/admin/ListProduct",
-    meta: __nuxt_page_meta$d || {},
-    alias: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.alias) || [],
-    redirect: __nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.redirect,
-    component: () => import('./ListProduct-t3YOH2n8.mjs').then((m) => m.default || m)
-  },
-  {
-    name: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.name) ?? "admin-Locations",
-    path: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.path) ?? "/admin/Locations",
-    meta: __nuxt_page_meta$c || {},
-    alias: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.alias) || [],
-    redirect: __nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.redirect,
-    component: () => import('./Locations-m0-2bgPC.mjs').then((m) => m.default || m)
-  },
-  {
-    name: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.name) ?? "admin-Messages",
-    path: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.path) ?? "/admin/Messages",
-    meta: __nuxt_page_meta$b || {},
-    alias: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.alias) || [],
-    redirect: __nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.redirect,
-    component: () => import('./Messages-C8OVaDzA.mjs').then((m) => m.default || m)
-  },
-  {
-    name: (__nuxt_page_meta$a == null ? void 0 : __nuxt_page_meta$a.name) ?? "admin-Orders",
-    path: (__nuxt_page_meta$a == null ? void 0 : __nuxt_page_meta$a.path) ?? "/admin/Orders",
-    meta: __nuxt_page_meta$a || {},
-    alias: (__nuxt_page_meta$a == null ? void 0 : __nuxt_page_meta$a.alias) || [],
-    redirect: __nuxt_page_meta$a == null ? void 0 : __nuxt_page_meta$a.redirect,
-    component: () => import('./Orders-8j4DPiCC.mjs').then((m) => m.default || m)
-  },
-  {
-    name: (__nuxt_page_meta$9 == null ? void 0 : __nuxt_page_meta$9.name) ?? "admin-SignIn",
-    path: (__nuxt_page_meta$9 == null ? void 0 : __nuxt_page_meta$9.path) ?? "/admin/SignIn",
-    meta: __nuxt_page_meta$9 || {},
-    alias: (__nuxt_page_meta$9 == null ? void 0 : __nuxt_page_meta$9.alias) || [],
-    redirect: __nuxt_page_meta$9 == null ? void 0 : __nuxt_page_meta$9.redirect,
     component: () => import('./SignIn-F080ssry.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$8 == null ? void 0 : __nuxt_page_meta$8.name) ?? "admin-Website",
-    path: (__nuxt_page_meta$8 == null ? void 0 : __nuxt_page_meta$8.path) ?? "/admin/Website",
-    meta: __nuxt_page_meta$8 || {},
-    alias: (__nuxt_page_meta$8 == null ? void 0 : __nuxt_page_meta$8.alias) || [],
-    redirect: __nuxt_page_meta$8 == null ? void 0 : __nuxt_page_meta$8.redirect,
-    component: () => import('./Website-C48neecc.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.name) ?? "admin-Social",
+    path: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.path) ?? "/admin/Social",
+    meta: __nuxt_page_meta$e || {},
+    alias: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.alias) || [],
+    redirect: __nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.redirect,
+    component: () => import('./Social-BbQ2MUce.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.name) ?? "admin-SubCategory",
+    path: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.path) ?? "/admin/SubCategory",
+    meta: __nuxt_page_meta$d || {},
+    alias: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.alias) || [],
+    redirect: __nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.redirect,
+    component: () => import('./SubCategory-Brqb399s.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.name) ?? "admin-Support",
+    path: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.path) ?? "/admin/Support",
+    meta: __nuxt_page_meta$c || {},
+    alias: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.alias) || [],
+    redirect: __nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.redirect,
+    component: () => import('./Support-BxpWWCeg.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.name) ?? "admin-Website",
+    path: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.path) ?? "/admin/Website",
+    meta: __nuxt_page_meta$b || {},
+    alias: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.alias) || [],
+    redirect: __nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.redirect,
+    component: () => import('./Website-DQPfdvu6.mjs').then((m) => m.default || m)
   },
   {
     name: "Cart",
@@ -1136,7 +1196,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Cart-ZuKD4Wm6.mjs').then((m) => m.default || m)
+    component: () => import('./Cart-Bnj1H8ca.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Fav",
+    path: "/Fav",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./Fav-CJKuGudJ.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -1144,7 +1212,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-Svz7xENw.mjs').then((m) => m.default || m)
+    component: () => import('./index-6MhcKE2Q.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Newest",
+    path: "/Newest",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./Newest-CHeXxNh2.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -1152,7 +1228,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-BoWoQ3BJ.mjs').then((m) => m.default || m)
+    component: () => import('./Order-BHgnaQJP.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1168,7 +1244,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./PrivacyPolicy-_E0hGGud.mjs').then((m) => m.default || m)
+    component: () => import('./PrivacyPolicy-BUBBBKlX.mjs').then((m) => m.default || m)
   },
   {
     name: "Product-id",
@@ -1176,7 +1252,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-BVkWiuvK.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-Dp3GGqfM.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1184,7 +1260,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-LX3ehdbE.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-CBR4cFr_.mjs').then((m) => m.default || m)
   },
   {
     name: "Search-id",
@@ -1192,7 +1268,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-C_uhOKii.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-C2KLK8w4.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Support",
+    path: "/Support",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./Support-C6cqzYMk.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1203,9 +1287,9 @@ const _wrapIf = (component, props, slots) => {
   } };
 };
 function generateRouteKey(route) {
-  const source = (route == null ? void 0 : route.meta.key) ?? route.path.replace(/(:\w+)\([^)]+\)/g, "$1").replace(/(:\w+)[?+*]/g, "$1").replace(/:\w+/g, (r) => {
+  const source = (route == null ? void 0 : route.meta.key) ?? route.path.replace(/(:\w+)\([^)]+\)/g, "$1").replace(/(:\w+)[?+*]/g, "$1").replace(/:\w+/g, (r2) => {
     var _a2;
-    return ((_a2 = route.params[r.slice(1)]) == null ? void 0 : _a2.toString()) || "";
+    return ((_a2 = route.params[r2.slice(1)]) == null ? void 0 : _a2.toString()) || "";
   });
   return typeof source === "function" ? source(route) : source;
 }
@@ -1422,7 +1506,7 @@ const plugin = /* @__PURE__ */ defineNuxtPlugin({
           }
         }
         for (const entry2 of middlewareEntries) {
-          const middleware = typeof entry2 === "string" ? nuxtApp._middleware.named[entry2] || await ((_b2 = namedMiddleware[entry2]) == null ? void 0 : _b2.call(namedMiddleware).then((r) => r.default || r)) : entry2;
+          const middleware = typeof entry2 === "string" ? nuxtApp._middleware.named[entry2] || await ((_b2 = namedMiddleware[entry2]) == null ? void 0 : _b2.call(namedMiddleware).then((r2) => r2.default || r2)) : entry2;
           if (!middleware) {
             throw new Error(`Unknown route middleware: '${entry2}'.`);
           }
@@ -1511,8 +1595,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-C-UMlDps.mjs').then((r) => r.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-DfHOY0jW.mjs').then((r) => r.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-D3h3ZCWa.mjs').then((r2) => r2.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-BqsbBHvL.mjs').then((r2) => r2.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -1544,29 +1628,29 @@ var FilterMatchMode = {
   DATE_BEFORE: "dateBefore",
   DATE_AFTER: "dateAfter"
 };
-function _createForOfIteratorHelper(r, e) {
-  var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+function _createForOfIteratorHelper(r2, e2) {
+  var t = "undefined" != typeof Symbol && r2[Symbol.iterator] || r2["@@iterator"];
   if (!t) {
-    if (Array.isArray(r) || (t = _unsupportedIterableToArray$1(r)) || e) {
-      t && (r = t);
+    if (Array.isArray(r2) || (t = _unsupportedIterableToArray$1(r2)) || e2) {
+      t && (r2 = t);
       var _n = 0, F = function F2() {
       };
       return { s: F, n: function n() {
-        return _n >= r.length ? { done: true } : { done: false, value: r[_n++] };
-      }, e: function e2(r2) {
-        throw r2;
+        return _n >= r2.length ? { done: true } : { done: false, value: r2[_n++] };
+      }, e: function e22(r22) {
+        throw r22;
       }, f: F };
     }
     throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
   }
   var o, a = true, u = false;
   return { s: function s() {
-    t = t.call(r);
+    t = t.call(r2);
   }, n: function n() {
-    var r2 = t.next();
-    return a = r2.done, r2;
-  }, e: function e2(r2) {
-    u = true, o = r2;
+    var r22 = t.next();
+    return a = r22.done, r22;
+  }, e: function e22(r22) {
+    u = true, o = r22;
   }, f: function f() {
     try {
       a || null == t["return"] || t["return"]();
@@ -1576,18 +1660,18 @@ function _createForOfIteratorHelper(r, e) {
     }
   } };
 }
-function _unsupportedIterableToArray$1(r, a) {
-  if (r) {
-    if ("string" == typeof r)
-      return _arrayLikeToArray$1(r, a);
-    var t = {}.toString.call(r).slice(8, -1);
-    return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray$1(r, a) : void 0;
+function _unsupportedIterableToArray$1(r2, a) {
+  if (r2) {
+    if ("string" == typeof r2)
+      return _arrayLikeToArray$1(r2, a);
+    var t = {}.toString.call(r2).slice(8, -1);
+    return "Object" === t && r2.constructor && (t = r2.constructor.name), "Map" === t || "Set" === t ? Array.from(r2) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray$1(r2, a) : void 0;
   }
 }
-function _arrayLikeToArray$1(r, a) {
-  (null == a || a > r.length) && (a = r.length);
-  for (var e = 0, n = Array(a); e < a; e++)
-    n[e] = r[e];
+function _arrayLikeToArray$1(r2, a) {
+  (null == a || a > r2.length) && (a = r2.length);
+  for (var e2 = 0, n = Array(a); e2 < a; e2++)
+    n[e2] = r2[e2];
   return n;
 }
 var FilterService = {
@@ -1819,45 +1903,45 @@ function _typeof$2(o) {
     return o2 && "function" == typeof Symbol && o2.constructor === Symbol && o2 !== Symbol.prototype ? "symbol" : typeof o2;
   }, _typeof$2(o);
 }
-function ownKeys$2(e, r) {
-  var t = Object.keys(e);
+function ownKeys$2(e2, r2) {
+  var t = Object.keys(e2);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    r && (o = o.filter(function(r2) {
-      return Object.getOwnPropertyDescriptor(e, r2).enumerable;
+    var o = Object.getOwnPropertySymbols(e2);
+    r2 && (o = o.filter(function(r22) {
+      return Object.getOwnPropertyDescriptor(e2, r22).enumerable;
     })), t.push.apply(t, o);
   }
   return t;
 }
-function _objectSpread$2(e) {
-  for (var r = 1; r < arguments.length; r++) {
-    var t = null != arguments[r] ? arguments[r] : {};
-    r % 2 ? ownKeys$2(Object(t), true).forEach(function(r2) {
-      _defineProperty$2(e, r2, t[r2]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys$2(Object(t)).forEach(function(r2) {
-      Object.defineProperty(e, r2, Object.getOwnPropertyDescriptor(t, r2));
+function _objectSpread$2(e2) {
+  for (var r2 = 1; r2 < arguments.length; r2++) {
+    var t = null != arguments[r2] ? arguments[r2] : {};
+    r2 % 2 ? ownKeys$2(Object(t), true).forEach(function(r22) {
+      _defineProperty$2(e2, r22, t[r22]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e2, Object.getOwnPropertyDescriptors(t)) : ownKeys$2(Object(t)).forEach(function(r22) {
+      Object.defineProperty(e2, r22, Object.getOwnPropertyDescriptor(t, r22));
     });
   }
-  return e;
+  return e2;
 }
-function _defineProperty$2(e, r, t) {
-  return (r = _toPropertyKey$2(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: true, configurable: true, writable: true }) : e[r] = t, e;
+function _defineProperty$2(e2, r2, t) {
+  return (r2 = _toPropertyKey$2(r2)) in e2 ? Object.defineProperty(e2, r2, { value: t, enumerable: true, configurable: true, writable: true }) : e2[r2] = t, e2;
 }
 function _toPropertyKey$2(t) {
   var i = _toPrimitive$2(t, "string");
   return "symbol" == _typeof$2(i) ? i : i + "";
 }
-function _toPrimitive$2(t, r) {
+function _toPrimitive$2(t, r2) {
   if ("object" != _typeof$2(t) || !t)
     return t;
-  var e = t[Symbol.toPrimitive];
-  if (void 0 !== e) {
-    var i = e.call(t, r || "default");
+  var e2 = t[Symbol.toPrimitive];
+  if (void 0 !== e2) {
+    var i = e2.call(t, r2 || "default");
     if ("object" != _typeof$2(i))
       return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return ("string" === r ? String : Number)(t);
+  return ("string" === r2 ? String : Number)(t);
 }
 function tryOnMounted(fn) {
   var sync = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : true;
@@ -1940,38 +2024,38 @@ function _typeof$1(o) {
     return o2 && "function" == typeof Symbol && o2.constructor === Symbol && o2 !== Symbol.prototype ? "symbol" : typeof o2;
   }, _typeof$1(o);
 }
-function _slicedToArray(r, e) {
-  return _arrayWithHoles(r) || _iterableToArrayLimit(r, e) || _unsupportedIterableToArray(r, e) || _nonIterableRest();
+function _slicedToArray(r2, e2) {
+  return _arrayWithHoles(r2) || _iterableToArrayLimit(r2, e2) || _unsupportedIterableToArray(r2, e2) || _nonIterableRest();
 }
 function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
-function _unsupportedIterableToArray(r, a) {
-  if (r) {
-    if ("string" == typeof r)
-      return _arrayLikeToArray(r, a);
-    var t = {}.toString.call(r).slice(8, -1);
-    return "Object" === t && r.constructor && (t = r.constructor.name), "Map" === t || "Set" === t ? Array.from(r) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r, a) : void 0;
+function _unsupportedIterableToArray(r2, a) {
+  if (r2) {
+    if ("string" == typeof r2)
+      return _arrayLikeToArray(r2, a);
+    var t = {}.toString.call(r2).slice(8, -1);
+    return "Object" === t && r2.constructor && (t = r2.constructor.name), "Map" === t || "Set" === t ? Array.from(r2) : "Arguments" === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t) ? _arrayLikeToArray(r2, a) : void 0;
   }
 }
-function _arrayLikeToArray(r, a) {
-  (null == a || a > r.length) && (a = r.length);
-  for (var e = 0, n = Array(a); e < a; e++)
-    n[e] = r[e];
+function _arrayLikeToArray(r2, a) {
+  (null == a || a > r2.length) && (a = r2.length);
+  for (var e2 = 0, n = Array(a); e2 < a; e2++)
+    n[e2] = r2[e2];
   return n;
 }
-function _iterableToArrayLimit(r, l) {
-  var t = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+function _iterableToArrayLimit(r2, l) {
+  var t = null == r2 ? null : "undefined" != typeof Symbol && r2[Symbol.iterator] || r2["@@iterator"];
   if (null != t) {
-    var e, n, i, u, a = [], f = true, o = false;
+    var e2, n, i, u, a = [], f = true, o = false;
     try {
-      if (i = (t = t.call(r)).next, 0 === l)
+      if (i = (t = t.call(r2)).next, 0 === l)
         ;
       else
-        for (; !(f = (e = i.call(t)).done) && (a.push(e.value), a.length !== l); f = true)
+        for (; !(f = (e2 = i.call(t)).done) && (a.push(e2.value), a.length !== l); f = true)
           ;
-    } catch (r2) {
-      o = true, n = r2;
+    } catch (r3) {
+      o = true, n = r3;
     } finally {
       try {
         if (!f && null != t["return"] && (u = t["return"](), Object(u) !== u))
@@ -1984,49 +2068,49 @@ function _iterableToArrayLimit(r, l) {
     return a;
   }
 }
-function _arrayWithHoles(r) {
-  if (Array.isArray(r))
-    return r;
+function _arrayWithHoles(r2) {
+  if (Array.isArray(r2))
+    return r2;
 }
-function ownKeys$1(e, r) {
-  var t = Object.keys(e);
+function ownKeys$1(e2, r2) {
+  var t = Object.keys(e2);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    r && (o = o.filter(function(r2) {
-      return Object.getOwnPropertyDescriptor(e, r2).enumerable;
+    var o = Object.getOwnPropertySymbols(e2);
+    r2 && (o = o.filter(function(r3) {
+      return Object.getOwnPropertyDescriptor(e2, r3).enumerable;
     })), t.push.apply(t, o);
   }
   return t;
 }
-function _objectSpread$1(e) {
-  for (var r = 1; r < arguments.length; r++) {
-    var t = null != arguments[r] ? arguments[r] : {};
-    r % 2 ? ownKeys$1(Object(t), true).forEach(function(r2) {
-      _defineProperty$1(e, r2, t[r2]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys$1(Object(t)).forEach(function(r2) {
-      Object.defineProperty(e, r2, Object.getOwnPropertyDescriptor(t, r2));
+function _objectSpread$1(e2) {
+  for (var r2 = 1; r2 < arguments.length; r2++) {
+    var t = null != arguments[r2] ? arguments[r2] : {};
+    r2 % 2 ? ownKeys$1(Object(t), true).forEach(function(r3) {
+      _defineProperty$1(e2, r3, t[r3]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e2, Object.getOwnPropertyDescriptors(t)) : ownKeys$1(Object(t)).forEach(function(r3) {
+      Object.defineProperty(e2, r3, Object.getOwnPropertyDescriptor(t, r3));
     });
   }
-  return e;
+  return e2;
 }
-function _defineProperty$1(e, r, t) {
-  return (r = _toPropertyKey$1(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: true, configurable: true, writable: true }) : e[r] = t, e;
+function _defineProperty$1(e2, r2, t) {
+  return (r2 = _toPropertyKey$1(r2)) in e2 ? Object.defineProperty(e2, r2, { value: t, enumerable: true, configurable: true, writable: true }) : e2[r2] = t, e2;
 }
 function _toPropertyKey$1(t) {
   var i = _toPrimitive$1(t, "string");
   return "symbol" == _typeof$1(i) ? i : i + "";
 }
-function _toPrimitive$1(t, r) {
+function _toPrimitive$1(t, r2) {
   if ("object" != _typeof$1(t) || !t)
     return t;
-  var e = t[Symbol.toPrimitive];
-  if (void 0 !== e) {
-    var i = e.call(t, r || "default");
+  var e2 = t[Symbol.toPrimitive];
+  if (void 0 !== e2) {
+    var i = e2.call(t, r2 || "default");
     if ("object" != _typeof$1(i))
       return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return ("string" === r ? String : Number)(t);
+  return ("string" === r2 ? String : Number)(t);
 }
 var theme = function theme2(_ref) {
   var dt2 = _ref.dt;
@@ -2135,45 +2219,45 @@ function _typeof(o) {
     return o2 && "function" == typeof Symbol && o2.constructor === Symbol && o2 !== Symbol.prototype ? "symbol" : typeof o2;
   }, _typeof(o);
 }
-function ownKeys(e, r) {
-  var t = Object.keys(e);
+function ownKeys(e2, r2) {
+  var t = Object.keys(e2);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    r && (o = o.filter(function(r2) {
-      return Object.getOwnPropertyDescriptor(e, r2).enumerable;
+    var o = Object.getOwnPropertySymbols(e2);
+    r2 && (o = o.filter(function(r3) {
+      return Object.getOwnPropertyDescriptor(e2, r3).enumerable;
     })), t.push.apply(t, o);
   }
   return t;
 }
-function _objectSpread(e) {
-  for (var r = 1; r < arguments.length; r++) {
-    var t = null != arguments[r] ? arguments[r] : {};
-    r % 2 ? ownKeys(Object(t), true).forEach(function(r2) {
-      _defineProperty(e, r2, t[r2]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r2) {
-      Object.defineProperty(e, r2, Object.getOwnPropertyDescriptor(t, r2));
+function _objectSpread(e2) {
+  for (var r2 = 1; r2 < arguments.length; r2++) {
+    var t = null != arguments[r2] ? arguments[r2] : {};
+    r2 % 2 ? ownKeys(Object(t), true).forEach(function(r3) {
+      _defineProperty(e2, r3, t[r3]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e2, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function(r3) {
+      Object.defineProperty(e2, r3, Object.getOwnPropertyDescriptor(t, r3));
     });
   }
-  return e;
+  return e2;
 }
-function _defineProperty(e, r, t) {
-  return (r = _toPropertyKey(r)) in e ? Object.defineProperty(e, r, { value: t, enumerable: true, configurable: true, writable: true }) : e[r] = t, e;
+function _defineProperty(e2, r2, t) {
+  return (r2 = _toPropertyKey(r2)) in e2 ? Object.defineProperty(e2, r2, { value: t, enumerable: true, configurable: true, writable: true }) : e2[r2] = t, e2;
 }
 function _toPropertyKey(t) {
   var i = _toPrimitive(t, "string");
   return "symbol" == _typeof(i) ? i : i + "";
 }
-function _toPrimitive(t, r) {
+function _toPrimitive(t, r2) {
   if ("object" != _typeof(t) || !t)
     return t;
-  var e = t[Symbol.toPrimitive];
-  if (void 0 !== e) {
-    var i = e.call(t, r || "default");
+  var e2 = t[Symbol.toPrimitive];
+  if (void 0 !== e2) {
+    var i = e2.call(t, r2 || "default");
     if ("object" != _typeof(i))
       return i;
     throw new TypeError("@@toPrimitive must return a primitive value.");
   }
-  return ("string" === r ? String : Number)(t);
+  return ("string" === r2 ? String : Number)(t);
 }
 var defaultOptions = {
   ripple: false,
@@ -2761,8 +2845,8 @@ const onRE = /^on[^a-z]/;
 const isOn = (key) => onRE.test(key);
 const bubblingEvents = ["onAfterscriptexecute", "onAnimationcancel", "onAnimationend", "onAnimationiteration", "onAnimationstart", "onAuxclick", "onBeforeinput", "onBeforescriptexecute", "onChange", "onClick", "onCompositionend", "onCompositionstart", "onCompositionupdate", "onContextmenu", "onCopy", "onCut", "onDblclick", "onFocusin", "onFocusout", "onFullscreenchange", "onFullscreenerror", "onGesturechange", "onGestureend", "onGesturestart", "onGotpointercapture", "onInput", "onKeydown", "onKeypress", "onKeyup", "onLostpointercapture", "onMousedown", "onMousemove", "onMouseout", "onMouseover", "onMouseup", "onMousewheel", "onPaste", "onPointercancel", "onPointerdown", "onPointerenter", "onPointerleave", "onPointermove", "onPointerout", "onPointerover", "onPointerup", "onReset", "onSelect", "onSubmit", "onTouchcancel", "onTouchend", "onTouchmove", "onTouchstart", "onTransitioncancel", "onTransitionend", "onTransitionrun", "onTransitionstart", "onWheel"];
 const compositionIgnoreKeys = ["ArrowUp", "ArrowDown", "ArrowRight", "ArrowLeft", "Enter", "Escape", "Tab", " "];
-function isComposingIgnoreKey(e) {
-  return e.isComposing && compositionIgnoreKeys.includes(e.key);
+function isComposingIgnoreKey(e2) {
+  return e2.isComposing && compositionIgnoreKeys.includes(e2.key);
 }
 function filterInputAttrs(attrs) {
   const [events, props] = pickWithRest(attrs, [onRE]);
@@ -2887,16 +2971,16 @@ function findChildrenWithProvide(key, vnode) {
   }
   return [];
 }
-function getEventCoordinates(e) {
-  if ("touches" in e) {
+function getEventCoordinates(e2) {
+  if ("touches" in e2) {
     return {
-      clientX: e.touches[0].clientX,
-      clientY: e.touches[0].clientY
+      clientX: e2.touches[0].clientX,
+      clientY: e2.touches[0].clientY
     };
   }
   return {
-    clientX: e.clientX,
-    clientY: e.clientY
+    clientX: e2.clientX,
+    clientY: e2.clientY
   };
 }
 function destructComputed(getter) {
@@ -3296,18 +3380,18 @@ function fromXYZ(xyz) {
 }
 function toXYZ(_ref) {
   let {
-    r,
+    r: r2,
     g,
     b
   } = _ref;
   const xyz = [0, 0, 0];
   const transform2 = srgbReverseTransform;
   const matrix = srgbReverseMatrix;
-  r = transform2(r / 255);
+  r2 = transform2(r2 / 255);
   g = transform2(g / 255);
   b = transform2(b / 255);
   for (let i = 0; i < 3; ++i) {
-    xyz[i] = matrix[i][0] * r + matrix[i][1] * g + matrix[i][2] * b;
+    xyz[i] = matrix[i][0] * r2 + matrix[i][1] * g + matrix[i][2] * b;
   }
   return xyz;
 }
@@ -3319,14 +3403,14 @@ function isParsableColor(color) {
 }
 const cssColorRe = /^(?<fn>(?:rgb|hsl)a?)\((?<values>.+)\)/;
 const mappers = {
-  rgb: (r, g, b, a) => ({
-    r,
+  rgb: (r2, g, b, a) => ({
+    r: r2,
     g,
     b,
     a
   }),
-  rgba: (r, g, b, a) => ({
-    r,
+  rgba: (r2, g, b, a) => ({
+    r: r2,
     g,
     b,
     a
@@ -3436,19 +3520,19 @@ function RGBtoHSV(rgba2) {
       v: 1,
       a: 1
     };
-  const r = rgba2.r / 255;
+  const r2 = rgba2.r / 255;
   const g = rgba2.g / 255;
   const b = rgba2.b / 255;
-  const max = Math.max(r, g, b);
-  const min = Math.min(r, g, b);
+  const max = Math.max(r2, g, b);
+  const min = Math.min(r2, g, b);
   let h2 = 0;
   if (max !== min) {
-    if (max === r) {
+    if (max === r2) {
       h2 = 60 * (0 + (g - b) / (max - min));
     } else if (max === g) {
-      h2 = 60 * (2 + (b - r) / (max - min));
+      h2 = 60 * (2 + (b - r2) / (max - min));
     } else if (max === b) {
-      h2 = 60 * (4 + (r - g) / (max - min));
+      h2 = 60 * (4 + (r2 - g) / (max - min));
     }
   }
   if (h2 < 0)
@@ -3496,12 +3580,12 @@ function HSLtoHSV(hsl2) {
 }
 function RGBtoCSS(_ref) {
   let {
-    r,
+    r: r2,
     g,
     b,
     a
   } = _ref;
-  return a === void 0 ? `rgb(${r}, ${g}, ${b})` : `rgba(${r}, ${g}, ${b}, ${a})`;
+  return a === void 0 ? `rgb(${r2}, ${g}, ${b})` : `rgba(${r2}, ${g}, ${b}, ${a})`;
 }
 function HSVtoCSS(hsva) {
   return RGBtoCSS(HSVtoRGB(hsva));
@@ -3512,19 +3596,19 @@ function toHex(v) {
 }
 function RGBtoHex(_ref2) {
   let {
-    r,
+    r: r2,
     g,
     b,
     a
   } = _ref2;
-  return `#${[toHex(r), toHex(g), toHex(b), a !== void 0 ? toHex(Math.round(a * 255)) : ""].join("")}`;
+  return `#${[toHex(r2), toHex(g), toHex(b), a !== void 0 ? toHex(Math.round(a * 255)) : ""].join("")}`;
 }
 function HexToRGB(hex2) {
   hex2 = parseHex(hex2);
-  let [r, g, b, a] = chunk(hex2, 2).map((c) => parseInt(c, 16));
+  let [r2, g, b, a] = chunk(hex2, 2).map((c) => parseInt(c, 16));
   a = a === void 0 ? a : a / 255;
   return {
-    r,
+    r: r2,
     g,
     b,
     a
@@ -7864,7 +7948,7 @@ const VProgressLinear = genericComponent()({
     const opacity = computed(() => {
       return props.bgOpacity == null ? props.bgOpacity : parseFloat(props.bgOpacity);
     });
-    function handleClick(e) {
+    function handleClick(e2) {
       if (!intersectionRef.value)
         return;
       const {
@@ -7872,7 +7956,7 @@ const VProgressLinear = genericComponent()({
         right,
         width
       } = intersectionRef.value.getBoundingClientRect();
-      const value = isReversed.value ? width - e.clientX + (right - width) : e.clientX - left;
+      const value = isReversed.value ? width - e2.clientX + (right - width) : e2.clientX - left;
       progress.value = Math.round(value / width * max.value);
     }
     useRender(() => createVNode(props.tag, {
@@ -8059,20 +8143,20 @@ function transform$1(el, value) {
   el.style.transform = value;
   el.style.webkitTransform = value;
 }
-function isTouchEvent(e) {
-  return e.constructor.name === "TouchEvent";
+function isTouchEvent(e2) {
+  return e2.constructor.name === "TouchEvent";
 }
-function isKeyboardEvent(e) {
-  return e.constructor.name === "KeyboardEvent";
+function isKeyboardEvent(e2) {
+  return e2.constructor.name === "KeyboardEvent";
 }
-const calculate = function(e, el) {
+const calculate = function(e2, el) {
   var _a2;
   let value = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
   let localX = 0;
   let localY = 0;
-  if (!isKeyboardEvent(e)) {
+  if (!isKeyboardEvent(e2)) {
     const offset = el.getBoundingClientRect();
-    const target = isTouchEvent(e) ? e.touches[e.touches.length - 1] : e;
+    const target = isTouchEvent(e2) ? e2.touches[e2.touches.length - 1] : e2;
     localX = target.clientX - offset.left;
     localY = target.clientY - offset.top;
   }
@@ -8100,7 +8184,7 @@ const calculate = function(e, el) {
 };
 const ripples = {
   /* eslint-disable max-statements */
-  show(e, el) {
+  show(e2, el) {
     var _a2;
     let value = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
     if (!((_a2 = el == null ? void 0 : el._ripple) == null ? void 0 : _a2.enabled)) {
@@ -8120,7 +8204,7 @@ const ripples = {
       y,
       centerX,
       centerY
-    } = calculate(e, el, value);
+    } = calculate(e2, el, value);
     const size = `${radius * 2}px`;
     animation.className = "v-ripple__animation";
     animation.style.width = size;
@@ -8174,28 +8258,28 @@ const ripples = {
 function isRippleEnabled(value) {
   return typeof value === "undefined" || !!value;
 }
-function rippleShow(e) {
+function rippleShow(e2) {
   const value = {};
-  const element = e.currentTarget;
-  if (!(element == null ? void 0 : element._ripple) || element._ripple.touched || e[stopSymbol])
+  const element = e2.currentTarget;
+  if (!(element == null ? void 0 : element._ripple) || element._ripple.touched || e2[stopSymbol])
     return;
-  e[stopSymbol] = true;
-  if (isTouchEvent(e)) {
+  e2[stopSymbol] = true;
+  if (isTouchEvent(e2)) {
     element._ripple.touched = true;
     element._ripple.isTouch = true;
   } else {
     if (element._ripple.isTouch)
       return;
   }
-  value.center = element._ripple.centered || isKeyboardEvent(e);
+  value.center = element._ripple.centered || isKeyboardEvent(e2);
   if (element._ripple.class) {
     value.class = element._ripple.class;
   }
-  if (isTouchEvent(e)) {
+  if (isTouchEvent(e2)) {
     if (element._ripple.showTimerCommit)
       return;
     element._ripple.showTimerCommit = () => {
-      ripples.show(e, element, value);
+      ripples.show(e2, element, value);
     };
     element._ripple.showTimer = (void 0).setTimeout(() => {
       var _a2;
@@ -8205,22 +8289,22 @@ function rippleShow(e) {
       }
     }, DELAY_RIPPLE);
   } else {
-    ripples.show(e, element, value);
+    ripples.show(e2, element, value);
   }
 }
-function rippleStop(e) {
-  e[stopSymbol] = true;
+function rippleStop(e2) {
+  e2[stopSymbol] = true;
 }
-function rippleHide(e) {
-  const element = e.currentTarget;
+function rippleHide(e2) {
+  const element = e2.currentTarget;
   if (!(element == null ? void 0 : element._ripple))
     return;
   (void 0).clearTimeout(element._ripple.showTimer);
-  if (e.type === "touchend" && element._ripple.showTimerCommit) {
+  if (e2.type === "touchend" && element._ripple.showTimerCommit) {
     element._ripple.showTimerCommit();
     element._ripple.showTimerCommit = null;
     element._ripple.showTimer = (void 0).setTimeout(() => {
-      rippleHide(e);
+      rippleHide(e2);
     });
     return;
   }
@@ -8231,8 +8315,8 @@ function rippleHide(e) {
   });
   ripples.hide(element);
 }
-function rippleCancelShow(e) {
-  const element = e.currentTarget;
+function rippleCancelShow(e2) {
+  const element = e2.currentTarget;
   if (!(element == null ? void 0 : element._ripple))
     return;
   if (element._ripple.showTimerCommit) {
@@ -8241,20 +8325,20 @@ function rippleCancelShow(e) {
   (void 0).clearTimeout(element._ripple.showTimer);
 }
 let keyboardRipple = false;
-function keyboardRippleShow(e) {
-  if (!keyboardRipple && (e.keyCode === keyCodes.enter || e.keyCode === keyCodes.space)) {
+function keyboardRippleShow(e2) {
+  if (!keyboardRipple && (e2.keyCode === keyCodes.enter || e2.keyCode === keyCodes.space)) {
     keyboardRipple = true;
-    rippleShow(e);
+    rippleShow(e2);
   }
 }
-function keyboardRippleHide(e) {
+function keyboardRippleHide(e2) {
   keyboardRipple = false;
-  rippleHide(e);
+  rippleHide(e2);
 }
-function focusRippleHide(e) {
+function focusRippleHide(e2) {
   if (keyboardRipple) {
     keyboardRipple = false;
-    rippleHide(e);
+    rippleHide(e2);
   }
 }
 function updateRipple(el, binding, wasEnabled) {
@@ -8448,11 +8532,11 @@ const VBtn = genericComponent()({
         return void 0;
       return Object(props.value) === props.value ? JSON.stringify(props.value, null, 0) : props.value;
     });
-    function onClick(e) {
+    function onClick(e2) {
       var _a2;
-      if (isDisabled.value || link.isLink.value && (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0 || attrs.target === "_blank"))
+      if (isDisabled.value || link.isLink.value && (e2.metaKey || e2.ctrlKey || e2.shiftKey || e2.button !== 0 || attrs.target === "_blank"))
         return;
-      (_a2 = link.navigate) == null ? void 0 : _a2.call(link, e);
+      (_a2 = link.navigate) == null ? void 0 : _a2.call(link, e2);
       group == null ? void 0 : group.toggle();
     }
     useSelectLink(link, group == null ? void 0 : group.select);
@@ -8631,7 +8715,7 @@ const VAlert = genericComponent()({
   name: "VAlert",
   props: makeVAlertProps(),
   emits: {
-    "click:close": (e) => true,
+    "click:close": (e2) => true,
     "update:modelValue": (value) => true
   },
   setup(props, _ref) {
@@ -8686,9 +8770,9 @@ const VAlert = genericComponent()({
     } = useLocale();
     const closeProps = computed(() => ({
       "aria-label": t(props.closeLabel),
-      onClick(e) {
+      onClick(e2) {
         isActive.value = false;
-        emit("click:close", e);
+        emit("click:close", e2);
       }
     }));
     return () => {
@@ -9073,11 +9157,11 @@ const VSelectionControl = genericComponent()({
         input.value.checked = model.value;
       }
     });
-    function onFocus(e) {
+    function onFocus(e2) {
       if (!isInteractive.value)
         return;
       isFocused.value = true;
-      if (matchesSelector(e.target) !== false) {
+      if (matchesSelector(e2.target) !== false) {
         isFocusVisible.value = true;
       }
     }
@@ -9085,16 +9169,16 @@ const VSelectionControl = genericComponent()({
       isFocused.value = false;
       isFocusVisible.value = false;
     }
-    function onClickLabel(e) {
-      e.stopPropagation();
+    function onClickLabel(e2) {
+      e2.stopPropagation();
     }
-    function onInput(e) {
+    function onInput(e2) {
       if (!isInteractive.value)
         return;
       if (props.readonly && group) {
         nextTick(() => group.forceUpdate());
       }
-      model.value = e.target.checked;
+      model.value = e2.target.checked;
     }
     useRender(() => {
       var _a2, _b;
@@ -9890,21 +9974,21 @@ const VSlideGroup = genericComponent()({
     const disableTransition = shallowRef(false);
     let startTouch = 0;
     let startOffset = 0;
-    function onTouchstart(e) {
+    function onTouchstart(e2) {
       const sizeProperty = isHorizontal.value ? "clientX" : "clientY";
       const sign = isRtl.value && isHorizontal.value ? -1 : 1;
       startOffset = sign * scrollOffset.value;
-      startTouch = e.touches[0][sizeProperty];
+      startTouch = e2.touches[0][sizeProperty];
       disableTransition.value = true;
     }
-    function onTouchmove(e) {
+    function onTouchmove(e2) {
       if (!isOverflowing.value)
         return;
       const sizeProperty = isHorizontal.value ? "clientX" : "clientY";
       const sign = isRtl.value && isHorizontal.value ? -1 : 1;
-      scrollOffset.value = sign * (startOffset + startTouch - e.touches[0][sizeProperty]);
+      scrollOffset.value = sign * (startOffset + startTouch - e2.touches[0][sizeProperty]);
     }
-    function onTouchend(e) {
+    function onTouchend(e2) {
       const maxScrollOffset = contentSize.value - containerSize.value;
       if (scrollOffset.value < 0 || !isOverflowing.value) {
         scrollOffset.value = 0;
@@ -9919,11 +10003,11 @@ const VSlideGroup = genericComponent()({
       containerRef.value[isHorizontal.value ? "scrollLeft" : "scrollTop"] = 0;
     }
     const isFocused = shallowRef(false);
-    function onFocusin(e) {
+    function onFocusin(e2) {
       isFocused.value = true;
       if (!isOverflowing.value || !contentRef.value)
         return;
-      for (const el of e.composedPath()) {
+      for (const el of e2.composedPath()) {
         for (const item of contentRef.value.children) {
           if (item === el) {
             scrollOffset.value = calculateUpdatedOffset({
@@ -9939,33 +10023,33 @@ const VSlideGroup = genericComponent()({
         }
       }
     }
-    function onFocusout(e) {
+    function onFocusout(e2) {
       isFocused.value = false;
     }
-    function onFocus(e) {
+    function onFocus(e2) {
       var _a2;
-      if (!isFocused.value && !(e.relatedTarget && ((_a2 = contentRef.value) == null ? void 0 : _a2.contains(e.relatedTarget))))
+      if (!isFocused.value && !(e2.relatedTarget && ((_a2 = contentRef.value) == null ? void 0 : _a2.contains(e2.relatedTarget))))
         focus();
     }
-    function onKeydown(e) {
+    function onKeydown(e2) {
       if (!contentRef.value)
         return;
       if (isHorizontal.value) {
-        if (e.key === "ArrowRight") {
+        if (e2.key === "ArrowRight") {
           focus(isRtl.value ? "prev" : "next");
-        } else if (e.key === "ArrowLeft") {
+        } else if (e2.key === "ArrowLeft") {
           focus(isRtl.value ? "next" : "prev");
         }
       } else {
-        if (e.key === "ArrowDown") {
+        if (e2.key === "ArrowDown") {
           focus("next");
-        } else if (e.key === "ArrowUp") {
+        } else if (e2.key === "ArrowUp") {
           focus("prev");
         }
       }
-      if (e.key === "Home") {
+      if (e2.key === "Home") {
         focus("first");
-      } else if (e.key === "End") {
+      } else if (e2.key === "End") {
         focus("last");
       }
     }
@@ -10225,10 +10309,10 @@ const VChip = genericComponent()({
   },
   props: makeVChipProps(),
   emits: {
-    "click:close": (e) => true,
+    "click:close": (e2) => true,
     "update:modelValue": (value) => true,
     "group:selected": (val) => true,
-    click: (e) => true
+    click: (e2) => true
   },
   setup(props, _ref) {
     let {
@@ -10269,24 +10353,24 @@ const VChip = genericComponent()({
     const isClickable = computed(() => !props.disabled && props.link !== false && (!!group || props.link || link.isClickable.value));
     const closeProps = computed(() => ({
       "aria-label": t(props.closeLabel),
-      onClick(e) {
-        e.stopPropagation();
+      onClick(e2) {
+        e2.stopPropagation();
         isActive.value = false;
-        emit("click:close", e);
+        emit("click:close", e2);
       }
     }));
-    function onClick(e) {
+    function onClick(e2) {
       var _a2;
-      emit("click", e);
+      emit("click", e2);
       if (!isClickable.value)
         return;
-      (_a2 = link.navigate) == null ? void 0 : _a2.call(link, e);
+      (_a2 = link.navigate) == null ? void 0 : _a2.call(link, e2);
       group == null ? void 0 : group.toggle();
     }
-    function onKeyDown(e) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        onClick(e);
+    function onKeyDown(e2) {
+      if (e2.key === "Enter" || e2.key === " ") {
+        e2.preventDefault();
+        onClick(e2);
       }
     }
     return () => {
@@ -11012,13 +11096,13 @@ const useNestedItem = (id, isGroup) => {
   const item = {
     ...parent,
     id: computedId,
-    open: (open, e) => parent.root.open(computedId.value, open, e),
-    openOnSelect: (open, e) => parent.root.openOnSelect(computedId.value, open, e),
+    open: (open, e2) => parent.root.open(computedId.value, open, e2),
+    openOnSelect: (open, e2) => parent.root.openOnSelect(computedId.value, open, e2),
     isOpen: computed(() => parent.root.opened.value.has(computedId.value)),
     parent: computed(() => parent.root.parents.value.get(computedId.value)),
-    activate: (activated, e) => parent.root.activate(computedId.value, activated, e),
+    activate: (activated, e2) => parent.root.activate(computedId.value, activated, e2),
     isActivated: computed(() => parent.root.activated.value.has(toRaw(computedId.value))),
-    select: (selected, e) => parent.root.select(computedId.value, selected, e),
+    select: (selected, e2) => parent.root.select(computedId.value, selected, e2),
     isSelected: computed(() => parent.root.selected.value.get(toRaw(computedId.value)) === "on"),
     isIndeterminate: computed(() => parent.root.selected.value.get(computedId.value) === "indeterminate"),
     isLeaf: computed(() => !parent.root.children.value.get(computedId.value)),
@@ -11087,8 +11171,8 @@ const VListGroup = genericComponent()({
     const {
       isBooted
     } = useSsrBoot();
-    function onClick(e) {
-      open(!isOpen.value, e);
+    function onClick(e2) {
+      open(!isOpen.value, e2);
     }
     const activatorProps = computed(() => ({
       onClick,
@@ -11199,7 +11283,7 @@ const VListItem = genericComponent()({
   },
   props: makeVListItemProps(),
   emits: {
-    click: (e) => true
+    click: (e2) => true
   },
   setup(props, _ref) {
     let {
@@ -11276,24 +11360,24 @@ const VListItem = genericComponent()({
       isSelected: isSelected.value,
       isIndeterminate: isIndeterminate.value
     }));
-    function onClick(e) {
+    function onClick(e2) {
       var _a2;
-      emit("click", e);
+      emit("click", e2);
       if (isGroupActivator || !isClickable.value)
         return;
-      (_a2 = link.navigate) == null ? void 0 : _a2.call(link, e);
+      (_a2 = link.navigate) == null ? void 0 : _a2.call(link, e2);
       if (root.activatable) {
-        activate(!isActivated.value, e);
+        activate(!isActivated.value, e2);
       } else if (root.selectable) {
-        select(!isSelected.value, e);
+        select(!isSelected.value, e2);
       } else if (props.value != null) {
-        select(!isSelected.value, e);
+        select(!isSelected.value, e2);
       }
     }
-    function onKeyDown(e) {
-      if (e.key === "Enter" || e.key === " ") {
-        e.preventDefault();
-        onClick(e);
+    function onKeyDown(e2) {
+      if (e2.key === "Enter" || e2.key === " ") {
+        e2.preventDefault();
+        onClick(e2);
       }
     }
     useRender(() => {
@@ -11836,34 +11920,34 @@ const VList = genericComponent()({
     });
     const isFocused = shallowRef(false);
     const contentRef = ref();
-    function onFocusin(e) {
+    function onFocusin(e2) {
       isFocused.value = true;
     }
-    function onFocusout(e) {
+    function onFocusout(e2) {
       isFocused.value = false;
     }
-    function onFocus(e) {
+    function onFocus(e2) {
       var _a2;
-      if (!isFocused.value && !(e.relatedTarget && ((_a2 = contentRef.value) == null ? void 0 : _a2.contains(e.relatedTarget))))
+      if (!isFocused.value && !(e2.relatedTarget && ((_a2 = contentRef.value) == null ? void 0 : _a2.contains(e2.relatedTarget))))
         focus();
     }
-    function onKeydown(e) {
+    function onKeydown(e2) {
       if (!contentRef.value)
         return;
-      if (e.key === "ArrowDown") {
+      if (e2.key === "ArrowDown") {
         focus("next");
-      } else if (e.key === "ArrowUp") {
+      } else if (e2.key === "ArrowUp") {
         focus("prev");
-      } else if (e.key === "Home") {
+      } else if (e2.key === "Home") {
         focus("first");
-      } else if (e.key === "End") {
+      } else if (e2.key === "End") {
         focus("last");
       } else {
         return;
       }
-      e.preventDefault();
+      e2.preventDefault();
     }
-    function onMousedown(e) {
+    function onMousedown(e2) {
       isFocused.value = true;
     }
     function focus(location) {
@@ -12363,7 +12447,7 @@ const makeScrollStrategyProps = propsFactory({
   }
 }, "VOverlay-scroll-strategies");
 function closeScrollStrategy(data) {
-  function onScroll(e) {
+  function onScroll(e2) {
     data.isActive.value = false;
   }
   bindScroll(data.targetEl.value ?? data.contentEl.value, onScroll);
@@ -12408,27 +12492,27 @@ function repositionScrollStrategy(data, props, scope) {
   let slow = false;
   let raf2 = -1;
   let ric = -1;
-  function update(e) {
+  function update(e2) {
     requestNewFrame(() => {
       var _a2, _b;
       const start = performance.now();
-      (_b = (_a2 = data.updateLocation).value) == null ? void 0 : _b.call(_a2, e);
+      (_b = (_a2 = data.updateLocation).value) == null ? void 0 : _b.call(_a2, e2);
       const time = performance.now() - start;
       slow = time / (1e3 / 60) > 2;
     });
   }
   ric = (typeof requestIdleCallback === "undefined" ? (cb) => cb() : requestIdleCallback)(() => {
     scope.run(() => {
-      bindScroll(data.targetEl.value ?? data.contentEl.value, (e) => {
+      bindScroll(data.targetEl.value ?? data.contentEl.value, (e2) => {
         if (slow) {
           cancelAnimationFrame(raf2);
           raf2 = requestAnimationFrame(() => {
             raf2 = requestAnimationFrame(() => {
-              update(e);
+              update(e2);
             });
           });
         } else {
-          update(e);
+          update(e2);
         }
       });
     });
@@ -12525,37 +12609,37 @@ function useActivator(props, _ref) {
   });
   const cursorTarget = ref();
   const availableEvents = {
-    onClick: (e) => {
-      e.stopPropagation();
-      activatorEl.value = e.currentTarget || e.target;
+    onClick: (e2) => {
+      e2.stopPropagation();
+      activatorEl.value = e2.currentTarget || e2.target;
       if (!isActive.value) {
-        cursorTarget.value = [e.clientX, e.clientY];
+        cursorTarget.value = [e2.clientX, e2.clientY];
       }
       isActive.value = !isActive.value;
     },
-    onMouseenter: (e) => {
+    onMouseenter: (e2) => {
       var _a2;
-      if ((_a2 = e.sourceCapabilities) == null ? void 0 : _a2.firesTouchEvents)
+      if ((_a2 = e2.sourceCapabilities) == null ? void 0 : _a2.firesTouchEvents)
         return;
       isHovered = true;
-      activatorEl.value = e.currentTarget || e.target;
+      activatorEl.value = e2.currentTarget || e2.target;
       runOpenDelay();
     },
-    onMouseleave: (e) => {
+    onMouseleave: (e2) => {
       isHovered = false;
       runCloseDelay();
     },
-    onFocus: (e) => {
-      if (matchesSelector(e.target) === false)
+    onFocus: (e2) => {
+      if (matchesSelector(e2.target) === false)
         ;
       isFocused = true;
-      e.stopPropagation();
-      activatorEl.value = e.currentTarget || e.target;
+      e2.stopPropagation();
+      activatorEl.value = e2.currentTarget || e2.target;
       runOpenDelay();
     },
-    onBlur: (e) => {
+    onBlur: (e2) => {
       isFocused = false;
-      e.stopPropagation();
+      e2.stopPropagation();
       runCloseDelay();
     }
   };
@@ -12847,24 +12931,24 @@ function useTeleport(target) {
 function defaultConditional() {
   return true;
 }
-function checkEvent(e, el, binding) {
-  if (!e || checkIsActive(e, binding) === false)
+function checkEvent(e2, el, binding) {
+  if (!e2 || checkIsActive(e2, binding) === false)
     return false;
   const root = attachedRoot(el);
-  if (typeof ShadowRoot !== "undefined" && root instanceof ShadowRoot && root.host === e.target)
+  if (typeof ShadowRoot !== "undefined" && root instanceof ShadowRoot && root.host === e2.target)
     return false;
   const elements = (typeof binding.value === "object" && binding.value.include || (() => []))();
   elements.push(el);
-  return !elements.some((el2) => el2 == null ? void 0 : el2.contains(e.target));
+  return !elements.some((el2) => el2 == null ? void 0 : el2.contains(e2.target));
 }
-function checkIsActive(e, binding) {
+function checkIsActive(e2, binding) {
   const isActive = typeof binding.value === "object" && binding.value.closeConditional || defaultConditional;
-  return isActive(e);
+  return isActive(e2);
 }
-function directive(e, el, binding) {
+function directive(e2, el, binding) {
   const handler = typeof binding.value === "function" ? binding.value : binding.value.handler;
-  el._clickOutside.lastMousedownWasOutside && checkEvent(e, el, binding) && setTimeout(() => {
-    checkIsActive(e, binding) && handler && handler(e);
+  el._clickOutside.lastMousedownWasOutside && checkEvent(e2, el, binding) && setTimeout(() => {
+    checkIsActive(e2, binding) && handler && handler(e2);
   }, 0);
 }
 function handleShadow(el, callback) {
@@ -12881,9 +12965,9 @@ const ClickOutside = {
   // available, iOS does not support
   // clicks on body
   mounted(el, binding) {
-    const onClick = (e) => directive(e, el, binding);
-    const onMousedown = (e) => {
-      el._clickOutside.lastMousedownWasOutside = checkEvent(e, el, binding);
+    const onClick = (e2) => directive(e2, el, binding);
+    const onMousedown = (e2) => {
+      el._clickOutside.lastMousedownWasOutside = checkEvent(e2, el, binding);
     };
     handleShadow(el, (app) => {
       app.addEventListener("click", onClick, true);
@@ -12975,7 +13059,7 @@ const VOverlay = genericComponent()({
     ...makeVOverlayProps()
   },
   emits: {
-    "click:outside": (e) => true,
+    "click:outside": (e2) => true,
     "update:modelValue": (value) => true,
     afterLeave: () => true
   },
@@ -13045,8 +13129,8 @@ const VOverlay = genericComponent()({
       contentStyles,
       updateLocation
     } = useLocationStrategies();
-    function onClickOutside(e) {
-      emit("click:outside", e);
+    function onClickOutside(e2) {
+      emit("click:outside", e2);
       if (!props.persistent)
         isActive.value = false;
       else
@@ -13277,19 +13361,19 @@ const VMenu = genericComponent()({
       unregister() {
         --openChildren.value;
       },
-      closeParents(e) {
+      closeParents(e2) {
         setTimeout(() => {
-          if (!openChildren.value && (e == null || e && !isClickInsideElement(e, overlay.value.contentEl))) {
+          if (!openChildren.value && (e2 == null || e2 && !isClickInsideElement(e2, overlay.value.contentEl))) {
             isActive.value = false;
             parent == null ? void 0 : parent.closeParents();
           }
         }, 40);
       }
     });
-    async function onFocusIn(e) {
+    async function onFocusIn(e2) {
       var _a2, _b, _c;
-      const before = e.relatedTarget;
-      const after = e.target;
+      const before = e2.relatedTarget;
+      const after = e2.target;
       await nextTick();
       if (isActive.value && before !== after && ((_a2 = overlay.value) == null ? void 0 : _a2.contentEl) && // We're the topmost menu
       ((_b = overlay.value) == null ? void 0 : _b.globalTop) && // It isn't the document or the menu body
@@ -13310,38 +13394,38 @@ const VMenu = genericComponent()({
         (void 0).removeEventListener("focusin", onFocusIn);
       }
     });
-    function onClickOutside(e) {
-      parent == null ? void 0 : parent.closeParents(e);
+    function onClickOutside(e2) {
+      parent == null ? void 0 : parent.closeParents(e2);
     }
-    function onKeydown(e) {
+    function onKeydown(e2) {
       var _a2, _b, _c;
       if (props.disabled)
         return;
-      if (e.key === "Tab") {
-        const nextElement = getNextElement(focusableChildren((_a2 = overlay.value) == null ? void 0 : _a2.contentEl, false), e.shiftKey ? "prev" : "next", (el) => el.tabIndex >= 0);
+      if (e2.key === "Tab") {
+        const nextElement = getNextElement(focusableChildren((_a2 = overlay.value) == null ? void 0 : _a2.contentEl, false), e2.shiftKey ? "prev" : "next", (el) => el.tabIndex >= 0);
         if (!nextElement) {
           isActive.value = false;
           (_c = (_b = overlay.value) == null ? void 0 : _b.activatorEl) == null ? void 0 : _c.focus();
         }
       }
     }
-    function onActivatorKeydown(e) {
+    function onActivatorKeydown(e2) {
       var _a2;
       if (props.disabled)
         return;
       const el = (_a2 = overlay.value) == null ? void 0 : _a2.contentEl;
       if (el && isActive.value) {
-        if (e.key === "ArrowDown") {
-          e.preventDefault();
+        if (e2.key === "ArrowDown") {
+          e2.preventDefault();
           focusChild(el, "next");
-        } else if (e.key === "ArrowUp") {
-          e.preventDefault();
+        } else if (e2.key === "ArrowUp") {
+          e2.preventDefault();
           focusChild(el, "prev");
         }
-      } else if (["ArrowDown", "ArrowUp"].includes(e.key)) {
+      } else if (["ArrowDown", "ArrowUp"].includes(e2.key)) {
         isActive.value = true;
-        e.preventDefault();
-        setTimeout(() => setTimeout(() => onActivatorKeydown(e)));
+        e2.preventDefault();
+        setTimeout(() => setTimeout(() => onActivatorKeydown(e2)));
       }
     }
     const activatorProps = computed(() => mergeProps({
@@ -13591,9 +13675,9 @@ const VField = genericComponent()({
       blur,
       focus
     }));
-    function onClick(e) {
-      if (e.target !== (void 0).activeElement) {
-        e.preventDefault();
+    function onClick(e2) {
+      if (e2.target !== (void 0).activeElement) {
+        e2.preventDefault();
       }
     }
     useRender(() => {
@@ -13673,9 +13757,9 @@ const VField = genericComponent()({
       }, {
         default: () => [withDirectives(createVNode("div", {
           "class": "v-field__clearable",
-          "onMousedown": (e) => {
-            e.preventDefault();
-            e.stopPropagation();
+          "onMousedown": (e2) => {
+            e2.preventDefault();
+            e2.stopPropagation();
           }
         }, [slots.clear ? slots.clear() : createVNode(InputIcon, {
           "name": "clear"
@@ -13745,8 +13829,8 @@ const VTextField = genericComponent()({
   inheritAttrs: false,
   props: makeVTextFieldProps(),
   emits: {
-    "click:control": (e) => true,
-    "mousedown:control": (e) => true,
+    "click:control": (e2) => true,
+    "mousedown:control": (e2) => true,
     "update:focused": (focused) => true,
     "update:modelValue": (val) => true
   },
@@ -13791,28 +13875,28 @@ const VTextField = genericComponent()({
       if (!isFocused.value)
         focus();
     }
-    function onControlMousedown(e) {
-      emit("mousedown:control", e);
-      if (e.target === inputRef.value)
+    function onControlMousedown(e2) {
+      emit("mousedown:control", e2);
+      if (e2.target === inputRef.value)
         return;
       onFocus();
-      e.preventDefault();
+      e2.preventDefault();
     }
-    function onControlClick(e) {
+    function onControlClick(e2) {
       onFocus();
-      emit("click:control", e);
+      emit("click:control", e2);
     }
-    function onClear(e) {
-      e.stopPropagation();
+    function onClear(e2) {
+      e2.stopPropagation();
       onFocus();
       nextTick(() => {
         model.value = null;
-        callEvent(props["onClick:clear"], e);
+        callEvent(props["onClick:clear"], e2);
       });
     }
-    function onInput(e) {
+    function onInput(e2) {
       var _a2;
-      const el = e.target;
+      const el = e2.target;
       model.value = el.value;
       if (((_a2 = props.modelModifiers) == null ? void 0 : _a2.trim) && ["text", "search", "password", "tel", "url"].includes(props.type)) {
         const caretPosition = [el.selectionStart, el.selectionEnd];
@@ -14295,7 +14379,7 @@ const VVirtualScroll = genericComponent()({
 function useScrolling(listRef, textFieldRef) {
   const isScrolling = shallowRef(false);
   let scrollTimeout;
-  function onListScroll(e) {
+  function onListScroll(e2) {
     cancelAnimationFrame(scrollTimeout);
     isScrolling.value = true;
     scrollTimeout = requestAnimationFrame(() => {
@@ -14318,25 +14402,25 @@ function useScrolling(listRef, textFieldRef) {
         resolve2();
     });
   }
-  async function onListKeydown(e) {
+  async function onListKeydown(e2) {
     var _a2, _b;
-    if (e.key === "Tab") {
+    if (e2.key === "Tab") {
       (_a2 = textFieldRef.value) == null ? void 0 : _a2.focus();
     }
-    if (!["PageDown", "PageUp", "Home", "End"].includes(e.key))
+    if (!["PageDown", "PageUp", "Home", "End"].includes(e2.key))
       return;
     const el = (_b = listRef.value) == null ? void 0 : _b.$el;
     if (!el)
       return;
-    if (e.key === "Home" || e.key === "End") {
+    if (e2.key === "Home" || e2.key === "End") {
       el.scrollTo({
-        top: e.key === "Home" ? 0 : el.scrollHeight,
+        top: e2.key === "Home" ? 0 : el.scrollHeight,
         behavior: "smooth"
       });
     }
     await finishScrolling();
     const children = el.querySelectorAll(":scope > :not(.v-virtual-scroll__spacer)");
-    if (e.key === "PageDown" || e.key === "Home") {
+    if (e2.key === "PageDown" || e2.key === "Home") {
       const top = el.getBoundingClientRect().top;
       for (const child of children) {
         if (child.getBoundingClientRect().top >= top) {
@@ -14476,7 +14560,7 @@ const VSelect = genericComponent()({
       onListScroll,
       onListKeydown
     } = useScrolling(listRef, vTextFieldRef);
-    function onClear(e) {
+    function onClear(e2) {
       if (props.openOnClear) {
         menu.value = true;
       }
@@ -14486,37 +14570,37 @@ const VSelect = genericComponent()({
         return;
       menu.value = !menu.value;
     }
-    function onKeydown(e) {
+    function onKeydown(e2) {
       var _a2, _b;
-      if (!e.key || props.readonly || (form == null ? void 0 : form.isReadonly.value))
+      if (!e2.key || props.readonly || (form == null ? void 0 : form.isReadonly.value))
         return;
-      if (["Enter", " ", "ArrowDown", "ArrowUp", "Home", "End"].includes(e.key)) {
-        e.preventDefault();
+      if (["Enter", " ", "ArrowDown", "ArrowUp", "Home", "End"].includes(e2.key)) {
+        e2.preventDefault();
       }
-      if (["Enter", "ArrowDown", " "].includes(e.key)) {
+      if (["Enter", "ArrowDown", " "].includes(e2.key)) {
         menu.value = true;
       }
-      if (["Escape", "Tab"].includes(e.key)) {
+      if (["Escape", "Tab"].includes(e2.key)) {
         menu.value = false;
       }
-      if (e.key === "Home") {
+      if (e2.key === "Home") {
         (_a2 = listRef.value) == null ? void 0 : _a2.focus("first");
-      } else if (e.key === "End") {
+      } else if (e2.key === "End") {
         (_b = listRef.value) == null ? void 0 : _b.focus("last");
       }
       const KEYBOARD_LOOKUP_THRESHOLD = 1e3;
-      function checkPrintable(e2) {
-        const isPrintableChar = e2.key.length === 1;
-        const noModifier = !e2.ctrlKey && !e2.metaKey && !e2.altKey;
+      function checkPrintable(e22) {
+        const isPrintableChar = e22.key.length === 1;
+        const noModifier = !e22.ctrlKey && !e22.metaKey && !e22.altKey;
         return isPrintableChar && noModifier;
       }
-      if (props.multiple || !checkPrintable(e))
+      if (props.multiple || !checkPrintable(e2))
         return;
       const now = performance.now();
       if (now - keyboardLookupLastTime > KEYBOARD_LOOKUP_THRESHOLD) {
         keyboardLookupPrefix = "";
       }
-      keyboardLookupPrefix += e.key.toLowerCase();
+      keyboardLookupPrefix += e2.key.toLowerCase();
       keyboardLookupLastTime = now;
       const item = items.value.find((item2) => item2.title.toLowerCase().startsWith(keyboardLookupPrefix));
       if (item !== void 0) {
@@ -14545,9 +14629,9 @@ const VSelect = genericComponent()({
         });
       }
     }
-    function onBlur(e) {
+    function onBlur(e2) {
       var _a2;
-      if (!((_a2 = listRef.value) == null ? void 0 : _a2.$el.contains(e.relatedTarget))) {
+      if (!((_a2 = listRef.value) == null ? void 0 : _a2.$el.contains(e2.relatedTarget))) {
         menu.value = false;
       }
     }
@@ -14557,7 +14641,7 @@ const VSelect = genericComponent()({
         (_a2 = vTextFieldRef.value) == null ? void 0 : _a2.focus();
       }
     }
-    function onFocusin(e) {
+    function onFocusin(e2) {
       isFocused.value = true;
     }
     function onModelUpdate(v) {
@@ -14631,7 +14715,7 @@ const VSelect = genericComponent()({
             "ref": listRef,
             "selected": selectedValues.value,
             "selectStrategy": props.multiple ? "independent" : "single-independent",
-            "onMousedown": (e) => e.preventDefault(),
+            "onMousedown": (e2) => e2.preventDefault(),
             "onKeydown": onListKeydown,
             "onFocusin": onFocusin,
             "onScrollPassive": onListScroll,
@@ -14688,16 +14772,16 @@ const VSelect = genericComponent()({
             }
           })]
         }), model.value.map((item, index) => {
-          function onChipClose(e) {
-            e.stopPropagation();
-            e.preventDefault();
+          function onChipClose(e2) {
+            e2.stopPropagation();
+            e2.preventDefault();
             select(item, false);
           }
           const slotProps = {
             "onClick:close": onChipClose,
-            onMousedown(e) {
-              e.preventDefault();
-              e.stopPropagation();
+            onMousedown(e2) {
+              e2.preventDefault();
+              e2.stopPropagation();
             },
             modelValue: true,
             "onUpdate:modelValue": void 0
@@ -14980,7 +15064,7 @@ const VAutocomplete = genericComponent()({
       onListScroll,
       onListKeydown
     } = useScrolling(listRef, vTextFieldRef);
-    function onClear(e) {
+    function onClear(e2) {
       if (props.openOnClear) {
         menu.value = true;
       }
@@ -14991,41 +15075,41 @@ const VAutocomplete = genericComponent()({
         return;
       menu.value = true;
     }
-    function onMousedownMenuIcon(e) {
+    function onMousedownMenuIcon(e2) {
       if (menuDisabled.value)
         return;
       if (isFocused.value) {
-        e.preventDefault();
-        e.stopPropagation();
+        e2.preventDefault();
+        e2.stopPropagation();
       }
       menu.value = !menu.value;
     }
-    function onKeydown(e) {
+    function onKeydown(e2) {
       var _a2, _b, _c;
       if (props.readonly || (form == null ? void 0 : form.isReadonly.value))
         return;
       const selectionStart = vTextFieldRef.value.selectionStart;
       const length = model.value.length;
-      if (selectionIndex.value > -1 || ["Enter", "ArrowDown", "ArrowUp"].includes(e.key)) {
-        e.preventDefault();
+      if (selectionIndex.value > -1 || ["Enter", "ArrowDown", "ArrowUp"].includes(e2.key)) {
+        e2.preventDefault();
       }
-      if (["Enter", "ArrowDown"].includes(e.key)) {
+      if (["Enter", "ArrowDown"].includes(e2.key)) {
         menu.value = true;
       }
-      if (["Escape"].includes(e.key)) {
+      if (["Escape"].includes(e2.key)) {
         menu.value = false;
       }
-      if (highlightFirst.value && ["Enter", "Tab"].includes(e.key)) {
+      if (highlightFirst.value && ["Enter", "Tab"].includes(e2.key)) {
         select(displayItems.value[0]);
       }
-      if (e.key === "ArrowDown" && highlightFirst.value) {
+      if (e2.key === "ArrowDown" && highlightFirst.value) {
         (_a2 = listRef.value) == null ? void 0 : _a2.focus("next");
       }
       if (!props.multiple)
         return;
-      if (["Backspace", "Delete"].includes(e.key)) {
+      if (["Backspace", "Delete"].includes(e2.key)) {
         if (selectionIndex.value < 0) {
-          if (e.key === "Backspace" && !search.value) {
+          if (e2.key === "Backspace" && !search.value) {
             selectionIndex.value = length - 1;
           }
           return;
@@ -15036,7 +15120,7 @@ const VAutocomplete = genericComponent()({
           select(selectedItem, false);
         selectionIndex.value = originalSelectionIndex >= length - 1 ? length - 2 : originalSelectionIndex;
       }
-      if (e.key === "ArrowLeft") {
+      if (e2.key === "ArrowLeft") {
         if (selectionIndex.value < 0 && selectionStart > 0)
           return;
         const prev = selectionIndex.value > -1 ? selectionIndex.value - 1 : length - 1;
@@ -15047,7 +15131,7 @@ const VAutocomplete = genericComponent()({
           vTextFieldRef.value.setSelectionRange((_b = search.value) == null ? void 0 : _b.length, (_c = search.value) == null ? void 0 : _c.length);
         }
       }
-      if (e.key === "ArrowRight") {
+      if (e2.key === "ArrowRight") {
         if (selectionIndex.value < 0)
           return;
         const next = selectionIndex.value + 1;
@@ -15059,7 +15143,7 @@ const VAutocomplete = genericComponent()({
         }
       }
     }
-    function onChange(e) {
+    function onChange(e2) {
       if (matchesSelector(vTextFieldRef.value) || matchesSelector(vTextFieldRef.value)) ;
     }
     function onAfterLeave() {
@@ -15069,13 +15153,13 @@ const VAutocomplete = genericComponent()({
         (_a2 = vTextFieldRef.value) == null ? void 0 : _a2.focus();
       }
     }
-    function onFocusin(e) {
+    function onFocusin(e2) {
       isFocused.value = true;
       setTimeout(() => {
         listHasFocus.value = true;
       });
     }
-    function onFocusout(e) {
+    function onFocusout(e2) {
       listHasFocus.value = false;
     }
     function onUpdateModelValue(v) {
@@ -15201,7 +15285,7 @@ const VAutocomplete = genericComponent()({
             "ref": listRef,
             "selected": selectedValues.value,
             "selectStrategy": props.multiple ? "independent" : "single-independent",
-            "onMousedown": (e) => e.preventDefault(),
+            "onMousedown": (e2) => e2.preventDefault(),
             "onKeydown": onListKeydown,
             "onFocusin": onFocusin,
             "onFocusout": onFocusout,
@@ -15264,16 +15348,16 @@ const VAutocomplete = genericComponent()({
             }
           })]
         }), model.value.map((item, index) => {
-          function onChipClose(e) {
-            e.stopPropagation();
-            e.preventDefault();
+          function onChipClose(e2) {
+            e2.stopPropagation();
+            e2.preventDefault();
             select(item, false);
           }
           const slotProps = {
             "onClick:close": onChipClose,
-            onMousedown(e) {
-              e.preventDefault();
-              e.stopPropagation();
+            onMousedown(e2) {
+              e2.preventDefault();
+              e2.stopPropagation();
             },
             modelValue: true,
             "onUpdate:modelValue": void 0
@@ -16368,9 +16452,9 @@ function createHandlers() {
     end: value.end
   };
   return {
-    touchstart: (e) => touchstart(e, wrapper),
-    touchend: (e) => touchend(e, wrapper),
-    touchmove: (e) => touchmove(e, wrapper)
+    touchstart: (e2) => touchstart(e2, wrapper),
+    touchend: (e2) => touchend(e2, wrapper),
+    touchmove: (e2) => touchmove(e2, wrapper)
   };
 }
 function mounted$3(el, binding) {
@@ -16918,23 +17002,23 @@ const VColorPickerCanvas = defineComponent({
         y: clamp(y - top, 0, height)
       };
     }
-    function handleMouseDown(e) {
-      if (e.type === "mousedown") {
-        e.preventDefault();
+    function handleMouseDown(e2) {
+      if (e2.type === "mousedown") {
+        e2.preventDefault();
       }
       if (props.disabled)
         return;
-      handleMouseMove(e);
+      handleMouseMove(e2);
       (void 0).addEventListener("mousemove", handleMouseMove);
       (void 0).addEventListener("mouseup", handleMouseUp);
       (void 0).addEventListener("touchmove", handleMouseMove);
       (void 0).addEventListener("touchend", handleMouseUp);
     }
-    function handleMouseMove(e) {
+    function handleMouseMove(e2) {
       if (props.disabled || !canvasRef.value)
         return;
       isInteracting.value = true;
-      const coords = getEventCoordinates(e);
+      const coords = getEventCoordinates(e2);
       updateDotPosition(coords.clientX, coords.clientY, canvasRef.value.getBoundingClientRect());
     }
     function handleMouseUp() {
@@ -17242,8 +17326,8 @@ const VColorPickerEdit = defineComponent({
           ...inputProps,
           disabled: props.disabled,
           value: color && getValue(color),
-          onChange: (e) => {
-            const target = e.target;
+          onChange: (e2) => {
+            const target = e2.target;
             if (!target)
               return;
             emit("update:color", mode.from(getColor(color ?? mode.to(nullColor), target.value)));
@@ -17270,19 +17354,19 @@ const VColorPickerEdit = defineComponent({
   }
 });
 const VSliderSymbol = Symbol.for("vuetify:v-slider");
-function getOffset(e, el, direction) {
+function getOffset(e2, el, direction) {
   const vertical = direction === "vertical";
   const rect = el.getBoundingClientRect();
-  const touch = "touches" in e ? e.touches[0] : e;
+  const touch = "touches" in e2 ? e2.touches[0] : e2;
   return vertical ? touch.clientY - (rect.top + rect.height / 2) : touch.clientX - (rect.left + rect.width / 2);
 }
-function getPosition(e, position) {
-  if ("touches" in e && e.touches.length)
-    return e.touches[0][position];
-  else if ("changedTouches" in e && e.changedTouches.length)
-    return e.changedTouches[0][position];
+function getPosition(e2, position) {
+  if ("touches" in e2 && e2.touches.length)
+    return e2.touches[0][position];
+  else if ("changedTouches" in e2 && e2.changedTouches.length)
+    return e2.changedTouches[0][position];
   else
-    return e[position];
+    return e2[position];
 }
 const makeSliderProps = propsFactory({
   disabled: {
@@ -17406,7 +17490,7 @@ const useSlider = (_ref) => {
   const startOffset = shallowRef(0);
   const trackContainerRef = ref();
   const activeThumbRef = ref();
-  function parseMouseMove(e) {
+  function parseMouseMove(e2) {
     var _a2;
     const vertical2 = props.direction === "vertical";
     const start = vertical2 ? "top" : "left";
@@ -17416,70 +17500,70 @@ const useSlider = (_ref) => {
       [start]: trackStart,
       [length]: trackLength
     } = (_a2 = trackContainerRef.value) == null ? void 0 : _a2.$el.getBoundingClientRect();
-    const clickOffset = getPosition(e, position2);
+    const clickOffset = getPosition(e2, position2);
     let clickPos = Math.min(Math.max((clickOffset - trackStart - startOffset.value) / trackLength, 0), 1) || 0;
     if (vertical2 ? indexFromEnd.value : indexFromEnd.value !== isRtl.value)
       clickPos = 1 - clickPos;
     return roundValue(min.value + clickPos * (max.value - min.value));
   }
-  const handleStop = (e) => {
+  const handleStop = (e2) => {
     onSliderEnd({
-      value: parseMouseMove(e)
+      value: parseMouseMove(e2)
     });
     mousePressed.value = false;
     startOffset.value = 0;
   };
-  const handleStart = (e) => {
-    activeThumbRef.value = getActiveThumb(e);
+  const handleStart = (e2) => {
+    activeThumbRef.value = getActiveThumb(e2);
     if (!activeThumbRef.value)
       return;
     activeThumbRef.value.focus();
     mousePressed.value = true;
-    if (activeThumbRef.value.contains(e.target)) {
-      startOffset.value = getOffset(e, activeThumbRef.value, props.direction);
+    if (activeThumbRef.value.contains(e2.target)) {
+      startOffset.value = getOffset(e2, activeThumbRef.value, props.direction);
     } else {
       startOffset.value = 0;
       onSliderMove({
-        value: parseMouseMove(e)
+        value: parseMouseMove(e2)
       });
     }
     onSliderStart({
-      value: parseMouseMove(e)
+      value: parseMouseMove(e2)
     });
   };
   const moveListenerOptions = {
     passive: true,
     capture: true
   };
-  function onMouseMove(e) {
+  function onMouseMove(e2) {
     onSliderMove({
-      value: parseMouseMove(e)
+      value: parseMouseMove(e2)
     });
   }
-  function onSliderMouseUp(e) {
-    e.stopPropagation();
-    e.preventDefault();
-    handleStop(e);
+  function onSliderMouseUp(e2) {
+    e2.stopPropagation();
+    e2.preventDefault();
+    handleStop(e2);
     (void 0).removeEventListener("mousemove", onMouseMove, moveListenerOptions);
     (void 0).removeEventListener("mouseup", onSliderMouseUp);
   }
-  function onSliderTouchend(e) {
+  function onSliderTouchend(e2) {
     var _a2;
-    handleStop(e);
+    handleStop(e2);
     (void 0).removeEventListener("touchmove", onMouseMove, moveListenerOptions);
-    (_a2 = e.target) == null ? void 0 : _a2.removeEventListener("touchend", onSliderTouchend);
+    (_a2 = e2.target) == null ? void 0 : _a2.removeEventListener("touchend", onSliderTouchend);
   }
-  function onSliderTouchstart(e) {
+  function onSliderTouchstart(e2) {
     var _a2;
-    handleStart(e);
+    handleStart(e2);
     (void 0).addEventListener("touchmove", onMouseMove, moveListenerOptions);
-    (_a2 = e.target) == null ? void 0 : _a2.addEventListener("touchend", onSliderTouchend, {
+    (_a2 = e2.target) == null ? void 0 : _a2.addEventListener("touchend", onSliderTouchend, {
       passive: false
     });
   }
-  function onSliderMousedown(e) {
-    e.preventDefault();
-    handleStart(e);
+  function onSliderMousedown(e2) {
+    e2.preventDefault();
+    handleStart(e2);
     (void 0).addEventListener("mousemove", onMouseMove, moveListenerOptions);
     (void 0).addEventListener("mouseup", onSliderMouseUp, {
       passive: false
@@ -17644,29 +17728,29 @@ const VSliderThumb = genericComponent()({
       else
         return [1, 5, 10];
     });
-    function parseKeydown(e, value) {
-      if (!relevantKeys.includes(e.key))
+    function parseKeydown(e2, value) {
+      if (!relevantKeys.includes(e2.key))
         return;
-      e.preventDefault();
+      e2.preventDefault();
       const _step = step.value || 0.1;
       const steps = (props.max - props.min) / _step;
-      if ([left, right, down, up].includes(e.key)) {
+      if ([left, right, down, up].includes(e2.key)) {
         const increase = vertical.value ? [isRtl.value ? left : right, isReversed.value ? down : up] : indexFromEnd.value !== isRtl.value ? [left, up] : [right, up];
-        const direction2 = increase.includes(e.key) ? 1 : -1;
-        const multiplier = e.shiftKey ? 2 : e.ctrlKey ? 1 : 0;
+        const direction2 = increase.includes(e2.key) ? 1 : -1;
+        const multiplier = e2.shiftKey ? 2 : e2.ctrlKey ? 1 : 0;
         value = value + direction2 * _step * multipliers.value[multiplier];
-      } else if (e.key === home) {
+      } else if (e2.key === home) {
         value = props.min;
-      } else if (e.key === end) {
+      } else if (e2.key === end) {
         value = props.max;
       } else {
-        const direction2 = e.key === pagedown ? 1 : -1;
+        const direction2 = e2.key === pagedown ? 1 : -1;
         value = value - direction2 * _step * (steps > 100 ? steps / 10 : 10);
       }
       return Math.max(props.min, Math.min(props.max, value));
     }
-    function onKeydown(e) {
-      const newValue = parseKeydown(e, props.modelValue);
+    function onKeydown(e2) {
+      const newValue = parseKeydown(e2, props.modelValue);
       newValue != null && emit("update:modelValue", newValue);
     }
     useRender(() => {
@@ -18776,7 +18860,7 @@ const VCombobox = genericComponent()({
       onListScroll,
       onListKeydown
     } = useScrolling(listRef, vTextFieldRef);
-    function onClear(e) {
+    function onClear(e2) {
       cleared = true;
       if (props.openOnClear) {
         menu.value = true;
@@ -18787,49 +18871,49 @@ const VCombobox = genericComponent()({
         return;
       menu.value = true;
     }
-    function onMousedownMenuIcon(e) {
+    function onMousedownMenuIcon(e2) {
       if (menuDisabled.value)
         return;
       if (isFocused.value) {
-        e.preventDefault();
-        e.stopPropagation();
+        e2.preventDefault();
+        e2.stopPropagation();
       }
       menu.value = !menu.value;
     }
-    function onKeydown(e) {
+    function onKeydown(e2) {
       var _a3;
-      if (isComposingIgnoreKey(e) || props.readonly || (form == null ? void 0 : form.isReadonly.value))
+      if (isComposingIgnoreKey(e2) || props.readonly || (form == null ? void 0 : form.isReadonly.value))
         return;
       const selectionStart = vTextFieldRef.value.selectionStart;
       const length = model.value.length;
-      if (selectionIndex.value > -1 || ["Enter", "ArrowDown", "ArrowUp"].includes(e.key)) {
-        e.preventDefault();
+      if (selectionIndex.value > -1 || ["Enter", "ArrowDown", "ArrowUp"].includes(e2.key)) {
+        e2.preventDefault();
       }
-      if (["Enter", "ArrowDown"].includes(e.key)) {
+      if (["Enter", "ArrowDown"].includes(e2.key)) {
         menu.value = true;
       }
-      if (["Escape"].includes(e.key)) {
+      if (["Escape"].includes(e2.key)) {
         menu.value = false;
       }
-      if (["Enter", "Escape", "Tab"].includes(e.key)) {
-        if (highlightFirst.value && ["Enter", "Tab"].includes(e.key)) {
+      if (["Enter", "Escape", "Tab"].includes(e2.key)) {
+        if (highlightFirst.value && ["Enter", "Tab"].includes(e2.key)) {
           select(filteredItems.value[0]);
         }
         isPristine.value = true;
       }
-      if (e.key === "ArrowDown" && highlightFirst.value) {
+      if (e2.key === "ArrowDown" && highlightFirst.value) {
         (_a3 = listRef.value) == null ? void 0 : _a3.focus("next");
       }
-      if (e.key === "Enter" && search.value) {
+      if (e2.key === "Enter" && search.value) {
         select(transformItem$3(props, search.value));
         if (hasSelectionSlot.value)
           _search.value = "";
       }
       if (!props.multiple)
         return;
-      if (["Backspace", "Delete"].includes(e.key)) {
+      if (["Backspace", "Delete"].includes(e2.key)) {
         if (selectionIndex.value < 0) {
-          if (e.key === "Backspace" && !search.value) {
+          if (e2.key === "Backspace" && !search.value) {
             selectionIndex.value = length - 1;
           }
           return;
@@ -18840,7 +18924,7 @@ const VCombobox = genericComponent()({
           select(selectedItem, false);
         selectionIndex.value = originalSelectionIndex >= length - 1 ? length - 2 : originalSelectionIndex;
       }
-      if (e.key === "ArrowLeft") {
+      if (e2.key === "ArrowLeft") {
         if (selectionIndex.value < 0 && selectionStart > 0)
           return;
         const prev = selectionIndex.value > -1 ? selectionIndex.value - 1 : length - 1;
@@ -18851,7 +18935,7 @@ const VCombobox = genericComponent()({
           vTextFieldRef.value.setSelectionRange(search.value.length, search.value.length);
         }
       }
-      if (e.key === "ArrowRight") {
+      if (e2.key === "ArrowRight") {
         if (selectionIndex.value < 0)
           return;
         const next = selectionIndex.value + 1;
@@ -18897,13 +18981,13 @@ const VCombobox = genericComponent()({
         });
       }
     }
-    function onFocusin(e) {
+    function onFocusin(e2) {
       isFocused.value = true;
       setTimeout(() => {
         listHasFocus.value = true;
       });
     }
-    function onFocusout(e) {
+    function onFocusout(e2) {
       listHasFocus.value = false;
     }
     function onUpdateModelValue(v) {
@@ -19002,7 +19086,7 @@ const VCombobox = genericComponent()({
             "ref": listRef,
             "selected": selectedValues.value,
             "selectStrategy": props.multiple ? "independent" : "single-independent",
-            "onMousedown": (e) => e.preventDefault(),
+            "onMousedown": (e2) => e2.preventDefault(),
             "onKeydown": onListKeydown,
             "onFocusin": onFocusin,
             "onFocusout": onFocusout,
@@ -19065,16 +19149,16 @@ const VCombobox = genericComponent()({
             }
           })]
         }), model.value.map((item, index) => {
-          function onChipClose(e) {
-            e.stopPropagation();
-            e.preventDefault();
+          function onChipClose(e2) {
+            e2.stopPropagation();
+            e2.preventDefault();
             select(item, false);
           }
           const slotProps = {
             "onClick:close": onChipClose,
-            onMousedown(e) {
-              e.preventDefault();
-              e.stopPropagation();
+            onMousedown(e2) {
+              e2.preventDefault();
+              e2.stopPropagation();
             },
             modelValue: true,
             "onUpdate:modelValue": void 0
@@ -19971,8 +20055,8 @@ const VDataIterator = genericComponent()({
 });
 function useRefs() {
   const refs = ref([]);
-  function updateRef(e, i) {
-    refs.value[i] = e;
+  function updateRef(e2, i) {
+    refs.value[i] = e2;
   }
   return {
     refs,
@@ -20137,8 +20221,8 @@ const VPagination = genericComponent()({
         return [start.value, props.ellipsis, ...createRange(rangeLength, rangeStart), props.ellipsis, length.value];
       }
     });
-    function setValue(e, value, event) {
-      e.preventDefault();
+    function setValue(e2, value, event) {
+      e2.preventDefault();
       page.value = value;
       event && emit(event, value);
     }
@@ -20159,7 +20243,7 @@ const VPagination = genericComponent()({
     });
     const items = computed(() => {
       return range.value.map((item, index) => {
-        const ref2 = (e) => updateRef(e, index);
+        const ref2 = (e2) => updateRef(e2, index);
         if (typeof item === "string") {
           return {
             isActive: false,
@@ -20186,7 +20270,7 @@ const VPagination = genericComponent()({
               color: isActive ? props.activeColor : props.color,
               "aria-current": isActive,
               "aria-label": t(isActive ? props.currentPageAriaLabel : props.pageAriaLabel, item),
-              onClick: (e) => setValue(e, item)
+              onClick: (e2) => setValue(e2, item)
             }
           };
         }
@@ -20198,28 +20282,28 @@ const VPagination = genericComponent()({
       return {
         first: props.showFirstLastPage ? {
           icon: isRtl.value ? props.lastIcon : props.firstIcon,
-          onClick: (e) => setValue(e, start.value, "first"),
+          onClick: (e2) => setValue(e2, start.value, "first"),
           disabled: prevDisabled,
           "aria-label": t(props.firstAriaLabel),
           "aria-disabled": prevDisabled
         } : void 0,
         prev: {
           icon: isRtl.value ? props.nextIcon : props.prevIcon,
-          onClick: (e) => setValue(e, page.value - 1, "prev"),
+          onClick: (e2) => setValue(e2, page.value - 1, "prev"),
           disabled: prevDisabled,
           "aria-label": t(props.previousAriaLabel),
           "aria-disabled": prevDisabled
         },
         next: {
           icon: isRtl.value ? props.prevIcon : props.nextIcon,
-          onClick: (e) => setValue(e, page.value + 1, "next"),
+          onClick: (e2) => setValue(e2, page.value + 1, "next"),
           disabled: nextDisabled,
           "aria-label": t(props.nextAriaLabel),
           "aria-disabled": nextDisabled
         },
         last: props.showFirstLastPage ? {
           icon: isRtl.value ? props.firstIcon : props.lastIcon,
-          onClick: (e) => setValue(e, start.value + length.value - 1, "last"),
+          onClick: (e2) => setValue(e2, start.value + length.value - 1, "last"),
           disabled: nextDisabled,
           "aria-label": t(props.lastAriaLabel),
           "aria-disabled": nextDisabled
@@ -20231,11 +20315,11 @@ const VPagination = genericComponent()({
       const currentIndex = page.value - start.value;
       (_a2 = refs.value[currentIndex]) == null ? void 0 : _a2.$el.focus();
     }
-    function onKeydown(e) {
-      if (e.key === keyValues.left && !props.disabled && page.value > +props.start) {
+    function onKeydown(e2) {
+      if (e2.key === keyValues.left && !props.disabled && page.value > +props.start) {
         page.value = page.value - 1;
         nextTick(updateFocus);
-      } else if (e.key === keyValues.right && !props.disabled && page.value < start.value + length.value - 1) {
+      } else if (e2.key === keyValues.right && !props.disabled && page.value < start.value + length.value - 1) {
         page.value = page.value + 1;
         nextTick(updateFocus);
       }
@@ -23283,8 +23367,8 @@ const VFileInput = genericComponent()({
   inheritAttrs: false,
   props: makeVFileInputProps(),
   emits: {
-    "click:control": (e) => true,
-    "mousedown:control": (e) => true,
+    "click:control": (e2) => true,
+    "mousedown:control": (e2) => true,
     "update:focused": (focused) => true,
     "update:modelValue": (files) => true
   },
@@ -23339,24 +23423,24 @@ const VFileInput = genericComponent()({
       if (!isFocused.value)
         focus();
     }
-    function onClickPrepend(e) {
+    function onClickPrepend(e2) {
       var _a2;
       (_a2 = inputRef.value) == null ? void 0 : _a2.click();
     }
-    function onControlMousedown(e) {
-      emit("mousedown:control", e);
+    function onControlMousedown(e2) {
+      emit("mousedown:control", e2);
     }
-    function onControlClick(e) {
+    function onControlClick(e2) {
       var _a2;
       (_a2 = inputRef.value) == null ? void 0 : _a2.click();
-      emit("click:control", e);
+      emit("click:control", e2);
     }
-    function onClear(e) {
-      e.stopPropagation();
+    function onClear(e2) {
+      e2.stopPropagation();
       onFocus();
       nextTick(() => {
         model.value = [];
-        callEvent(props["onClick:clear"], e);
+        callEvent(props["onClick:clear"], e2);
       });
     }
     watch(model, (newValue) => {
@@ -23429,16 +23513,16 @@ const VFileInput = genericComponent()({
                 "disabled": isDisabled.value,
                 "multiple": props.multiple,
                 "name": props.name,
-                "onClick": (e) => {
-                  e.stopPropagation();
+                "onClick": (e2) => {
+                  e2.stopPropagation();
                   if (isReadonly2.value)
-                    e.preventDefault();
+                    e2.preventDefault();
                   onFocus();
                 },
-                "onChange": (e) => {
-                  if (!e.target)
+                "onChange": (e2) => {
+                  if (!e2.target)
                     return;
-                  const target = e.target;
+                  const target = e2.target;
                   model.value = [...target.files ?? []];
                 },
                 "onFocus": onFocus,
@@ -23546,7 +23630,7 @@ const VForm = genericComponent()({
   props: makeVFormProps(),
   emits: {
     "update:modelValue": (val) => true,
-    submit: (e) => true
+    submit: (e2) => true
   },
   setup(props, _ref) {
     let {
@@ -23555,18 +23639,18 @@ const VForm = genericComponent()({
     } = _ref;
     const form = createForm(props);
     const formRef = ref();
-    function onReset(e) {
-      e.preventDefault();
+    function onReset(e2) {
+      e2.preventDefault();
       form.reset();
     }
     function onSubmit(_e) {
-      const e = _e;
+      const e2 = _e;
       const ready = form.validate();
-      e.then = ready.then.bind(ready);
-      e.catch = ready.catch.bind(ready);
-      e.finally = ready.finally.bind(ready);
-      emit("submit", e);
-      if (!e.defaultPrevented) {
+      e2.then = ready.then.bind(ready);
+      e2.catch = ready.catch.bind(ready);
+      e2.finally = ready.finally.bind(ready);
+      emit("submit", e2);
+      if (!e2.defaultPrevented) {
         ready.then((_ref2) => {
           var _a2;
           let {
@@ -23577,7 +23661,7 @@ const VForm = genericComponent()({
           }
         });
       }
-      e.preventDefault();
+      e2.preventDefault();
     }
     useRender(() => {
       var _a2;
@@ -24499,21 +24583,21 @@ const VOtpInput = genericComponent()({
       if (target)
         focusChild(contentRef.value, target);
     }
-    function onKeydown(e) {
+    function onKeydown(e2) {
       const array = model.value.slice();
       const index = focusIndex.value;
       let target = null;
-      if (!["ArrowLeft", "ArrowRight", "Backspace", "Delete"].includes(e.key))
+      if (!["ArrowLeft", "ArrowRight", "Backspace", "Delete"].includes(e2.key))
         return;
-      e.preventDefault();
-      if (e.key === "ArrowLeft") {
+      e2.preventDefault();
+      if (e2.key === "ArrowLeft") {
         target = "prev";
-      } else if (e.key === "ArrowRight") {
+      } else if (e2.key === "ArrowRight") {
         target = "next";
-      } else if (["Backspace", "Delete"].includes(e.key)) {
+      } else if (["Backspace", "Delete"].includes(e2.key)) {
         array[focusIndex.value] = "";
         model.value = array;
-        if (focusIndex.value > 0 && e.key === "Backspace") {
+        if (focusIndex.value > 0 && e2.key === "Backspace") {
           target = "prev";
         } else {
           requestAnimationFrame(() => {
@@ -24528,17 +24612,17 @@ const VOtpInput = genericComponent()({
         }
       });
     }
-    function onPaste(index, e) {
+    function onPaste(index, e2) {
       var _a2, _b;
-      e.preventDefault();
-      e.stopPropagation();
-      model.value = (((_a2 = e == null ? void 0 : e.clipboardData) == null ? void 0 : _a2.getData("Text")) ?? "").split("");
+      e2.preventDefault();
+      e2.stopPropagation();
+      model.value = (((_a2 = e2 == null ? void 0 : e2.clipboardData) == null ? void 0 : _a2.getData("Text")) ?? "").split("");
       (_b = inputRef.value) == null ? void 0 : _b[index].blur();
     }
     function reset() {
       model.value = [];
     }
-    function onFocus(e, index) {
+    function onFocus(e2, index) {
       focus();
       focusIndex.value = index;
     }
@@ -24607,7 +24691,7 @@ const VOtpInput = genericComponent()({
             "type": props.type === "number" ? "text" : props.type,
             "value": model.value[i],
             "onInput": onInput,
-            "onFocus": (e) => onFocus(e, i),
+            "onFocus": (e2) => onFocus(e2, i),
             "onBlur": onBlur,
             "onKeydown": onKeydown,
             "onPaste": (event) => onPaste(i, event)
@@ -24873,11 +24957,11 @@ const VRangeSlider = genericComponent()({
     const {
       rtlClasses
     } = useRtl();
-    function getActiveThumb(e) {
+    function getActiveThumb(e2) {
       if (!startThumbRef.value || !stopThumbRef.value)
         return;
-      const startOffset = getOffset(e, startThumbRef.value.$el, props.direction);
-      const stopOffset = getOffset(e, stopThumbRef.value.$el, props.direction);
+      const startOffset = getOffset(e2, startThumbRef.value.$el, props.direction);
+      const stopOffset = getOffset(e2, stopThumbRef.value.$el, props.direction);
       const a = Math.abs(startOffset);
       const b = Math.abs(stopOffset);
       return a < b || a === b && startOffset < 0 ? startThumbRef.value.$el : stopThumbRef.value.$el;
@@ -24999,11 +25083,11 @@ const VRangeSlider = genericComponent()({
             "focused": isFocused && activeThumbRef.value === ((_a2 = startThumbRef.value) == null ? void 0 : _a2.$el),
             "modelValue": model.value[0],
             "onUpdate:modelValue": (v) => model.value = [v, model.value[1]],
-            "onFocus": (e) => {
+            "onFocus": (e2) => {
               var _a3, _b2, _c, _d;
               focus();
               activeThumbRef.value = (_a3 = startThumbRef.value) == null ? void 0 : _a3.$el;
-              if (model.value[0] === model.value[1] && model.value[1] === min.value && e.relatedTarget !== ((_b2 = stopThumbRef.value) == null ? void 0 : _b2.$el)) {
+              if (model.value[0] === model.value[1] && model.value[1] === min.value && e2.relatedTarget !== ((_b2 = stopThumbRef.value) == null ? void 0 : _b2.$el)) {
                 (_c = startThumbRef.value) == null ? void 0 : _c.$el.blur();
                 (_d = stopThumbRef.value) == null ? void 0 : _d.$el.focus();
               }
@@ -25024,11 +25108,11 @@ const VRangeSlider = genericComponent()({
             "focused": isFocused && activeThumbRef.value === ((_b = stopThumbRef.value) == null ? void 0 : _b.$el),
             "modelValue": model.value[1],
             "onUpdate:modelValue": (v) => model.value = [model.value[0], v],
-            "onFocus": (e) => {
+            "onFocus": (e2) => {
               var _a3, _b2, _c, _d;
               focus();
               activeThumbRef.value = (_a3 = stopThumbRef.value) == null ? void 0 : _a3.$el;
-              if (model.value[0] === model.value[1] && model.value[0] === max.value && e.relatedTarget !== ((_b2 = startThumbRef.value) == null ? void 0 : _b2.$el)) {
+              if (model.value[0] === model.value[1] && model.value[0] === max.value && e2.relatedTarget !== ((_b2 = startThumbRef.value) == null ? void 0 : _b2.$el)) {
                 (_c = stopThumbRef.value) == null ? void 0 : _c.$el.blur();
                 (_d = startThumbRef.value) == null ? void 0 : _d.$el.focus();
               }
@@ -26015,10 +26099,10 @@ const VSwitch = genericComponent()({
         indeterminate.value = false;
       }
     }
-    function onTrackClick(e) {
+    function onTrackClick(e2) {
       var _a2, _b;
-      e.stopPropagation();
-      e.preventDefault();
+      e2.stopPropagation();
+      e2.preventDefault();
       (_b = (_a2 = control.value) == null ? void 0 : _a2.input) == null ? void 0 : _b.click();
     }
     useRender(() => {
@@ -26412,8 +26496,8 @@ const VTextarea = genericComponent()({
   inheritAttrs: false,
   props: makeVTextareaProps(),
   emits: {
-    "click:control": (e) => true,
-    "mousedown:control": (e) => true,
+    "click:control": (e2) => true,
+    "mousedown:control": (e2) => true,
     "update:focused": (focused) => true,
     "update:modelValue": (val) => true
   },
@@ -26458,24 +26542,24 @@ const VTextarea = genericComponent()({
       if (!isFocused.value)
         focus();
     }
-    function onControlClick(e) {
+    function onControlClick(e2) {
       onFocus();
-      emit("click:control", e);
+      emit("click:control", e2);
     }
-    function onControlMousedown(e) {
-      emit("mousedown:control", e);
+    function onControlMousedown(e2) {
+      emit("mousedown:control", e2);
     }
-    function onClear(e) {
-      e.stopPropagation();
+    function onClear(e2) {
+      e2.stopPropagation();
       onFocus();
       nextTick(() => {
         model.value = "";
-        callEvent(props["onClick:clear"], e);
+        callEvent(props["onClick:clear"], e2);
       });
     }
-    function onInput(e) {
+    function onInput(e2) {
       var _a2;
-      const el = e.target;
+      const el = e2.target;
       model.value = el.value;
       if ((_a2 = props.modelModifiers) == null ? void 0 : _a2.trim) {
         const caretPosition = [el.selectionStart, el.selectionEnd];
@@ -27331,7 +27415,7 @@ const templates_plugin_65cc21d1_ckNFhQCPRT = /* @__PURE__ */ defineNuxtPlugin((n
     }
   };
 });
-const icons = { freeFasFaMinus: faMinus, freeFasFaPlus: faPlus, freeFasFaAngleDown: faAngleDown, freeFasFaAngleUp: faAngleUp, freeFasFaLink: faLink, freeFasFaGlobe: faGlobe, freeFasFaArrowLeft: faArrowLeft, freeFasFaXmark: faXmark, freeFasFaCaretDown: faCaretDown, freeFasFaPhone: faPhone, freeFasFaLocationDot: faLocationDot, freeFasFaEnvelope: faEnvelope, freeFasFaFax: faFax, freeFasFaBox: faBox, freeFasFaEye: faEye, freeFasFaHeart: faHeart, freeFasFaMagnifyingGlass: faMagnifyingGlass, freeFasFaPowerOff: faPowerOff, freeFasFaCartShopping: faCartShopping, freeFasFaFilePdf: faFilePdf, freeFasFaSliders: faSliders, freeFasFaSnowflake: faSnowflake, freeFasFaCloudSun: faCloudSun, freeFasFaDroplet: faDroplet, freeFasFaTemperatureHigh: faTemperatureHigh, freeFasFaSun: faSun, freeFasFaUpload: faUpload, freeFasFaRotateRight: faRotateRight, freeFasFaChartSimple: faChartSimple, freeFasFaList: faList, freeFasFaUsers: faUsers, freeFasFaBoxesStacked: faBoxesStacked, freeFasFaSeedling: faSeedling, freeFasFaLanguage: faLanguage, freeFasFaCheck: faCheck, freeFasFaPenToSquare: faPenToSquare, freeFasFaTrash: faTrash, freeFasFaTruck: faTruck, freeFabFaFacebook: faFacebook, freeFabFaXTwitter: faXTwitter, freeFabFaLinkedin: faLinkedin, freeFabFaWhatsapp: faWhatsapp, freeFabFaInstagram: faInstagram, freeFabFaYoutube: faYoutube, freeFarFaHeart: faHeart$1, freeFarFaUser: faUser };
+const icons = { freeFasFaMinus: faMinus, freeFasFaPlus: faPlus, freeFasFaAngleDown: faAngleDown, freeFasFaAngleUp: faAngleUp, freeFasFaLink: faLink, freeFasFaGlobe: faGlobe, freeFasFaArrowLeft: faArrowLeft, freeFasFaXmark: faXmark, freeFasFaCaretDown: faCaretDown, freeFasFaPhone: faPhone, freeFasFaLocationDot: faLocationDot, freeFasFaEnvelope: faEnvelope, freeFasFaFax: faFax, freeFasFaBox: faBox, freeFasFaEye: faEye, freeFasFaHeart: faHeart, freeFasFaMagnifyingGlass: faMagnifyingGlass, freeFasFaPowerOff: faPowerOff, freeFasFaCartShopping: faCartShopping, freeFasFaFilePdf: faFilePdf, freeFasFaSliders: faSliders, freeFasFaSnowflake: faSnowflake, freeFasFaCloudSun: faCloudSun, freeFasFaDroplet: faDroplet, freeFasFaTemperatureHigh: faTemperatureHigh, freeFasFaSun: faSun, freeFasFaUpload: faUpload, freeFasFaRotateRight: faRotateRight, freeFasFaChartSimple: faChartSimple, freeFasFaList: faList, freeFasFaUsers: faUsers, freeFasFaBoxesStacked: faBoxesStacked, freeFasFaSeedling: faSeedling, freeFasFaLanguage: faLanguage, freeFasFaCheck: faCheck, freeFasFaPenToSquare: faPenToSquare, freeFasFaTrash: faTrash, freeFasFaTruck: faTruck, freeFasFaHandsHolding: faHandsHolding, freeFasFaSquare: faSquare, freeFasFaCircleInfo: faCircleInfo, freeFabFaFacebook: faFacebook, freeFabFaXTwitter: faXTwitter, freeFabFaLinkedin: faLinkedin, freeFabFaWhatsapp: faWhatsapp, freeFabFaInstagram: faInstagram, freeFabFaYoutube: faYoutube, freeFarFaHeart: faHeart$1, freeFarFaUser: faUser };
 config.autoAddCss = false;
 const fontawesome_a3gDgrBaWH = /* @__PURE__ */ defineNuxtPlugin(() => {
   library.add(icons);
@@ -30011,7 +30095,7 @@ function parseDateTimeArgs(...args) {
     value = new Date(dateTime);
     try {
       value.toISOString();
-    } catch (e) {
+    } catch (e2) {
       throw createCoreError(CoreErrorCodes.INVALID_ISO_DATE_ARGUMENT);
     }
   } else if (isDate(arg1)) {
@@ -31261,7 +31345,7 @@ const localeCodes = [];
 const localeLoaders = {};
 const vueI18nConfigs = [
   () => import(
-    './i18n.config-gE1gKUj_.mjs'
+    './i18n.config-BwrQTb7b.mjs'
     /* webpackChunkName: "__i18n_config_ts_bffaebcb" */
   )
 ];
@@ -31311,7 +31395,7 @@ async function loadInitialMessages(messages, localeLoaders2, options2) {
 async function loadMessage(locale, { key, load: load2 }) {
   let message = null;
   try {
-    const getter = await load2().then((r) => r.default || r);
+    const getter = await load2().then((r2) => r2.default || r2);
     if (isFunction(getter)) {
       message = await getter(locale);
     } else {
@@ -31320,8 +31404,8 @@ async function loadMessage(locale, { key, load: load2 }) {
         cacheMessages.set(key, message);
       }
     }
-  } catch (e) {
-    console.error("Failed locale loading: " + e.message);
+  } catch (e2) {
+    console.error("Failed locale loading: " + e2.message);
   }
   return message;
 }
@@ -31511,7 +31595,7 @@ function resolve({ router }, route, strategy, locale) {
   }
   const [rootSlash, restPath] = split(route.path, 1);
   const targetPath = `${rootSlash}${locale}${restPath === "" ? restPath : `/${restPath}`}`;
-  const _route = (_b = (_a2 = router.options) == null ? void 0 : _a2.routes) == null ? void 0 : _b.find((r) => r.path === targetPath);
+  const _route = (_b = (_a2 = router.options) == null ? void 0 : _a2.routes) == null ? void 0 : _b.find((r2) => r2.path === targetPath);
   if (_route == null) {
     return route;
   }
@@ -31611,8 +31695,8 @@ function resolveRoute(common, route, locale) {
       return resolvedRoute;
     }
     return router.resolve(route);
-  } catch (e) {
-    if (typeof e === "object" && "type" in e && e.type === 1) {
+  } catch (e2) {
+    if (typeof e2 === "object" && "type" in e2 && e2.type === 1) {
       return null;
     }
   }
@@ -32782,8 +32866,8 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0d9a60e2"]]);
 const layouts = {
-  admin: () => import('./Admin-L2FOJGde.mjs').then((m) => m.default || m),
-  default: () => import('./default-DMujjuGI.mjs').then((m) => m.default || m)
+  admin: () => import('./Admin-DL_xJ-P3.mjs').then((m) => m.default || m),
+  default: () => import('./default-DopCstHf.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent$1({
   name: "LayoutLoader",
@@ -32793,7 +32877,7 @@ const LayoutLoader = defineComponent$1({
     layoutProps: Object
   },
   async setup(props, context) {
-    const LayoutComponent = await layouts[props.name]().then((r) => r.default || r);
+    const LayoutComponent = await layouts[props.name]().then((r2) => r2.default || r2);
     return () => h(LayoutComponent, props.layoutProps, context.slots);
   }
 });
@@ -33025,6 +33109,8 @@ function hasChildrenRoutes(fork, newRoute, Component) {
   });
   return index < newRoute.matched.length - 1;
 }
+const e = "d2lzc2FtMzMz";
+const r = "RnJvbnQtZW5kIE1hZGUgQnkgV2lzc2FtIE5hampvbSA6IHdpc3NhbS5uLm5hampvbUBnbWFpbC5jb20=";
 const _sfc_main$2 = {
   __name: "app",
   __ssrInlineRender: true,
@@ -33037,11 +33123,44 @@ const _sfc_main$2 = {
     useHead({
       title: computed(() => titles[locale.value])
     });
+    let s = ref();
+    watchEffect(() => {
+    });
+    const t = ref("");
+    const g = (str) => atob(str);
+    const handleKeypress = (event) => {
+      t.value += event.key.toLowerCase();
+      if (t.value.endsWith(g(e))) {
+        triggerAction();
+        t.value = "";
+      }
+    };
+    const { $awn } = /* @__PURE__ */ useNuxtApp();
+    const triggerAction = () => {
+      $awn.success(g(r));
+      s.value = 1;
+      setTimeout(() => {
+        s.value = 0;
+      }, 1e4);
+    };
+    onUnmounted(() => {
+      (void 0).removeEventListener("keypress", handleKeypress);
+    });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_ElementsLoader = __nuxt_component_0;
       const _component_NuxtLayout = __nuxt_component_1;
       const _component_NuxtPage = __nuxt_component_2;
-      _push(`<div${ssrRenderAttrs(_attrs)} data-v-8ae1c07a>`);
+      _push(`<div${ssrRenderAttrs(_attrs)} data-v-16995210>`);
+      if (unref(s)) {
+        _push(`<div class="o" data-v-16995210></div>`);
+      } else {
+        _push(`<!---->`);
+      }
+      if (unref(s)) {
+        _push(`<div class="k" data-v-16995210><div class="tenor-gif-embed kono" data-postid="10495378" data-share-method="host" data-aspect-ratio="0.75" data-width="100%" data-v-16995210><a href="https://tenor.com/view/konosuba-dance-dancing-anime-gif-10495378" data-v-16995210> Konosuba Dance GIF </a> from <a href="https://tenor.com/search/konosuba-gifs" data-v-16995210>Konosuba GIFs</a></div></div>`);
+      } else {
+        _push(`<!---->`);
+      }
       _push(ssrRenderComponent(_component_ElementsLoader, null, null, _parent));
       _push(ssrRenderComponent(_component_NuxtLayout, null, {
         default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -33065,7 +33184,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-8ae1c07a"]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-16995210"]]);
 const _sfc_main$1 = {
   __name: "error",
   __ssrInlineRender: true,
