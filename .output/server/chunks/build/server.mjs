@@ -965,6 +965,34 @@ async function getRouteRules(url) {
     return defu({}, ..._routeRulesMatcher.matchAll(url).reverse());
   }
 }
+const __nuxt_page_meta$z = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$y = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$x = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$w = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$v = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$u = {
+  layout: "admin"
+  // This will disable the default layout
+};
+const __nuxt_page_meta$t = {
+  layout: "admin"
+  // This will disable the default layout
+};
 const __nuxt_page_meta$s = {
   layout: "admin"
   // This will disable the default layout
@@ -998,7 +1026,7 @@ const __nuxt_page_meta$l = {
   // This will disable the default layout
 };
 const __nuxt_page_meta$k = {
-  layout: "admin"
+  layout: false
   // This will disable the default layout
 };
 const __nuxt_page_meta$j = {
@@ -1018,22 +1046,6 @@ const __nuxt_page_meta$g = {
   // This will disable the default layout
 };
 const __nuxt_page_meta$f = {
-  layout: false
-  // This will disable the default layout
-};
-const __nuxt_page_meta$e = {
-  layout: "admin"
-  // This will disable the default layout
-};
-const __nuxt_page_meta$d = {
-  layout: "admin"
-  // This will disable the default layout
-};
-const __nuxt_page_meta$c = {
-  layout: "admin"
-  // This will disable the default layout
-};
-const __nuxt_page_meta$b = {
   layout: "admin"
   // This will disable the default layout
 };
@@ -1047,148 +1059,180 @@ const _routes = [
     component: () => import('./About-B8AXN0TD.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.name) ?? "admin-About",
-    path: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.path) ?? "/admin/About",
-    meta: __nuxt_page_meta$s || {},
-    alias: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.alias) || [],
-    redirect: __nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.redirect,
-    component: () => import('./About-Danz-69U.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta$z == null ? void 0 : __nuxt_page_meta$z.name) ?? "admin-About",
+    path: (__nuxt_page_meta$z == null ? void 0 : __nuxt_page_meta$z.path) ?? "/admin/About",
+    meta: __nuxt_page_meta$z || {},
+    alias: (__nuxt_page_meta$z == null ? void 0 : __nuxt_page_meta$z.alias) || [],
+    redirect: __nuxt_page_meta$z == null ? void 0 : __nuxt_page_meta$z.redirect,
+    component: () => import('./About-CgxcJ1f_.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.name) ?? "admin-AddProduct",
-    path: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.path) ?? "/admin/AddProduct",
-    meta: __nuxt_page_meta$r || {},
-    alias: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.alias) || [],
-    redirect: __nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.redirect,
-    component: () => import('./AddProduct-DSeMIRqz.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta$y == null ? void 0 : __nuxt_page_meta$y.name) ?? "admin-AddProduct",
+    path: (__nuxt_page_meta$y == null ? void 0 : __nuxt_page_meta$y.path) ?? "/admin/AddProduct",
+    meta: __nuxt_page_meta$y || {},
+    alias: (__nuxt_page_meta$y == null ? void 0 : __nuxt_page_meta$y.alias) || [],
+    redirect: __nuxt_page_meta$y == null ? void 0 : __nuxt_page_meta$y.redirect,
+    component: () => import('./AddProduct-RKIBTJOa.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.name) ?? "admin-Category",
-    path: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.path) ?? "/admin/Category",
-    meta: __nuxt_page_meta$q || {},
-    alias: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.alias) || [],
-    redirect: __nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.redirect,
+    name: (__nuxt_page_meta$x == null ? void 0 : __nuxt_page_meta$x.name) ?? "admin-Care",
+    path: (__nuxt_page_meta$x == null ? void 0 : __nuxt_page_meta$x.path) ?? "/admin/Care",
+    meta: __nuxt_page_meta$x || {},
+    alias: (__nuxt_page_meta$x == null ? void 0 : __nuxt_page_meta$x.alias) || [],
+    redirect: __nuxt_page_meta$x == null ? void 0 : __nuxt_page_meta$x.redirect,
+    component: () => import('./Care-hNNS2RV5.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$w == null ? void 0 : __nuxt_page_meta$w.name) ?? "admin-Category",
+    path: (__nuxt_page_meta$w == null ? void 0 : __nuxt_page_meta$w.path) ?? "/admin/Category",
+    meta: __nuxt_page_meta$w || {},
+    alias: (__nuxt_page_meta$w == null ? void 0 : __nuxt_page_meta$w.alias) || [],
+    redirect: __nuxt_page_meta$w == null ? void 0 : __nuxt_page_meta$w.redirect,
     component: () => import('./Category-k40wYEw6.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.name) ?? "admin-ContactInfo",
-    path: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.path) ?? "/admin/ContactInfo",
-    meta: __nuxt_page_meta$p || {},
-    alias: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.alias) || [],
-    redirect: __nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.redirect,
+    name: (__nuxt_page_meta$v == null ? void 0 : __nuxt_page_meta$v.name) ?? "admin-ContactInfo",
+    path: (__nuxt_page_meta$v == null ? void 0 : __nuxt_page_meta$v.path) ?? "/admin/ContactInfo",
+    meta: __nuxt_page_meta$v || {},
+    alias: (__nuxt_page_meta$v == null ? void 0 : __nuxt_page_meta$v.alias) || [],
+    redirect: __nuxt_page_meta$v == null ? void 0 : __nuxt_page_meta$v.redirect,
     component: () => import('./ContactInfo-3Ghu9GON.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.name) ?? "admin-Customers",
-    path: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.path) ?? "/admin/Customers",
-    meta: __nuxt_page_meta$o || {},
-    alias: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.alias) || [],
-    redirect: __nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.redirect,
+    name: (__nuxt_page_meta$u == null ? void 0 : __nuxt_page_meta$u.name) ?? "admin-Customers",
+    path: (__nuxt_page_meta$u == null ? void 0 : __nuxt_page_meta$u.path) ?? "/admin/Customers",
+    meta: __nuxt_page_meta$u || {},
+    alias: (__nuxt_page_meta$u == null ? void 0 : __nuxt_page_meta$u.alias) || [],
+    redirect: __nuxt_page_meta$u == null ? void 0 : __nuxt_page_meta$u.redirect,
     component: () => import('./Customers-adrm1l-K.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.name) ?? "admin-EditProduct-id",
-    path: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.path) ?? "/admin/EditProduct/:id()",
-    meta: __nuxt_page_meta$n || {},
-    alias: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.alias) || [],
-    redirect: __nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.redirect,
-    component: () => import('./_id_-pG8dvh-t.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta$t == null ? void 0 : __nuxt_page_meta$t.name) ?? "admin-EditProduct-id",
+    path: (__nuxt_page_meta$t == null ? void 0 : __nuxt_page_meta$t.path) ?? "/admin/EditProduct/:id()",
+    meta: __nuxt_page_meta$t || {},
+    alias: (__nuxt_page_meta$t == null ? void 0 : __nuxt_page_meta$t.alias) || [],
+    redirect: __nuxt_page_meta$t == null ? void 0 : __nuxt_page_meta$t.redirect,
+    component: () => import('./_id_-DoHKGS5c.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.name) ?? "admin",
-    path: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.path) ?? "/admin",
-    meta: __nuxt_page_meta$m || {},
-    alias: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.alias) || [],
-    redirect: __nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.redirect,
-    component: () => import('./index-VPmEA9Gh.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.name) ?? "admin",
+    path: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.path) ?? "/admin",
+    meta: __nuxt_page_meta$s || {},
+    alias: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.alias) || [],
+    redirect: __nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.redirect,
+    component: () => import('./index-Cq3HGMRZ.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.name) ?? "admin-ListProduct",
-    path: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.path) ?? "/admin/ListProduct",
-    meta: __nuxt_page_meta$l || {},
-    alias: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.alias) || [],
-    redirect: __nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.redirect,
-    component: () => import('./ListProduct-ZS5kbVS9.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.name) ?? "admin-ListProduct",
+    path: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.path) ?? "/admin/ListProduct",
+    meta: __nuxt_page_meta$r || {},
+    alias: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.alias) || [],
+    redirect: __nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.redirect,
+    component: () => import('./ListProduct-DDwVZq3Q.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.name) ?? "admin-Locations",
-    path: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.path) ?? "/admin/Locations",
-    meta: __nuxt_page_meta$k || {},
-    alias: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.alias) || [],
-    redirect: __nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.redirect,
+    name: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.name) ?? "admin-Locations",
+    path: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.path) ?? "/admin/Locations",
+    meta: __nuxt_page_meta$q || {},
+    alias: (__nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.alias) || [],
+    redirect: __nuxt_page_meta$q == null ? void 0 : __nuxt_page_meta$q.redirect,
     component: () => import('./Locations-zjOVZ6Fa.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.name) ?? "admin-Logo",
-    path: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.path) ?? "/admin/Logo",
-    meta: __nuxt_page_meta$j || {},
-    alias: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.alias) || [],
-    redirect: __nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.redirect,
+    name: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.name) ?? "admin-Logo",
+    path: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.path) ?? "/admin/Logo",
+    meta: __nuxt_page_meta$p || {},
+    alias: (__nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.alias) || [],
+    redirect: __nuxt_page_meta$p == null ? void 0 : __nuxt_page_meta$p.redirect,
     component: () => import('./Logo-CVQWTcxi.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.name) ?? "admin-Messages",
-    path: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.path) ?? "/admin/Messages",
-    meta: __nuxt_page_meta$i || {},
-    alias: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.alias) || [],
-    redirect: __nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.redirect,
+    name: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.name) ?? "admin-Messages",
+    path: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.path) ?? "/admin/Messages",
+    meta: __nuxt_page_meta$o || {},
+    alias: (__nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.alias) || [],
+    redirect: __nuxt_page_meta$o == null ? void 0 : __nuxt_page_meta$o.redirect,
     component: () => import('./Messages-Dnb2UMy-.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.name) ?? "admin-Orders",
-    path: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.path) ?? "/admin/Orders",
-    meta: __nuxt_page_meta$h || {},
-    alias: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.alias) || [],
-    redirect: __nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.redirect,
-    component: () => import('./Orders-B93h7cOz.mjs').then((m) => m.default || m)
+    name: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.name) ?? "admin-Orders",
+    path: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.path) ?? "/admin/Orders",
+    meta: __nuxt_page_meta$n || {},
+    alias: (__nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.alias) || [],
+    redirect: __nuxt_page_meta$n == null ? void 0 : __nuxt_page_meta$n.redirect,
+    component: () => import('./Orders-UtmsNiM6.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.name) ?? "admin-PrivacyPolicy",
-    path: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.path) ?? "/admin/PrivacyPolicy",
-    meta: __nuxt_page_meta$g || {},
-    alias: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.alias) || [],
-    redirect: __nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.redirect,
+    name: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.name) ?? "admin-Press",
+    path: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.path) ?? "/admin/Press",
+    meta: __nuxt_page_meta$m || {},
+    alias: (__nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.alias) || [],
+    redirect: __nuxt_page_meta$m == null ? void 0 : __nuxt_page_meta$m.redirect,
+    component: () => import('./Press-DmFtdai5.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.name) ?? "admin-PrivacyPolicy",
+    path: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.path) ?? "/admin/PrivacyPolicy",
+    meta: __nuxt_page_meta$l || {},
+    alias: (__nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.alias) || [],
+    redirect: __nuxt_page_meta$l == null ? void 0 : __nuxt_page_meta$l.redirect,
     component: () => import('./PrivacyPolicy-CMeHBmQZ.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.name) ?? "admin-SignIn",
-    path: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.path) ?? "/admin/SignIn",
-    meta: __nuxt_page_meta$f || {},
-    alias: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.alias) || [],
-    redirect: __nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.redirect,
+    name: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.name) ?? "admin-SignIn",
+    path: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.path) ?? "/admin/SignIn",
+    meta: __nuxt_page_meta$k || {},
+    alias: (__nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.alias) || [],
+    redirect: __nuxt_page_meta$k == null ? void 0 : __nuxt_page_meta$k.redirect,
     component: () => import('./SignIn-F080ssry.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.name) ?? "admin-Social",
-    path: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.path) ?? "/admin/Social",
-    meta: __nuxt_page_meta$e || {},
-    alias: (__nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.alias) || [],
-    redirect: __nuxt_page_meta$e == null ? void 0 : __nuxt_page_meta$e.redirect,
+    name: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.name) ?? "admin-Social",
+    path: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.path) ?? "/admin/Social",
+    meta: __nuxt_page_meta$j || {},
+    alias: (__nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.alias) || [],
+    redirect: __nuxt_page_meta$j == null ? void 0 : __nuxt_page_meta$j.redirect,
     component: () => import('./Social-BbQ2MUce.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.name) ?? "admin-SubCategory",
-    path: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.path) ?? "/admin/SubCategory",
-    meta: __nuxt_page_meta$d || {},
-    alias: (__nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.alias) || [],
-    redirect: __nuxt_page_meta$d == null ? void 0 : __nuxt_page_meta$d.redirect,
+    name: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.name) ?? "admin-SubCategory",
+    path: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.path) ?? "/admin/SubCategory",
+    meta: __nuxt_page_meta$i || {},
+    alias: (__nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.alias) || [],
+    redirect: __nuxt_page_meta$i == null ? void 0 : __nuxt_page_meta$i.redirect,
     component: () => import('./SubCategory-Brqb399s.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.name) ?? "admin-Support",
-    path: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.path) ?? "/admin/Support",
-    meta: __nuxt_page_meta$c || {},
-    alias: (__nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.alias) || [],
-    redirect: __nuxt_page_meta$c == null ? void 0 : __nuxt_page_meta$c.redirect,
+    name: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.name) ?? "admin-Support",
+    path: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.path) ?? "/admin/Support",
+    meta: __nuxt_page_meta$h || {},
+    alias: (__nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.alias) || [],
+    redirect: __nuxt_page_meta$h == null ? void 0 : __nuxt_page_meta$h.redirect,
     component: () => import('./Support-BxpWWCeg.mjs').then((m) => m.default || m)
   },
   {
-    name: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.name) ?? "admin-Website",
-    path: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.path) ?? "/admin/Website",
-    meta: __nuxt_page_meta$b || {},
-    alias: (__nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.alias) || [],
-    redirect: __nuxt_page_meta$b == null ? void 0 : __nuxt_page_meta$b.redirect,
+    name: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.name) ?? "admin-Talk",
+    path: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.path) ?? "/admin/Talk",
+    meta: __nuxt_page_meta$g || {},
+    alias: (__nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.alias) || [],
+    redirect: __nuxt_page_meta$g == null ? void 0 : __nuxt_page_meta$g.redirect,
+    component: () => import('./Talk-0hytyRdE.mjs').then((m) => m.default || m)
+  },
+  {
+    name: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.name) ?? "admin-Website",
+    path: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.path) ?? "/admin/Website",
+    meta: __nuxt_page_meta$f || {},
+    alias: (__nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.alias) || [],
+    redirect: __nuxt_page_meta$f == null ? void 0 : __nuxt_page_meta$f.redirect,
     component: () => import('./Website-DQPfdvu6.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Care",
+    path: "/Care",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./Care-0xzsKV5M.mjs').then((m) => m.default || m)
   },
   {
     name: "Cart",
@@ -1196,7 +1240,15 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Cart-Bnj1H8ca.mjs').then((m) => m.default || m)
+    component: () => import('./Cart-D0Trtz3p.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Contact",
+    path: "/Contact",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./Contact-1f9eo5qR.mjs').then((m) => m.default || m)
   },
   {
     name: "Fav",
@@ -1204,7 +1256,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Fav-CJKuGudJ.mjs').then((m) => m.default || m)
+    component: () => import('./Fav-Ckwvaa7K.mjs').then((m) => m.default || m)
   },
   {
     name: "index",
@@ -1212,7 +1264,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./index-6MhcKE2Q.mjs').then((m) => m.default || m)
+    component: () => import('./index-PKRZfe1p.mjs').then((m) => m.default || m)
   },
   {
     name: "Newest",
@@ -1220,7 +1272,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Newest-CHeXxNh2.mjs').then((m) => m.default || m)
+    component: () => import('./Newest-CUx28KSV.mjs').then((m) => m.default || m)
   },
   {
     name: "Order",
@@ -1228,7 +1280,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./Order-BHgnaQJP.mjs').then((m) => m.default || m)
+    component: () => import('./Order-Br26PyZI.mjs').then((m) => m.default || m)
   },
   {
     name: "Photos",
@@ -1237,6 +1289,14 @@ const _routes = [
     alias: [],
     redirect: void 0 ,
     component: () => import('./Photos-Bzt2fcCa.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Press",
+    path: "/Press",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./Press-UFu8W1k9.mjs').then((m) => m.default || m)
   },
   {
     name: "PrivacyPolicy",
@@ -1252,7 +1312,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-BQWoXSZ_.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-CAUbjr_3.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1260,7 +1320,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-CBR4cFr_.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-DxH0eABD.mjs').then((m) => m.default || m)
   },
   {
     name: "Search-id",
@@ -1268,7 +1328,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-C2KLK8w4.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-Bwy4FXNj.mjs').then((m) => m.default || m)
   },
   {
     name: "Support",
@@ -1277,6 +1337,14 @@ const _routes = [
     alias: [],
     redirect: void 0 ,
     component: () => import('./Support-C6cqzYMk.mjs').then((m) => m.default || m)
+  },
+  {
+    name: "Talk",
+    path: "/Talk",
+    meta: {},
+    alias: [],
+    redirect: void 0 ,
+    component: () => import('./Talk--Sv-PQKC.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -1595,8 +1663,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-DIV24MZH.mjs').then((r2) => r2.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-C987T3Rz.mjs').then((r2) => r2.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-C3F-jI6M.mjs').then((r2) => r2.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-Dw_4lgbt.mjs').then((r2) => r2.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -32866,7 +32934,7 @@ _sfc_main$3.setup = (props, ctx) => {
 };
 const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-0d9a60e2"]]);
 const layouts = {
-  admin: () => import('./Admin-DL_xJ-P3.mjs').then((m) => m.default || m),
+  admin: () => import('./Admin-CVwSF-xw.mjs').then((m) => m.default || m),
   default: () => import('./default-DopCstHf.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent$1({
@@ -33150,14 +33218,14 @@ const _sfc_main$2 = {
       const _component_ElementsLoader = __nuxt_component_0;
       const _component_NuxtLayout = __nuxt_component_1;
       const _component_NuxtPage = __nuxt_component_2;
-      _push(`<div${ssrRenderAttrs(_attrs)} data-v-b8ed4d65>`);
+      _push(`<div${ssrRenderAttrs(_attrs)} data-v-ac48b020>`);
       if (unref(s)) {
-        _push(`<div class="o" data-v-b8ed4d65></div>`);
+        _push(`<div class="o" data-v-ac48b020></div>`);
       } else {
         _push(`<!---->`);
       }
       if (unref(s)) {
-        _push(`<div class="k" data-v-b8ed4d65><div class="tenor-gif-embed kono" data-postid="10495378" data-share-method="host" data-aspect-ratio="0.75" data-width="100%" data-v-b8ed4d65><a href="https://tenor.com/view/konosuba-dance-dancing-anime-gif-10495378" data-v-b8ed4d65> Konosuba Dance GIF </a> from <a href="https://tenor.com/search/konosuba-gifs" data-v-b8ed4d65>Konosuba GIFs</a></div></div>`);
+        _push(`<div class="k" data-v-ac48b020><div class="tenor-gif-embed kono" data-postid="10495378" data-share-method="host" data-aspect-ratio="0.75" data-width="100%" data-v-ac48b020><a href="https://tenor.com/view/konosuba-dance-dancing-anime-gif-10495378" data-v-ac48b020> Konosuba Dance GIF </a> from <a href="https://tenor.com/search/konosuba-gifs" data-v-ac48b020>Konosuba GIFs</a></div></div>`);
       } else {
         _push(`<!---->`);
       }
@@ -33184,7 +33252,7 @@ _sfc_main$2.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("app.vue");
   return _sfc_setup$2 ? _sfc_setup$2(props, ctx) : void 0;
 };
-const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-b8ed4d65"]]);
+const AppComponent = /* @__PURE__ */ _export_sfc(_sfc_main$2, [["__scopeId", "data-v-ac48b020"]]);
 const _sfc_main$1 = {
   __name: "error",
   __ssrInlineRender: true,

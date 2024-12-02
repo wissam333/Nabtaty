@@ -17,5 +17,5 @@ const princedomORMap = () => useState(() => true, "$uhL1ThW1hr");
 const useSidebar = () => useState(() => true, "$fwYUMzzmcM");
 const useDelviryCost = () => useState(() => 0, "$J444hxSIPc");
 
-export { useCart as a, useAuth as b, useUserInfo as c, useDelviryCost as d, useAccountType as e, useCurrency as f, useLang as g, useMainToken as h, princedomORMap as p, useSidebar as u };
+export { useCart as a, useAuth as b, useLang as c, useUserInfo as d, useDelviryCost as e, useAccountType as f, useCurrency as g, useMainToken as h, princedomORMap as p, useSidebar as u };
 //# sourceMappingURL=useState-DDQ6Qtd2.mjs.map

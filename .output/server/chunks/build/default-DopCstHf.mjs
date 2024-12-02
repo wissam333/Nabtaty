@@ -1,5 +1,5 @@
 import { u as useI18n, t as __nuxt_component_0$1 } from './server.mjs';
-import { g as useLang } from './useState-DDQ6Qtd2.mjs';
+import { c as useLang } from './useState-DDQ6Qtd2.mjs';
 import { useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent } from 'vue/server-renderer';
 import '../runtime.mjs';
