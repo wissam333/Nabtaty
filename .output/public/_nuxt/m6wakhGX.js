@@ -1,0 +1,1 @@
+import{aH as r,n as d}from"./CL2NgQFF.js";import"./Bynz-MEc.js";const n=r((e,a)=>{if(e.params.id!==void 0&&!/^\d+$/.test(e.params.id))return d("/404",{redirectCode:301});if(e.params.productId!==void 0&&!/^\d+$/.test(e.params.productId))return d("/404",{redirectCode:301})});export{n as default};

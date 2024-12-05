@@ -143,9 +143,9 @@
         </li>
 
         <li class="menu-item color" style="padding: 16px 12px">
-          <div class="d-flex align-items-center">
+          <div>
             <font-awesome :icon="['fas', 'language']" />
-            <ElementsLanguageToggle :color="`#003d2ec2`" class="mx-2"></ElementsLanguageToggle>
+            <ElementsLanguageToggle :color="`#fff`"></ElementsLanguageToggle>
           </div>
         </li>
 
