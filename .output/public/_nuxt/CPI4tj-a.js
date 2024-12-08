@@ -1,0 +1,1 @@
+import{aH as a,j as s,z as u,n as o,F as r}from"./DC6DYEp4.js";import"./Bynz-MEc.js";const c=a(()=>{{const e=s(),t=u().value;if(!e.value.isAuthenticated)return o("/newsite/auth/login",{redirectCode:301});if(!t.items.length&&t.totalQty<0||t.totalQty==0)return r().back()}});export{c as default};

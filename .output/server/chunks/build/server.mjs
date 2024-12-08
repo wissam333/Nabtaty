@@ -994,8 +994,9 @@ const __nuxt_page_meta$t = {
   // This will disable the default layout
 };
 const __nuxt_page_meta$s = {
-  layout: "admin"
+  layout: "admin",
   // This will disable the default layout
+  middleware: ["auth"]
 };
 const __nuxt_page_meta$r = {
   layout: "admin"
@@ -1120,7 +1121,7 @@ const _routes = [
     meta: __nuxt_page_meta$s || {},
     alias: (__nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.alias) || [],
     redirect: __nuxt_page_meta$s == null ? void 0 : __nuxt_page_meta$s.redirect,
-    component: () => import('./index-Cq3HGMRZ.mjs').then((m) => m.default || m)
+    component: () => import('./index-CjvWnKuU.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta$r == null ? void 0 : __nuxt_page_meta$r.name) ?? "admin-ListProduct",
@@ -1312,7 +1313,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0 ,
-    component: () => import('./_id_-Coaj8Vfu.mjs').then((m) => m.default || m)
+    component: () => import('./_id_-wBVsWJkM.mjs').then((m) => m.default || m)
   },
   {
     name: "Products-id",
@@ -1663,8 +1664,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import('./Icon-CF4Ov8z1.mjs').then((r2) => r2.default));
-const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-Bo3t40UE.mjs').then((r2) => r2.default));
+const LazyIcon = defineAsyncComponent(() => import('./Icon-Cml28Fvw.mjs').then((r2) => r2.default));
+const LazyIconCSS = defineAsyncComponent(() => import('./IconCSS-BpMJjA1Y.mjs').then((r2) => r2.default));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
